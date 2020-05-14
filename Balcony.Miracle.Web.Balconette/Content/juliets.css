@@ -1,0 +1,153 @@
+/* Blue for Juliets */
+a, h1, h2, h3, .area_color {
+    color: #0740C3 !important;
+}
+
+.sf-menu > li.sfHover, 
+.sf-menu > li.on {
+    background-color: #0740C3 !important;
+}
+
+
+/*-------------------------------*/
+/* --- JULIETS HOME PAGE --- */
+/*-------------------------------*/
+/*
+/* Two icons left of the slider */
+
+#two-icons {
+	float: left;
+	width: 219px;
+}
+#two-icons h3 {
+	font-weight: normal;
+}
+#two-icons h3 a {
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 20px;
+	width: 204px;
+	height: 147px;
+	float: left;
+	padding: 10px 0 0 15px;
+	line-height: 1.1;
+}
+#two-icons h3#off-the-shelf a {
+	background: url(/images/off-the-shelf-prices.jpg) top left no-repeat #FFF;
+	padding: 40px 0 0 95px;
+	width: 124px;
+	height: 117px;
+	
+}
+#two-icons h3#off-the-shelf a:hover {
+	background: url(/images/off-the-shelf-prices.jpg) bottom left no-repeat #FFF;
+}
+#two-icons h3#size-i-need a {
+	background: url(/images/size-i-need.jpg) top left no-repeat #FFF;
+	padding: 75px 0 0 95px;
+	width: 124px;
+	height: 82px;
+}
+#two-icons h3#size-i-need a:hover {
+	background: url(/images/size-i-need.jpg) bottom left no-repeat #FFF;
+}
+
+
+
+
+
+
+
+
+/* Left column content */
+#content .left .icons h3 {
+	margin: 0;
+	float: left;
+}
+#content .left .icons h3 a {
+	float: left;
+	margin: 0 10px 20px 0;
+	height: 45px;
+	width: 180px;
+	color: #FFF !important;
+	text-transform:capitalize;
+	text-align: center;
+	padding-top: 85px;
+	font-weight: bold;
+	font-size: 12px;
+}
+#content .left .icons h3 a.double-line {
+	padding-top: 75px;
+	height: 55px;
+}
+#content .left .icons h3 a#technical-details {
+	background: url(/images/technical-details-juliet.jpg) top left no-repeat #FFF;
+}
+#content .left .icons h3 a#technical-details:hover {
+	background: url(/images/technical-details-juliet.jpg) bottom left  no-repeat #FFF;
+}
+#content .left .icons h3 a#trade-customers {
+	background: url(/images/trade-customers-juliet.jpg) top left no-repeat #FFF;
+}
+#content .left .icons h3 a#trade-customers:hover {
+	background: url(/images/trade-customers-juliet.jpg) bottom left  no-repeat #FFF;
+}
+#content .left .icons h3 a#types-of-juliet-balconies {
+	background: url(/images/types-of-juliet-balconies.jpg) top left no-repeat #FFF;
+}
+#content .left .icons h3 a#types-of-juliet-balconies:hover {
+	background: url(/images/types-of-juliet-balconies.jpg) bottom left  no-repeat #FFF;
+}
+#content .left .icons h3 a#how-to-install-juliet-balconies {
+	background: url(/images/how-to-install-juliet-balconies.jpg) top left no-repeat #FFF;
+}
+#content .left .icons h3 a#how-to-install-juliet-balconies:hover {
+	background: url(/images/how-to-install-juliet-balconies.jpg) bottom left  no-repeat #FFF;
+}
+#content .left .icons h3 a.last {
+	margin: 0;
+}
+#content .left ol.bigger-margin li {
+	margin-bottom: 10px;
+}
+#content .left ol li strong {
+	font-weight: bold;
+}
+
+
+/* RIGHT COLUMN */
+
+
+#content .main .right #faq {
+	background: url(/images/faq-icon-juliet.jpg) bottom right no-repeat #FFF;
+}
+#content .main .right #case-studies {
+    background: url("/images/case-studies-icon-juliet.jpg") no-repeat scroll right bottom #FFFFFF;
+}
+#content .main .right #articles {
+    background: url("/images/articles-icon-juliet.jpg") no-repeat scroll right bottom #FFFFFF;
+}
+
+/****************************************************/
+/* SUB PAGES FOR RULES THAT EXIST ON MULTIPLE PAGES */
+/****************************************************/
+/**
+/* On state for right menu */
+#content .right.subpage ul li a.on {
+	color: #0740C3 !important;
+}
+/* Break first menu item */
+#content .right.subpage ul li.break {
+	width: 150px;
+}
+
+
+/* Article with clickable image on left and text on right */
+.left .article-section img {
+	float: left;
+}
+.left .article-section  .content h5 {
+	color: #0740C3;
+}
+.left .article-section  .content a.read-more {
+	color: #0740C3;	
+}

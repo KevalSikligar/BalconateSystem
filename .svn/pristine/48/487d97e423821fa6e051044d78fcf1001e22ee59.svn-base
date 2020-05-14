@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  For more information on how to configure your ASP.NET application, please visit
+  http://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+  <configSections>
+    <section name="hibernate-configuration" type="NHibernate.Cfg.ConfigurationSectionHandler, NHibernate" />
+    <section name="syscache" type="NHibernate.Caches.SysCache.SysCacheSectionHandler, NHibernate.Caches.SysCache" requirePermission="false" />
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler,log4net" />
+  </configSections>
+  <hibernate-configuration xmlns="urn:nhibernate-configuration-2.2">
+    <session-factory>
+      <property name="dialect">NHibernate.Dialect.MsSql2005Dialect</property>
+      <property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+      <property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+      <property name="adonet.batch_size">500</property>
+      <property name="show_sql">false</property>
+      <property name="cache.provider_class">NHibernate.Caches.SysCache.SysCacheProvider, NHibernate.Caches.SysCache</property>
+      <property name="cache.use_second_level_cache">true</property>
+      <property name="cache.use_query_cache">true</property>
+      <property name="connection.connection_string">
+        Data Source=192.168.16.7;Initial Catalog=bm4;User ID=sa;MultipleActiveResultSets=True;Connect Timeout=120;Network Library=dbmssocn;Password=a9215361;
+      </property>
+      <property name="current_session_context_class">web</property>
+    </session-factory>
+  </hibernate-configuration>
+  <syscache>
+    <cache region="normal" expiration="900" priority="3" />
+  </syscache>
+  <connectionStrings>
+    <add name="DefaultConnection" providerName="System.Data.SqlClient" connectionString="Data Source=.\SQLEXPRESS;Initial Catalog=aspnet-Balcony.Miracle.Web-20120923110536;Integrated Security=SSPI" />
+  </connectionStrings>
+  <appSettings>
+    <add key="AppId" value="10" />
+    <add key="aspnet:UseTaskFriendlySynchronizationContext" value="true" />
+    <add key="webpages:Version" value="2.0.0.0" />
+    <add key="webpages:Enabled" value="false" />
+    <add key="PreserveLoginUrl" value="true" />
+    <add key="ClientValidationEnabled" value="true" />
+    <add key="UnobtrusiveJavaScriptEnabled" value="true" />
+  </appSettings>
+  <log4net>
+    <appender name="GeneralLog" type="log4net.Appender.RollingFileAppender">
+      <file value="Logs/general.txt" />
+      <appendToFile value="true" />
+      <maximumFileSize value="5000KB" />
+      <maxSizeRollBackups value="99999" />
+      <rollingStyle value="Size" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%d{dd/MM/yyyy HH:mm:ss} [%t] %-5p %c - %m%n" />
+      </layout>
+    </appender>
+    
+    <appender name="NotFoundErrorsAppender" type="log4net.Appender.RollingFileAppender">
+      <file value="Logs/not-found.txt" />
+      <appendToFile value="true" />
+      <maximumFileSize value="5000KB" />
+      <maxSizeRollBackups value="99999" />
+      <rollingStyle value="Size" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%d{dd/MM/yyyy HH:mm:ss} [%t] %-5p %c - %m%n" />
+      </layout>
+    </appender>
+      
+    <!-- levels: DEBUG, INFO, WARN, ERROR, FATAL -->
+    <root>
+      <level value="DEBUG" />
+      <appender-ref ref="GeneralLog" />
+    </root>
+    <logger name="NHibernate">
+      <level value="ERROR" />
+    </logger>
+    <logger name="NHibernate.SQL">
+      <level value="ERROR" />
+    </logger>
+    <logger additivity="false" name="NotFoundErrors">
+      <level value="DEBUG" />
+      <appender-ref ref="NotFoundErrorsAppender" />
+    </logger>
+  </log4net>
+  <!--
+    For a description of web.config changes see http://go.microsoft.com/fwlink/?LinkId=235367.
+
+    The following attributes can be set on the <httpRuntime> tag.
+      <system.Web>
+        <httpRuntime targetFramework="4.5" />
+      </system.Web>
+  -->
+  <system.web>    
+    <httpRuntime enableVersionHeader="false" maxRequestLength="262144" />
+    <compilation debug="true" targetFramework="4.5" />
+    <authentication mode="Forms">
+      <forms loginUrl="~/Account/Login" timeout="2880" />
+    </authentication>
+    <customErrors mode="On">
+      <error statusCode="500" redirect="/general/_500_" />
+    </customErrors>
+    <globalization uiCulture="en-GB" culture="en-GB" />
+    <pages controlRenderingCompatibilityVersion="4.0" buffer="true" enableViewState="false"> 
+      <namespaces>
+        <add namespace="System.Web.Helpers" />
+        <add namespace="System.Web.Mvc" />
+        <add namespace="System.Web.Mvc.Ajax" />
+        <add namespace="System.Web.Mvc.Html" />
+        <add namespace="System.Web.Optimization" />
+        <add namespace="System.Web.Routing" />
+        <add namespace="System.Web.WebPages" />
+        <add namespace="Balcony.Miracle.Core" />
+        <add namespace="Balcony.Miracle.Web" />
+        <add namespace="Balcony.Miracle.Web.Models" />
+        <add namespace="Balcony.Miracle.Web.Cms" />
+      </namespaces>
+    </pages>
+    <profile defaultProvider="DefaultProfileProvider">
+      <providers>
+        <add name="DefaultProfileProvider" type="System.Web.Providers.DefaultProfileProvider, System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" connectionStringName="DefaultConnection" applicationName="/" />
+      </providers>
+    </profile>
+    <membership defaultProvider="DefaultMembershipProvider">
+      <providers>
+        <add name="DefaultMembershipProvider" type="System.Web.Providers.DefaultMembershipProvider, System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" connectionStringName="DefaultConnection" enablePasswordRetrieval="false" enablePasswordReset="true" requiresQuestionAndAnswer="false" requiresUniqueEmail="false" maxInvalidPasswordAttempts="5" minRequiredPasswordLength="6" minRequiredNonalphanumericCharacters="0" passwordAttemptWindow="10" applicationName="/" />
+      </providers>
+    </membership>
+    <roleManager defaultProvider="DefaultRoleProvider">
+      <providers>
+        <add name="DefaultRoleProvider" type="System.Web.Providers.DefaultRoleProvider, System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" connectionStringName="DefaultConnection" applicationName="/" />
+      </providers>
+    </roleManager>
+    <sessionState mode="InProc" customProvider="DefaultSessionProvider">
+      <providers>
+        <add name="DefaultSessionProvider" type="System.Web.Providers.DefaultSessionStateProvider, System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" connectionStringName="DefaultConnection" />
+      </providers>
+    </sessionState>
+  </system.web>
+  <system.webServer>
+    <httpErrors errorMode="Custom" existingResponse="Replace">
+      <remove statusCode="404" />
+      <error statusCode="404" path="/general/_404_" responseMode="ExecuteURL" />
+      <remove statusCode="500" />
+      <error statusCode="500" path="/general/_500_" responseMode="ExecuteURL" />
+     </httpErrors>
+    <urlCompression doDynamicCompression="true" doStaticCompression="true" dynamicCompressionBeforeCache="true" />
+    <validation validateIntegratedModeConfiguration="false" />
+    <modules runAllManagedModulesForAllRequests="true" />
+    <security>
+      <requestFiltering>
+        <requestLimits maxAllowedContentLength="268435456" />
+      </requestFiltering>
+    </security>
+  </system.webServer>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Helpers" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0-2.0.0.0" newVersion="2.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Mvc" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0-4.0.0.0" newVersion="4.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.WebPages" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0-2.0.0.0" newVersion="2.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.5.0.0" newVersion="4.5.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Services" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.0.0" newVersion="4.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Net.Http.Primitives" publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.2.20.0" newVersion="4.2.20.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+</configuration>

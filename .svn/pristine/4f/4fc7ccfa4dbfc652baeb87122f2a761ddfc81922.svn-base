@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balcony.Miracle.Web", "Balcony.Miracle.Web.Balconette\Balcony.Miracle.Web.csproj", "{5CD6168C-725F-4988-BE2A-14C45BF2314B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balcony.Miracle.Web.Cms", "Balcony.Miracle.Web.Cms\Balcony.Miracle.Web.Cms.csproj", "{469400B7-57D9-40E7-A191-A477D2E39DD8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resharper", "Resharper", "{E59D8F05-330A-45AD-BDA2-D57FFDC1B014}"
+	ProjectSection(SolutionItems) = preProject
+		NewWebsite.sln.DotSettings.user = NewWebsite.sln.DotSettings.user
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTester", "ConsoleTester\ConsoleTester.csproj", "{F724F6E8-50CA-43E2-991E-2CCE2B55E5BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balcony.Miracle.Server", "Balcony.Miracle.Server\Balcony.Miracle.Server.csproj", "{154D38BC-FE95-4763-B513-15ABA1F45304}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balcony.Miracle.Web.Shared", "Balcony.Miracle.Web.Shared\Balcony.Miracle.Web.Shared.csproj", "{6562E513-2462-4707-BC59-2ECCC2BE5182}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CD6168C-725F-4988-BE2A-14C45BF2314B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CD6168C-725F-4988-BE2A-14C45BF2314B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CD6168C-725F-4988-BE2A-14C45BF2314B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CD6168C-725F-4988-BE2A-14C45BF2314B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{469400B7-57D9-40E7-A191-A477D2E39DD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469400B7-57D9-40E7-A191-A477D2E39DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469400B7-57D9-40E7-A191-A477D2E39DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469400B7-57D9-40E7-A191-A477D2E39DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F724F6E8-50CA-43E2-991E-2CCE2B55E5BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F724F6E8-50CA-43E2-991E-2CCE2B55E5BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F724F6E8-50CA-43E2-991E-2CCE2B55E5BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F724F6E8-50CA-43E2-991E-2CCE2B55E5BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{154D38BC-FE95-4763-B513-15ABA1F45304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{154D38BC-FE95-4763-B513-15ABA1F45304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{154D38BC-FE95-4763-B513-15ABA1F45304}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{154D38BC-FE95-4763-B513-15ABA1F45304}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6562E513-2462-4707-BC59-2ECCC2BE5182}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6562E513-2462-4707-BC59-2ECCC2BE5182}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6562E513-2462-4707-BC59-2ECCC2BE5182}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6562E513-2462-4707-BC59-2ECCC2BE5182}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8ACC35FD-F3FF-433B-86B8-C80FCB47EF45}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,85 @@
+.kalbtn {
+    display: inline-block !important;
+    text-decoration: none !important;
+    font-family: Arial, Tahoma, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    color: white !important;
+    text-shadow: 0 1px 0 rgba(0,0,0, 0.15) !important;
+    border-radius: 6px !important;
+    padding: 10px 15px 5px 15px !important;
+    margin: 0 5px 5px 0 !important;
+    background: #CB0002 !important;
+    border: 1px solid white;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+.kalbtn:hover {
+    background-color: #a50001 !important;
+}
+
+#FTUContainer {
+    position: fixed !important;
+    z-index: 9900 !important;
+    bottom: 50px !important;
+    right: 15px !important;
+}
+
+#FTUMinimise {
+    display: inline-block !important;
+    text-decoration: none !important;
+    font-family: Arial, Tahoma, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    text-align: center !important;
+    position: absolute !important;
+    z-index: 9901 !important;
+    top: 1px !important;
+    right: 6px !important;
+    background-color: #700101 !important;
+    border-radius: 0px 4.5px 0px 0px !important;
+    padding: 4px 0px 4px 0px !important;
+}
+
+#aFTUMinimise {
+    text-decoration: none !important;
+    color: grey !important;
+    padding: 5px 9px 5px 9px !important;
+}
+
+
+#minContainer {
+    display: none;
+}
+
+#aFTUmin {
+    border-radius: 50% !important;
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.FTUp {
+    margin: 1px 0px 8px 0px !important;
+}
+
+
+@media screen and (max-width: 659px) {
+    #FTUContainer {
+        position: fixed !important;
+        z-index: 9900 !important;
+        bottom: 100px !important;
+        right: 0px !important;
+    }
+
+    #FTUMinimise {
+        top: 1px !important;
+        right: 6px !important;
+        padding: 9px 0px 9px 0px !important;
+    }
+
+    #aFTUMinimise {
+        padding: 10px 16px 10px 16px !important;
+    }
+
+}

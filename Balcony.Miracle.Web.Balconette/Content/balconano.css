@@ -1,0 +1,288 @@
+/* Green for Balconano */
+a, h1, h2, h3, h5, .area_color {
+    color: #1E802C !important;
+}
+
+.sf-menu > li.sfHover, 
+.sf-menu > li.on {
+    background-color: #1E802C !important;
+}
+
+
+/*-------------------------------*/
+/* --- Balconano HOME PAGE --- */
+/*-------------------------------*/
+/*
+/* Two icons left of the slider */
+
+#two-icons {
+	float: left;
+	width: 219px;
+}
+#two-icons h3 {
+	font-weight: normal;
+}
+#two-icons h3 a {
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 20px;
+	width: 204px;
+	height: 147px;
+	float: left;
+	padding: 10px 0 0 15px;
+	line-height: 1.1;
+}
+#two-icons h3#online-shop a {
+	background: url(/images/balconano.jpg) top left no-repeat #FFF;
+	padding: 100px 50px 0 49px;
+	width: 130px;
+	height: 57px;
+	
+}
+#two-icons h3#online-shop a:hover {
+	background: url(/images/balconano.jpg) bottom left no-repeat #FFF;
+}
+#two-icons h3#products a {
+	background: url(/images/balconano.jpg) top left no-repeat #FFF;
+	padding: 100px 5px 0 15px;
+	width: 199px;
+	height: 57px;
+}
+#two-icons h3#products a:hover {
+	background: url(/images/balconano.jpg) bottom left no-repeat #FFF;
+}
+
+#balconano-video {
+    float: left;
+    height: 320px;
+    margin: 20px 0 0 60px;
+    width: 700px;
+}
+
+/* Icons below video */
+#icons {
+	float: left;
+	width: 100%;
+}
+#icons h3 {
+	margin: 0;
+	float: left;
+}
+#icons h3 a {
+	float: left;
+	margin: 0 10px 20px 0;
+	height: 45px;
+	width: 180px;
+	color: #FFF !important;
+	text-transform:capitalize;
+	text-align: center;
+	padding-top: 85px;
+	font-weight: bold;
+	font-size: 12px;
+}
+#icons h3 a.double-line {
+	padding-top: 75px;
+	height: 55px;
+}
+#icons h3 a#how-it-works {
+	background: url(/images/balconano-how-it-works.jpg) top left no-repeat #FFF;
+}
+#icons h3 a#how-it-works:hover {
+	background: url(/images/balconano-how-it-works.jpg) bottom left  no-repeat #FFF;
+}
+#icons h3 a#application-instructions {
+	background: url(/images/balconano-application-instructions.jpg) top left no-repeat #FFF;
+}
+#icons h3 a#application-instructions:hover {
+	background: url(/images/balconano-application-instructions.jpg) bottom left  no-repeat #FFF;
+}
+#icons h3 a#trade-and-distributors {
+	background: url(/images/balconano-trade-and-distributors.jpg) top left no-repeat #FFF;
+}
+#icons h3 a#trade-and-distributors:hover {
+	background: url(/images/balconano-trade-and-distributors.jpg) bottom left  no-repeat #FFF;
+}
+#icons h3 a#faq {
+	background: url(/images/balconano-faq.jpg) top left no-repeat #FFF;
+}
+#icons h3 a#faq:hover {
+	background: url(/images/balconano-faq.jpg) bottom left  no-repeat #FFF;
+}
+#icons h3 a.last {
+	margin: 0;
+}
+#money-back {
+	float: right;
+	margin: 15px 0 0 0;
+	width: 200px;
+
+}
+#money-back img {
+	float: left;
+	margin: 0 8px 0 0;
+}
+#money-back p {
+	font-size: 14px;
+	color: #666;
+	font-weight: bold;
+	margin: 5px 0 5px 0;
+}	
+
+/* Left column content */
+
+#content .left ol.bigger-margin li {
+	margin-bottom: 10px;
+}
+#content .left ol li strong {
+	font-weight: bold;
+}
+
+#shop {
+	float: left;
+	width: 610px;
+	background-color: #EEEEED;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+	min-height: 300px;
+	margin: 20px 0 0 0;
+	position: relative;
+	padding: 20px 20px 20px 20px	
+}	
+#shop-bg {
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	background: url(/images/balconano-shop-bg.jpg) bottom left no-repeat #FFF;
+	width: 650px;
+	height: 30px;
+}
+#shop img.badges {
+	float: left;
+	margin: 7px 0 0 0;
+}	
+#shop #content-block {
+	float: right;
+	width: 460px;
+	margin: 0 0 0 30px;
+}
+#content-block h2, #customer-reviews h2  {
+    font-size: 24px;
+	margin: 0 0 20px 0;
+	font-weight: normal;
+}
+#content-block th {
+	color: #646464;
+	text-align: left;
+	border-bottom: 1px dotted #666;
+	padding-bottom: 3px;
+}
+#content-block p {
+	margin: 0 0 0 0;
+}
+#content-block a.btnAddToCart {
+	padding: 5px 20px !important;
+	font-weight: bold;
+}
+#content-block th.price {
+	width: 130px;
+}
+#content-block th.quantity {
+	width: 80px;
+	text-align: center;	
+}
+#content-block th.add-to-cart {
+	width: 130px;
+}
+#content-block td {
+	padding: 15px 15px 15px 0;
+	vertical-align: middle;
+}
+#content-block td p.title {
+	font-weight: bold;
+}
+#content-block td p.current-price {
+	font-weight: bold;
+}
+#content-block td p.old-price {
+	color: #646464;
+	text-decoration:line-through;
+}
+#content-block td p.quantity-field {
+	text-align: center;
+}
+#content-block td p.sale {
+	font-weight: bold;
+	color: #CB191B;
+}
+#content-block input[type=text] {
+	text-align: right;
+	width: 20px;
+}
+#goto-shop {
+	float: left;
+	clear: both;
+	margin-bottom: 20px;
+}
+#goto-shop  img {
+	margin-top: 5px;
+}
+/* Right column */
+#balconano-apps  h2{
+    font-weight: bold;
+	font-size: 20px;
+	color: #3F3F3F !important;
+	margin: 7px 0 10px 0;
+	font-weight: normal;
+}
+#balconano-apps  div {
+	float: left;
+	width: 100%;
+	border-top: 1px dotted #666;
+	padding: 10px 0 10px 0;
+}
+#balconano-apps  div.last {
+	border-bottom: 1px dotted #666;
+}
+#balconano-apps  div img {
+	float: right;
+	margin: 0 3px 0 5px;
+}
+#balconano-apps  div  h3{
+	font-size: 16px;
+	font-weight: normal;
+}
+/****************************************************/
+/* SUB PAGES FOR RULES THAT EXIST ON MULTIPLE PAGES */
+/****************************************************/
+/**
+/* On state for right menu */
+#content .right.subpage ul li a.on {
+	color: #1E802C !important;
+}
+/* Article with clickable image on left and text on right */
+.left .article-section.product {
+	width: 700px;
+}
+.left .article-section  .content {
+	float: left;
+	margin: 20px 0 0 30px !important;
+	width: 381px;
+}
+.left .article-section.product  .content {
+	width: 451px;
+}
+.left .article-section.product  .content img{
+	float: right;
+	margin-left: 20px;
+}
+
+/* Images side by side */
+.images {
+	float: left;
+	width: 100%;
+	margin: 20px 0 20px 0;
+}
+.images img {
+	margin-right: 5px;
+}
+

@@ -1,0 +1,107 @@
+/* Blue for Balcony Views */
+a, h1, h2, h3, .area_color {
+    color: #000 !important;
+}
+
+.sf-menu > li.sfHover, 
+.sf-menu > li.on {
+    background-color: #000 !important;
+}
+
+
+/*-------------------------------*/
+/* --- BALCONY VIEWS HOME PAGE --- */
+/*-------------------------------*/
+/*
+
+/* grey background that holds the two icons and balcony views magazine image */
+#top-area {
+	float: left;
+	width: 980px;
+	-moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+	background-color: #EEEEED;
+	padding: 15px 0 15px 0;
+	margin: 0 0 20px 0;
+}
+
+/* Two icons left of the slider */
+
+#two-icons {
+	float: left;
+	width: 219px;
+	margin-left: 50px;
+}
+#two-icons h3 {
+	font-weight: normal;
+}
+#two-icons h3 a {
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 20px;
+	width: 204px;
+	height: 147px;
+	float: left;
+	padding: 10px 0 0 15px;
+	line-height: 1.1;
+	background: url(/images/balcony-views-bg-icon.jpg) top left no-repeat #FFF;	
+	color: #FFF !important;	
+}
+#two-icons h3  a:hover {
+	background: url(/images/balcony-views-bg-icon.jpg) bottom left no-repeat #FFF;
+}
+#two-icons h3#subscribe a {
+	padding: 40px 15px 0 35px;
+	width: 169px;
+	height: 117px;
+}
+#two-icons h3#download a {
+	padding: 60px 15px 0 35px;
+	width: 169px;
+	height: 97px;
+}
+/* Balcony Views Magazine image */
+#top-area img {
+	float: right;
+	margin-right: 121px;
+}
+
+
+/* Left column content */
+
+#content .left ol.bigger-margin li {
+	margin-bottom: 10px;
+}
+#content .left ol li strong {
+	font-weight: bold;
+}
+
+/* RIGHT COLUMN */
+
+#content .right a {
+	color: #0337F9 !important;
+}
+
+#content .main .right #stories-and-articles {
+	background: url(/images/stories-and-articles-icon.jpg) bottom right no-repeat #FFF;
+	border-top: 1px dotted #666666;
+	margin-top: 15px;
+}
+#content .right #stories-and-articles p {
+	margin-top: 17px;
+	width: 140px;
+}
+#content .main .right #pr-and-media{
+	background: url(/images/pr-and-media-icon.jpg) bottom right no-repeat #FFF;
+}
+#content .main .right #pr-and-media p {
+	margin-top: 14px;
+}
+/****************************************************/
+/* SUB PAGES FOR RULES THAT EXIST ON MULTIPLE PAGES */
+/****************************************************/
+/**
+/* Links for subpages */
+.left-content a, .subpage a  {
+	color: #0337F9 !important;
+}

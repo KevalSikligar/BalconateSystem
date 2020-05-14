@@ -1,0 +1,922 @@
+07/02/2014 18:11:15 [81] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:15
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/9d54d508-1efb-4db0-adcf-fd106323a092_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/9d54d508-1efb-4db0-adcf-fd106323a092_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/9d54d508-1efb-4db0-adcf-fd106323a092_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:16 [89] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:16
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/9d54d508-1efb-4db0-adcf-fd106323a092_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/9d54d508-1efb-4db0-adcf-fd106323a092_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/9d54d508-1efb-4db0-adcf-fd106323a092_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:20 [89] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:20
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/9d54d508-1efb-4db0-adcf-fd106323a092_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/9d54d508-1efb-4db0-adcf-fd106323a092_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/9d54d508-1efb-4db0-adcf-fd106323a092_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:20 [33] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:20
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/5d07aa56-d9c5-47f7-b2c5-c55907d3f674_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/5d07aa56-d9c5-47f7-b2c5-c55907d3f674_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/5d07aa56-d9c5-47f7-b2c5-c55907d3f674_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:21 [39] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:21
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/5d07aa56-d9c5-47f7-b2c5-c55907d3f674_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/5d07aa56-d9c5-47f7-b2c5-c55907d3f674_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/5d07aa56-d9c5-47f7-b2c5-c55907d3f674_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:25 [55] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:25
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/5d07aa56-d9c5-47f7-b2c5-c55907d3f674_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/5d07aa56-d9c5-47f7-b2c5-c55907d3f674_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/5d07aa56-d9c5-47f7-b2c5-c55907d3f674_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:25 [33] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:25
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/30c864d4-55c7-4a83-bff3-6a3885413022_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/30c864d4-55c7-4a83-bff3-6a3885413022_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/30c864d4-55c7-4a83-bff3-6a3885413022_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:26 [39] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:26
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/30c864d4-55c7-4a83-bff3-6a3885413022_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/30c864d4-55c7-4a83-bff3-6a3885413022_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/30c864d4-55c7-4a83-bff3-6a3885413022_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:30 [65] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:30
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/30c864d4-55c7-4a83-bff3-6a3885413022_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/30c864d4-55c7-4a83-bff3-6a3885413022_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/30c864d4-55c7-4a83-bff3-6a3885413022_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:30 [77] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:30
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/af88ca89-e303-44e2-a2e4-7cd07d98f805_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/af88ca89-e303-44e2-a2e4-7cd07d98f805_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/af88ca89-e303-44e2-a2e4-7cd07d98f805_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:31 [39] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:31
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/af88ca89-e303-44e2-a2e4-7cd07d98f805_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/af88ca89-e303-44e2-a2e4-7cd07d98f805_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/af88ca89-e303-44e2-a2e4-7cd07d98f805_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:35 [81] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:35
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/af88ca89-e303-44e2-a2e4-7cd07d98f805_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/af88ca89-e303-44e2-a2e4-7cd07d98f805_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/af88ca89-e303-44e2-a2e4-7cd07d98f805_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:35 [39] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:35
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/73779770-d47b-447e-9695-988f74f1b3e6_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/73779770-d47b-447e-9695-988f74f1b3e6_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/73779770-d47b-447e-9695-988f74f1b3e6_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+07/02/2014 18:11:36 [39] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 07/02/2014 18:11:36
+<br /><hr />
+<strong>Source:</strong> System.Web.Mvc
+<br /><hr />
+<strong>Message:</strong> The controller for path '/content/upimages/73779770-d47b-447e-9695-988f74f1b3e6_t.jpg' was not found or does not implement IController.
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/content/upimages/73779770-d47b-447e-9695-988f74f1b3e6_t.jpg
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/homepage
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.102 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+_articles: System.Collections.Generic.HashSet`1[System.Guid]<br />
+<hr />
+<strong>Form:</strong><br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): The controller for path '/content/upimages/73779770-d47b-447e-9695-988f74f1b3e6_t.jpg' was not found or does not implement IController.
+   at System.Web.Mvc.DefaultControllerFactory.GetControllerInstance(RequestContext requestContext, Type controllerType)
+   at System.Web.Mvc.DefaultControllerFactory.CreateController(RequestContext requestContext, String controllerName)
+   at System.Web.Mvc.MvcHandler.ProcessRequestInit(HttpContextBase httpContext, IController& controller, IControllerFactory& factory)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+08/02/2014 12:12:18 [1] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.StoredFile.Data is not an auto property, which may result in uninitialized property access
+08/02/2014 12:12:18 [1] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.EventType.ImageBytes is not an auto property, which may result in uninitialized property access
+08/02/2014 15:58:56 [36] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.StoredFile.Data is not an auto property, which may result in uninitialized property access
+08/02/2014 15:58:56 [36] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.EventType.ImageBytes is not an auto property, which may result in uninitialized property access
+08/02/2014 16:26:03 [1] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.StoredFile.Data is not an auto property, which may result in uninitialized property access
+08/02/2014 16:26:03 [1] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.EventType.ImageBytes is not an auto property, which may result in uninitialized property access
+08/02/2014 16:48:20 [36] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.StoredFile.Data is not an auto property, which may result in uninitialized property access
+08/02/2014 16:48:20 [36] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.EventType.ImageBytes is not an auto property, which may result in uninitialized property access
+08/02/2014 16:48:33 [33] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 08/02/2014 16:48:33
+<br /><hr />
+<strong>Source:</strong> System.Web
+<br /><hr />
+<strong>Message:</strong> Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerWrapper'.<br />   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)<br />   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)<br />   at System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)<br />   at System.Web.Mvc.ViewPage.RenderView(ViewContext viewContext)<br />   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)<br />   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()<br />   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)<br />   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)<br />   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)<br />   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)<br />   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)<br />   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)<br />   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)<br />   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()<br />   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)<br /><br />Inner: <br />Exception of type 'System.Web.HttpUnhandledException' was thrown.<br />   at System.Web.UI.Page.HandleError(Exception e)<br />   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />   at System.Web.UI.Page.ProcessRequest()<br />   at System.Web.UI.Page.ProcessRequest(HttpContext context)<br />   at System.Web.Mvc.ViewPage.ProcessRequest(HttpContext context)<br />   at ASP.views_juliettes_quote_custom_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\36c0697b\892d8bf8\App_Web_fluoh4h0.0.cs:line 0<br />   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()<br />   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)<br />   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)<br /><br />Inner: <br />Object reference not set to an instance of an object.<br />   at ASP.views_juliettes_quote_custom_aspx.__RenderContent1(HtmlTextWriter __w, Control parameterContainer) in c:\Balcony\NewWebsite\Balcony.Miracle.Web.Balconette\Views\Juliettes\Quote-Custom.aspx:line 74<br />   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)<br />   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)<br />   at ASP.views_shared_site_master.__Render__control8(HtmlTextWriter __w, Control parameterContainer) in c:\Balcony\NewWebsite\Balcony.Miracle.Web.Balconette\Views\Shared\Site.Master:line 177<br />   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)<br />   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)<br />   at ASP.views_shared_main_master.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Balcony\NewWebsite\Balcony.Miracle.Web.Balconette\Views\Shared\Main.Master:line 33<br />   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)<br />   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)<br />   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)<br />   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)<br />   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)<br />   at System.Web.Mvc.ViewPage.Render(HtmlTextWriter writer)<br />   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)<br />   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)<br />
+<br /><hr />
+<strong>Stack trace:</strong>    at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   at System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   at System.Web.Mvc.ViewPage.RenderView(ViewContext viewContext)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/juliettes/quote-custom
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/juliettes/standard-model/1500?type=1&color=3
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+<hr />
+<strong>Form:</strong><br />
+StandardId: 1500<br />
+TypeId: 1<br />
+ColorId: 3<br />
+GlassId: 1<br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Web.HttpException (0x80004005): Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerWrapper'. ---> System.Web.HttpUnhandledException (0x80004005): Exception of type 'System.Web.HttpUnhandledException' was thrown. ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at ASP.views_juliettes_quote_custom_aspx.__RenderContent1(HtmlTextWriter __w, Control parameterContainer) in c:\Balcony\NewWebsite\Balcony.Miracle.Web.Balconette\Views\Juliettes\Quote-Custom.aspx:line 74
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at ASP.views_shared_site_master.__Render__control8(HtmlTextWriter __w, Control parameterContainer) in c:\Balcony\NewWebsite\Balcony.Miracle.Web.Balconette\Views\Shared\Site.Master:line 177
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at ASP.views_shared_main_master.__Render__control1(HtmlTextWriter __w, Control parameterContainer) in c:\Balcony\NewWebsite\Balcony.Miracle.Web.Balconette\Views\Shared\Main.Master:line 33
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   at System.Web.Mvc.ViewPage.Render(HtmlTextWriter writer)
+   at System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.HandleError(Exception e)
+   at System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+   at System.Web.UI.Page.ProcessRequest()
+   at System.Web.UI.Page.ProcessRequest(HttpContext context)
+   at System.Web.Mvc.ViewPage.ProcessRequest(HttpContext context)
+   at ASP.views_juliettes_quote_custom_aspx.ProcessRequest(HttpContext context) in c:\Windows\Microsoft.NET\Framework64\v4.0.30319\Temporary ASP.NET Files\root\36c0697b\892d8bf8\App_Web_fluoh4h0.0.cs:line 0
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.<>c__DisplayClass4.<Wrap>b__3()
+   at System.Web.Mvc.HttpHandlerUtil.ServerExecuteHttpHandlerWrapper.Wrap[TResult](Func`1 func)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   at System.Web.HttpServerUtility.ExecuteInternal(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage, VirtualPath path, VirtualPath filePath, String physPath, Exception error, String queryStringOverride)
+   at System.Web.HttpServerUtility.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm, Boolean setPreviousPage)
+   at System.Web.HttpServerUtilityWrapper.Execute(IHttpHandler handler, TextWriter writer, Boolean preserveForm)
+   at System.Web.Mvc.ViewPage.RenderView(ViewContext viewContext)
+   at System.Web.Mvc.ViewResultBase.ExecuteResult(ControllerContext context)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass1a.<InvokeActionResultWithFilters>b__17()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultFilter(IResultFilter filter, ResultExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionResultWithFilters(ControllerContext controllerContext, IList`1 filters, ActionResult actionResult)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__22(IAsyncResult asyncResult)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__18(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.Controller.EndExecuteCore(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__3(IAsyncResult asyncResult)
+   at System.Web.Mvc.Async.AsyncResultWrapper.<>c__DisplayClass4.<MakeVoidDelegate>b__3(IAsyncResult ar)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+08/02/2014 17:17:27 [1] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.StoredFile.Data is not an auto property, which may result in uninitialized property access
+08/02/2014 17:17:27 [1] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.EventType.ImageBytes is not an auto property, which may result in uninitialized property access
+08/02/2014 17:49:23 [27] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.StoredFile.Data is not an auto property, which may result in uninitialized property access
+08/02/2014 17:49:24 [27] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.EventType.ImageBytes is not an auto property, which may result in uninitialized property access
+08/02/2014 17:56:32 [16] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 08/02/2014 17:56:32
+<br /><hr />
+<strong>Source:</strong> System
+<br /><hr />
+<strong>Message:</strong> Property accessor 'CustomerContact' on object 'Balcony.Miracle.Core.CartItem' threw the following exception:'Object reference not set to an instance of an object.'<br />   at System.ComponentModel.ReflectPropertyDescriptor.GetValue(Object component)<br />   at System.Web.Mvc.DataErrorInfoModelValidatorProvider.DataErrorInfoClassModelValidator.Validate(Object container)<br />   at System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()<br />   at System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)<br />   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)<br />   at System.Web.Mvc.DefaultModelBinder.UpdateCollection(ControllerContext controllerContext, ModelBindingContext bindingContext, Type elementType)<br />   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)<br />   at System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)<br />   at System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)<br />   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__1e(AsyncCallback asyncCallback, Object asyncState)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag)<br />   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__17(AsyncCallback asyncCallback, Object asyncState)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)<br />   at System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)<br />   at System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)<br />   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__2(AsyncCallback asyncCallback, Object asyncState)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)<br />   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)<br />   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()<br />   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)<br /><br />Inner: <br />Object reference not set to an instance of an object.<br />   at Balcony.Miracle.Core.CartItem.get_CustomerContact()<br />
+<br /><hr />
+<strong>Stack trace:</strong>    at System.ComponentModel.ReflectPropertyDescriptor.GetValue(Object component)
+   at System.Web.Mvc.DataErrorInfoModelValidatorProvider.DataErrorInfoClassModelValidator.Validate(Object container)
+   at System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   at System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.DefaultModelBinder.UpdateCollection(ControllerContext controllerContext, ModelBindingContext bindingContext, Type elementType)
+   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__1e(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__17(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)
+   at System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__2(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/customer/cart
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/customer/cart
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+<hr />
+<strong>Form:</strong><br />
+save: true<br />
+[0].ID: cfa8bfb4-b8cd-4baa-892e-a2bd00efe877<br />
+[0].Quantity: 1,1<br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Reflection.TargetInvocationException: Property accessor 'CustomerContact' on object 'Balcony.Miracle.Core.CartItem' threw the following exception:'Object reference not set to an instance of an object.' ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Balcony.Miracle.Core.CartItem.get_CustomerContact()
+   --- End of inner exception stack trace ---
+   at System.ComponentModel.ReflectPropertyDescriptor.GetValue(Object component)
+   at System.Web.Mvc.DataErrorInfoModelValidatorProvider.DataErrorInfoClassModelValidator.Validate(Object container)
+   at System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   at System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.DefaultModelBinder.UpdateCollection(ControllerContext controllerContext, ModelBindingContext bindingContext, Type elementType)
+   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__1e(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__17(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)
+   at System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__2(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+08/02/2014 17:59:12 [40] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.StoredFile.Data is not an auto property, which may result in uninitialized property access
+08/02/2014 17:59:12 [40] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.EventType.ImageBytes is not an auto property, which may result in uninitialized property access
+08/02/2014 17:59:13 [35] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 08/02/2014 17:59:13
+<br /><hr />
+<strong>Source:</strong> System
+<br /><hr />
+<strong>Message:</strong> Property accessor 'CustomerContact' on object 'Balcony.Miracle.Core.CartItem' threw the following exception:'Object reference not set to an instance of an object.'<br />   at System.ComponentModel.ReflectPropertyDescriptor.GetValue(Object component)<br />   at System.Web.Mvc.DataErrorInfoModelValidatorProvider.DataErrorInfoClassModelValidator.Validate(Object container)<br />   at System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()<br />   at System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)<br />   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)<br />   at System.Web.Mvc.DefaultModelBinder.UpdateCollection(ControllerContext controllerContext, ModelBindingContext bindingContext, Type elementType)<br />   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)<br />   at System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)<br />   at System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)<br />   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__1e(AsyncCallback asyncCallback, Object asyncState)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag)<br />   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__17(AsyncCallback asyncCallback, Object asyncState)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)<br />   at System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)<br />   at System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)<br />   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__2(AsyncCallback asyncCallback, Object asyncState)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)<br />   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)<br />   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()<br />   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)<br /><br />Inner: <br />Object reference not set to an instance of an object.<br />   at Balcony.Miracle.Core.CartItem.get_CustomerContact()<br />
+<br /><hr />
+<strong>Stack trace:</strong>    at System.ComponentModel.ReflectPropertyDescriptor.GetValue(Object component)
+   at System.Web.Mvc.DataErrorInfoModelValidatorProvider.DataErrorInfoClassModelValidator.Validate(Object container)
+   at System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   at System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.DefaultModelBinder.UpdateCollection(ControllerContext controllerContext, ModelBindingContext bindingContext, Type elementType)
+   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__1e(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__17(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)
+   at System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__2(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/customer/cart
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/customer/cart
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+<hr />
+<strong>Form:</strong><br />
+save: true<br />
+[0].ID: cfa8bfb4-b8cd-4baa-892e-a2bd00efe877<br />
+[0].Quantity: 1,1<br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Reflection.TargetInvocationException: Property accessor 'CustomerContact' on object 'Balcony.Miracle.Core.CartItem' threw the following exception:'Object reference not set to an instance of an object.' ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Balcony.Miracle.Core.CartItem.get_CustomerContact()
+   --- End of inner exception stack trace ---
+   at System.ComponentModel.ReflectPropertyDescriptor.GetValue(Object component)
+   at System.Web.Mvc.DataErrorInfoModelValidatorProvider.DataErrorInfoClassModelValidator.Validate(Object container)
+   at System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   at System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.DefaultModelBinder.UpdateCollection(ControllerContext controllerContext, ModelBindingContext bindingContext, Type elementType)
+   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__1e(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__17(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)
+   at System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__2(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+08/02/2014 17:59:35 [57] ERROR root - <h1>Exception occured</h1>
+<strong>Time:</strong> 08/02/2014 17:59:35
+<br /><hr />
+<strong>Source:</strong> System
+<br /><hr />
+<strong>Message:</strong> Property accessor 'CustomerContact' on object 'Balcony.Miracle.Core.CartItem' threw the following exception:'Object reference not set to an instance of an object.'<br />   at System.ComponentModel.ReflectPropertyDescriptor.GetValue(Object component)<br />   at System.Web.Mvc.DataErrorInfoModelValidatorProvider.DataErrorInfoClassModelValidator.Validate(Object container)<br />   at System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()<br />   at System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)<br />   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)<br />   at System.Web.Mvc.DefaultModelBinder.UpdateCollection(ControllerContext controllerContext, ModelBindingContext bindingContext, Type elementType)<br />   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)<br />   at System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)<br />   at System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)<br />   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__1e(AsyncCallback asyncCallback, Object asyncState)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag)<br />   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__17(AsyncCallback asyncCallback, Object asyncState)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)<br />   at System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)<br />   at System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)<br />   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__2(AsyncCallback asyncCallback, Object asyncState)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)<br />   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)<br />   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)<br />   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()<br />   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)<br /><br />Inner: <br />Object reference not set to an instance of an object.<br />   at Balcony.Miracle.Core.CartItem.get_CustomerContact()<br />
+<br /><hr />
+<strong>Stack trace:</strong>    at System.ComponentModel.ReflectPropertyDescriptor.GetValue(Object component)
+   at System.Web.Mvc.DataErrorInfoModelValidatorProvider.DataErrorInfoClassModelValidator.Validate(Object container)
+   at System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   at System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.DefaultModelBinder.UpdateCollection(ControllerContext controllerContext, ModelBindingContext bindingContext, Type elementType)
+   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__1e(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__17(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)
+   at System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__2(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+<br /><hr />
+<strong>URL: </strong>http://balconynew:80/customer/cart
+<br /><hr />
+<strong>Ref URL:</strong> http://balconynew/customer/cart
+<br /><hr />
+<strong>User Agent:</strong> Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1700.107 Safari/537.36
+<br /><hr />
+<strong>User Host Address:</strong> 127.0.0.1
+<br /><hr />
+<strong>Session:</strong><br />
+<hr />
+<strong>Form:</strong><br />
+save: false<br />
+[0].ID: cfa8bfb4-b8cd-4baa-892e-a2bd00efe877<br />
+[0].Quantity: 1,1<br />
+[1].ID: 85d91362-2b21-43e4-b6eb-a2cc01151e78<br />
+[1].Quantity: 1,1<br />
+[2].ID: ccb4fbfa-dc5e-4093-8109-a2cc011f588a<br />
+[2].Quantity: 1,1<br />
+[3].ID: c1b53567-dd79-49bf-aac7-a2cc0121af81<br />
+[3].Quantity: 1,1<br />
+<hr />
+<strong>Cookies:</strong><br />
+_allow_cookies: true<br />
+SessionID: soh012uzu0apeeo2yqjbythg<br />
+ASP.NET_SessionId: xdzrvlrmidu3g3idggicqjda<br />
+
+System.Reflection.TargetInvocationException: Property accessor 'CustomerContact' on object 'Balcony.Miracle.Core.CartItem' threw the following exception:'Object reference not set to an instance of an object.' ---> System.NullReferenceException: Object reference not set to an instance of an object.
+   at Balcony.Miracle.Core.CartItem.get_CustomerContact()
+   --- End of inner exception stack trace ---
+   at System.ComponentModel.ReflectPropertyDescriptor.GetValue(Object component)
+   at System.Web.Mvc.DataErrorInfoModelValidatorProvider.DataErrorInfoClassModelValidator.Validate(Object container)
+   at System.Web.Mvc.ModelValidator.CompositeModelValidator.<Validate>d__1.MoveNext()
+   at System.Web.Mvc.DefaultModelBinder.OnModelUpdated(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.DefaultModelBinder.UpdateCollection(ControllerContext controllerContext, ModelBindingContext bindingContext, Type elementType)
+   at System.Web.Mvc.DefaultModelBinder.BindComplexModel(ControllerContext controllerContext, ModelBindingContext bindingContext)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValue(ControllerContext controllerContext, ParameterDescriptor parameterDescriptor)
+   at System.Web.Mvc.ControllerActionInvoker.GetParameterValues(ControllerContext controllerContext, ActionDescriptor actionDescriptor)
+   at System.Web.Mvc.Async.AsyncControllerActionInvoker.<>c__DisplayClass25.<BeginInvokeAction>b__1e(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag)
+   at System.Web.Mvc.Controller.<>c__DisplayClass1d.<BeginExecuteCore>b__17(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Controller.BeginExecuteCore(AsyncCallback callback, Object state)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)
+   at System.Web.Mvc.Controller.BeginExecute(RequestContext requestContext, AsyncCallback callback, Object state)
+   at System.Web.Mvc.MvcHandler.<>c__DisplayClass8.<BeginProcessRequest>b__2(AsyncCallback asyncCallback, Object asyncState)
+   at System.Web.Mvc.Async.AsyncResultWrapper.WrappedAsyncResult`1.Begin(AsyncCallback callback, Object state, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin[TResult](AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate`1 endDelegate, Object tag, Int32 timeout)
+   at System.Web.Mvc.Async.AsyncResultWrapper.Begin(AsyncCallback callback, Object state, BeginInvokeDelegate beginDelegate, EndInvokeDelegate endDelegate, Object tag)
+   at System.Web.Mvc.MvcHandler.BeginProcessRequest(HttpContextBase httpContext, AsyncCallback callback, Object state)
+   at System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   at System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+08/02/2014 18:00:15 [40] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.StoredFile.Data is not an auto property, which may result in uninitialized property access
+08/02/2014 18:00:15 [40] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.EventType.ImageBytes is not an auto property, which may result in uninitialized property access
+08/02/2014 18:22:28 [40] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.StoredFile.Data is not an auto property, which may result in uninitialized property access
+08/02/2014 18:22:28 [40] ERROR NHibernate.Tuple.Entity.EntityMetamodel - Lazy or no-proxy property Balcony.Miracle.Core.EventType.ImageBytes is not an auto property, which may result in uninitialized property access

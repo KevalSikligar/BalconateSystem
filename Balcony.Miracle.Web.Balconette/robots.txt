@@ -1,0 +1,7 @@
+﻿User-Agent: *
+Disallow: /wp-admin
+Disallow: /login
+Disallow: /sign-in
+Disallow: /account
+Disallow: /admin
+Disallow: /customer

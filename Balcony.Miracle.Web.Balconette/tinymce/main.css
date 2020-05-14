@@ -1,0 +1,15 @@
+
+
+
+body { font-family: Verdana; font-size: 8.5pt; line-height: 14px; }
+table { font-size: 8.5pt; line-height: 14px; }
+td { font-size: 8.5pt; line-height: 14px; padding: 2px;  }
+th { font-size: 8.5pt; line-height: 14px; padding: 2px; font-weight: bold; text-align: center; }
+
+
+.taleft  { text-align: left; }
+.tacenter  { text-align: center; }
+.taright { text-align: right; }
+
+
+.pagebreak { page-break-after: always }

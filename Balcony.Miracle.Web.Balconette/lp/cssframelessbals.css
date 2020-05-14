@@ -1,0 +1,199 @@
+   /* jssor slider bullet navigator skin 05 css */
+            /*
+            .jssorb05 div           (normal)
+            .jssorb05 div:hover     (normal mouseover)
+            .jssorb05 .av           (active)
+            .jssorb05 .av:hover     (active mouseover)
+            .jssorb05 .dn           (mousedown)
+            */
+            .jssorb05 {
+                position: absolute;
+            }
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url(../img/b05.png) no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .jssorb05 div { background-position: -7px -7px; }
+            .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+            .jssorb05 .av { background-position: -67px -7px; }
+            .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+			
+	#slider1_container {z-index: 100;}
+	#topform {
+	z-index: 199900;
+	background: url('/lp/images/framelessbalustrades.png') no-repeat;
+    display: block;
+	height: 930px;
+	margin: 0 auto;
+    width: 1920px;
+	position: relative;
+    left: -50%;
+	}
+	
+	#topform2 {
+	z-index: 199900;
+	background: url('/lp/images/Landing Page_V6-01.png') no-repeat;
+    display: block;
+	height: 660px;
+	margin: 0 auto;
+    width: 1024px;
+	position: relative;
+    left: -50%;
+	}
+	
+	#topform.thanks {background: url('/lp/images/framelessbalustradesty.png') no-repeat;}
+	#topform2.thanks {background: url('/lp/images/framelessbalustradesty.png') no-repeat;}
+	
+	#topformty {
+	z-index: 199900;
+	background: url('/lp/images/framelessbalustradesty.png') no-repeat;
+    display: block;
+	height: 660px;
+	margin: 0 auto;
+    width: 1024px;
+	}
+	
+	body {margin-top: 0;}
+	
+	.topfirst {position: relative; top: 0px; left: 0px; width: 1920px; height: 1200px; overflow: hidden;}
+	.topthird {position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;top: 0px; left: 0px;width: 100%;height:100%;}
+	
+	.topformmain {position: absolute; left: 50%;top:  0;z-index:  3000000;}
+	
+	@media only screen and (max-width: 770px) {
+	
+	#topform {height: 930px !important;}
+	
+	body {margin: 0;}
+	
+	#slider1_container {display: none;}
+	.topformmain {
+	width: 100%;
+    display: block;
+    height: 1100px;
+    background-image: url('https://www.balconette.co.uk/lp/images/frmlsbalustradesmbl.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+	position: static;
+	}
+	
+	#topform {
+	padding: 541px 0 0 0;
+    margin: 0 auto;
+    width: 274px;
+	background: none;
+	position: static;
+	
+	}
+	
+	#topform2 {
+	padding: 922px 0 0 0;
+    margin: 0 auto;
+    width: 274px;
+	background: none;
+	position: static;
+	
+	}
+	
+	.topformmain.thanks {background: url('/lp/images/frmlsbalustradesmblty.png') no-repeat;background-position: top center;}
+	#topform.thanks {display: none;}
+	#topform2.thanks {display: none;}
+	
+	.submit-wrap {margin-top: 15px;}
+	
+	input {
+	width: 268px;
+    height: 33px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    color: #333333;
+    text-align: center;
+    direction: rtl;
+	}
+	
+	#topphonemobile {
+	    width: 100%;
+    position: fixed;
+    top: 20px;
+    margin: -20px auto 0;
+    text-align: right;
+	}
+	
+	#bottomphonemobile {
+	width: 194px;
+    text-align: center;
+    padding: 40px;
+	margin: 0 auto;
+    margin-top: -124px;
+	}
+	
+	#bottomphonemobile a {
+	text-decoration: none;
+    color: #141939;
+    font-size: 29px;
+	}
+	
+	
+	
+	
+	
+	#lpcredits {
+	width: 300px;
+    margin: 0 auto 20px;
+    position: absolute;
+    top: 890px;
+    font-size: 12px;
+    direction: rtl;
+    text-align: center;
+	left: 0;
+    right: 0;
+	}
+	
+	}
+	
+	
+	
+	@media only screen and (min-width: 771px) {
+	
+	body {    height: 1220px;}
+	#mobilecontainer, #mobileform {display: none;}
+	#bottomphonemobile, #topphonemobile  {display: none;}
+	#lpcredits {
+	width: 100%;
+    margin: 0 auto;
+	position: absolute;
+    top: 1190px;
+	font-size: 12px;
+    direction: rtl;
+    text-align: center;
+	}
+	.wpcf7-form {
+	padding-top: 284px;
+	width: 160px;
+    margin: 0 auto;
+    display: block;
+    padding-left: 946px;
+	}
+	
+	.submit-wrap {margin-top: 15px;}
+	
+	input {
+	width: 180px;
+    height: 33px;
+    margin-bottom: 23px;
+    background-color: transparent;
+    border: none;
+    color: #333333;
+    text-align: center;
+    direction: rtl;
+	}
+	
+	}
+	
+	

@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+
+ 
+
+<html lang="en-US" prefix="og: http://ogp.me/ns#"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-10">
+
+ 
+
+<head>
+
+ 
+
+ 
+
+ 
+
+<meta charset="utf-8">
+
+ 
+
+                <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ 
+
+                <link href="https://vjs.zencdn.net/7.0.3/video-js.css" rel="stylesheet">
+
+ 
+
+                <!-- <link href="fa-svg-with-js.css" rel="stylesheet"> -->
+
+ 
+
+                <link href="font-awesome.min.css" rel="stylesheet">
+
+ 
+
+                <!-- <script src="fontawesome-all.min.js"></script> -->
+
+ 
+
+    
+
+ 
+
+      <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+
+ 
+
+                <script src="http://vjs.zencdn.net/ie8/ie8-version/videojs-ie8.min.js"></script>
+
+ 
+
+    
+
+ 
+
+    <script
+
+ 
+
+  src="https://code.jquery.com/jquery-3.3.1.js"
+
+ 
+
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+
+ 
+
+  crossorigin="anonymous"></script>
+
+ 
+
+  <script src="https://cdn1.raptmedia.com/system/player/v1/api.min.js"></script>
+
+ 
+
+ 
+
+<!---Conent between this and the next comment must go in the <head> section, or CSS can instead be placed into a CSS file-->
+
+ 
+
+<style>
+
+body {
+
+ 
+
+                margin: 0;
+
+ 
+
+}
+
+ 
+
+#vidwrapper{
+
+ 
+
+    z­index:1;
+
+ 
+
+    position: relative;
+
+ 
+
+    display: inline-block;
+
+ 
+
+    text-align: center;
+
+ 
+
+}
+
+ 
+
+/*BELOW CSS RESZES THE VIDEO. SIDEBAR TEXT IS RESIZED IN '.sidenav a' CSS, AND MENU TOGGLE SIZE IS RESIZED IN SCRIPT BELOW (can 'ctlf+F' search for 'videomenutoggle.style.fontSize'*/
+
+ 
+
+#target {
+
+ 
+
+    max-width: 710px;
+
+ 
+
+    max-height: calc((710px * (9 / 16)));
+
+ 
+
+    width: 95vw;
+
+ 
+
+    height: calc((95vw * (9 / 16)));
+
+    
+
+    z-index: 1;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+.pre-title-section{
+
+ 
+
+                text-align: center;
+
+ 
+
+                display: -webkit-flex;
+
+ 
+
+                display: -moz-flex;
+
+ 
+
+                display: -ms-flex;
+
+ 
+
+                display: -o-flex;
+
+ 
+
+                display: flex;
+
+ 
+
+                -ms-align-items: center;
+
+ 
+
+                align-items: center;
+
+ 
+
+                justify-content: center;
+
+ 
+
+}
+
+ 
+
+.pre-title-section .call {
+
+ 
+
+                color: rgb(244, 67, 54);
+
+ 
+
+                font-size: 22px;
+
+ 
+
+                text-decoration: none;
+
+ 
+
+                font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+
+ 
+
+                position: absolute;
+
+ 
+
+    top: calc(50% - 13px);
+
+ 
+
+    right: -70%;
+
+ 
+
+}
+
+ 
+
+.pre-title-section > div {
+
+ 
+
+                position: relative;
+
+ 
+
+}
+
+ 
+
+.pre-title-section img {
+
+ 
+
+                max-width: 340px;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+.section-wrapper {
+
+ 
+
+                display: -webkit-flex;
+
+ 
+
+                display: -moz-flex;
+
+ 
+
+                display: -ms-flex;
+
+ 
+
+                display: -o-flex;
+
+ 
+
+                display: flex;
+
+ 
+
+                -ms-align-items: center;
+
+ 
+
+                align-items: center;
+
+ 
+
+                justify-content: center;
+
+                
+
+                padding-right: 7%;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+.share-btns ul{
+
+ 
+
+                list-style-type: none;
+
+ 
+
+                padding-left: 0;
+
+ 
+
+                margin-right: 20px;
+
+ 
+
+}
+
+ 
+
+.share-btns a{
+
+ 
+
+                display: -webkit-flex;
+
+ 
+
+                display: -moz-flex;
+
+ 
+
+                display: -ms-flex;
+
+ 
+
+                display: -o-flex;
+
+ 
+
+                display: flex;
+
+ 
+
+                flex-direction: column;
+
+ 
+
+                -ms-align-items: center;
+
+ 
+
+                align-items: center;
+
+ 
+
+                justify-content: center;
+
+ 
+
+                color: #fff;
+
+ 
+
+                background-color: #F44336;
+
+ 
+
+                border: 1px solid #000000;
+
+ 
+
+    font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+
+ 
+
+    text-align: center;
+
+ 
+
+    font-size: 19px;
+
+ 
+
+                font-weight: 300;
+
+ 
+
+                text-decoration: none;
+
+ 
+
+                padding: 5px 15px 20px 15px;
+
+ 
+
+}
+
+ 
+
+.share-btns a span {
+
+ 
+
+                margin-bottom: 10px;
+
+ 
+
+}
+
+ 
+
+.share-btns a .fa {
+
+ 
+
+                font-size: 46px;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+@media all and (max-width: 850px) {
+
+ 
+
+                .sidenav a {
+
+                    font-size: 3vw;
+
+                    white-space: normal;
+
+                }
+
+                
+
+                .section-wrapper {
+
+ 
+
+                                flex-direction: column-reverse;
+
+                                padding-right: 0px;
+
+ 
+
+                }
+
+ 
+
+ 
+
+ 
+
+                .share-btns {
+
+ 
+
+                                margin-top: 140px;
+
+ 
+
+                }
+
+ 
+
+                .share-btns ul {
+
+ 
+
+                                display: -webkit-flex;
+
+ 
+
+                                display: -moz-flex;
+
+ 
+
+                                display: -ms-flex;
+
+ 
+
+                                display: -o-flex;
+
+ 
+
+                                display: flex;
+
+ 
+
+                                margin-right: 0;
+
+ 
+
+                }
+
+ 
+
+                .pre-title-section .call {
+
+ 
+
+                                position: relative;
+
+ 
+
+                                top: 0;
+
+ 
+
+                                right: 0;
+
+ 
+
+                    display: block;
+
+ 
+
+                }
+
+ 
+
+                .v-button-key {
+
+ 
+
+                    margin-right: 15px;
+
+ 
+
+                }
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+h1.intro-title{
+
+ 
+
+                font-size: 46px;
+
+ 
+
+                text-align: center;
+
+ 
+
+                color: rgb(51, 51, 51);
+
+ 
+
+                font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+.v-button-key {
+
+ 
+
+                display: inline-block;
+
+ 
+
+    position: absolute;
+
+ 
+
+    bottom: -155px;
+
+ 
+
+    right: 0;
+
+ 
+
+}
+
+ 
+
+.v-button-key p{
+
+ 
+
+                font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+
+ 
+
+                font-size: 18px;
+
+ 
+
+                color: rgb(51,51,51);
+
+ 
+
+                text-align: center;
+
+ 
+
+                margin-bottom: 0;
+
+ 
+
+}
+
+ 
+
+.v-button-key ul {
+
+ 
+
+                list-style-type: none;
+
+ 
+
+                padding-left: 0;
+
+ 
+
+                margin-top: 5px;
+
+ 
+
+}
+
+ 
+
+.v-button-key ul li span {
+
+ 
+
+                border: 1px solid rgb(51,51,51);
+
+ 
+
+                height: 40px;
+
+ 
+
+                display: inline-block;
+
+ 
+
+                line-height: 39px;
+
+ 
+
+                width: 120px;
+
+ 
+
+                text-align: center;
+
+ 
+
+                font-family: "myriad-pro-1","myriad-pro-2",sans-serif;
+
+ 
+
+                font-size: 12px;
+
+ 
+
+                color: rgb(51,51,51);
+
+ 
+
+}
+
+ 
+
+.v-button-key ul li:first-child span {
+
+ 
+
+                border-bottom: none;
+
+ 
+
+}
+
+ 
+
+.v-button-key ul span.red-square {
+
+ 
+
+                background-color: #F44336;
+
+ 
+
+}
+
+ 
+
+.v-button-key ul span.blue-square {
+
+ 
+
+                background-color: #03A9F4;
+
+ 
+
+}
+
+ 
+
+.v-button-key ul span.red-square,
+
+ 
+
+.v-button-key ul span.blue-square{
+
+ 
+
+                width: 40px;
+
+ 
+
+                border-right: none;
+
+ 
+
+ 
+
+ 
+
+}
+
+ 
+
+.v-button-key ul a {
+
+ 
+
+                display: flex;
+
+ 
+
+                text-decoration: none;
+
+ 
+
+                align-items: center;
+
+ 
+
+                vertical-align: middle;
+
+ 
+
+}
+
+ 
+
+ 
+
+ 
+
+</style>
+
+ 
+
+ 
+
+ 
+
+<!---Conent between the previous comment and this comment must go in the <head> section, or CSS can instead be placed into a CSS file-->
+
+ 
+
+</head>
+
+ 
+
+<body>
+
+ 
+
+ 
+
+ 
+
+<div class="pre-title-section">
+
+ 
+
+                <div class="">
+
+ 
+
+                                <a href="https://www.balconette.co.uk"><img src="https://www.balconette.co.uk/vidintro/balconete-logo.jpg" class="balc-logo" alt="logo"></a>
+
+ 
+
+                                <a class="call" href="tel:01342410411">Call: 01342 410411</a>
+
+ 
+
+                </div>
+
+ 
+
+</div>
+
+ 
+
+<h1 class="intro-title">Introduction to Our Products</h1>
+
+ 
+
+<div class="section-wrapper">
+
+ 
+
+               
+
+ 
+
+                <div class="share-btns">
+
+ 
+
+                                <ul>
+
+ 
+
+                                                <li><a href="https://www.balconette.co.uk/general/contact-us"><span>Contact</span><i class="fa fa-phone"></i></a></li>
+
+ 
+
+                                                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https://www.balconette.co.uk/vidintro/index.html&p=Learn+about+our+Glass+Balustrades,+Juliet+Balconies+and+Curved+Glass+Doors+through+this+interactive+experience." target="_blank"><span>Share</span><i class="fa fa-facebook-official"></i></a></li>
+
+ 
+
+                                                <li><a href="https://twitter.com/home?status=Learn+about+our+Glass+Balustrades,+Juliet+Balconies+and+Curved+Glass+Doors+through+this+interactive+experience.+https%3A//www.balconette.co.uk/vidintro/index.html" target="_blank"><span>Share</span><i class="fa fa-twitter-square"></i></a></li>
+
+ 
+
+                                                <li><a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.balconette.co.uk/vidintro/index.html&title=Introduction+to+Our+Product&ro=false&summary=Learn+about+our+Glass+Balustrades,+Juliet+Balconies+and+Curved+Glass+Doors+through+this+interactive+experience.&source=https://www.linkedin.com/shareArticle?mini=true&url=https://www.balconette.co.uk/vidintro/index.html" target="_blank"><span>Share</span><i class="fa fa-linkedin-square"></i></a></li>
+
+ 
+
+                                </ul>
+
+ 
+
+                </div>
+
+ 
+
+ 
+
+ 
+
+    
+
+ 
+
+    
+
+ 
+
+    
+
+ 
+
+    
+
+ 
+
+<!-- video container start -->
+
+    <!--Begin Rapt Video Player-->
+
+    
+
+    
+
+ 
+
+<div id="vidwrapper">
+
+ 
+
+    
+
+ 
+
+    
+
+ 
+
+    <!--Begin Rapt Video Player-->
+
+    <div id="target"></div>
+
+ 
+
+    <script>
+
+//initialise rapt player        
+
+        var player = new Rapt.Player({
+
+ 
+
+        target: 'target',
+
+ 
+
+        project: 'BJiQ0XWK',
+
+        });
+
+    </script>
+
+ 
+
+    <!--End Rapt Video Player-->
+
+ 
+
+    <div class="v-button-key">
+
+ 
+
+                                <p>Video Button Colour Code</p>
+
+ 
+
+                                <ul>
+
+ 
+
+                                                <li><a id="nex-video"><span class="red-square"></span><span>= Next Video</span></a></li>
+
+ 
+
+                                                <li><a><span class="blue-square"></span><span>= Go to Web Page</span></a></li>
+
+ 
+
+                                </ul>
+
+ 
+
+                </div>  
+
+</div>
+
+ 
+
+<!-- video container end -->
+
+ 
+
+</div>
+
+</body>
+
+ 
+
+</html>

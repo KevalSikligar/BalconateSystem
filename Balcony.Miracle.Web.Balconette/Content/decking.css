@@ -1,0 +1,164 @@
+/* Blue for Decking */
+a, h1, h2, h3, .area_color {
+    color: #22B5C6 !important;
+}
+
+.sf-menu > li.sfHover, 
+.sf-menu > li.on {
+    background-color: #22B5C6 !important;
+}
+
+
+/*-------------------------------*/
+/* --- DECKING HOME PAGE --- */
+/*-------------------------------*/
+/*
+/* Two icons left of the slider */
+
+#two-icons {
+	float: left;
+	width: 219px;
+}
+#two-icons h3  {
+	font-weight: normal;
+}
+#two-icons h3 a {
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 20px;
+	width: 204px;
+	height: 137px;
+	float: left;
+	padding: 20px 0 0 15px;
+	line-height: 1.1;
+}
+#two-icons h3#online-quote a {
+	background: url(/images/get-an-online-quote.jpg) top left no-repeat #FFF;
+}
+#two-icons h3#online-quote a:hover {
+	background: url(/images/get-an-online-quote.jpg) bottom left no-repeat #FFF;
+}
+#two-icons h3#why-choose-our-decking a {
+	background: url(/images/why-choose-our-decking.jpg) top left no-repeat #FFF;
+	padding: 65px 0 0 75px;
+	width: 144px;
+	height: 92px;
+	color: #FFF !important;
+}
+#two-icons h3#why-choose-our-decking a:hover {
+	background: url(/images/why-choose-our-decking.jpg) bottom left no-repeat #FFF;
+}
+
+
+/* Left column content */
+#content .left .icons h3 {
+	margin: 0;
+	float: left;
+}
+#content .left .icons h3 a {
+	float: left;
+	margin: 0 10px 20px 0;
+	height: 45px;
+	width: 180px;
+	color: #FFF !important;
+	text-transform:capitalize;
+	text-align: center;
+	padding-top: 85px;
+	font-weight: bold;
+	font-size: 12px;
+}
+#content .left .icons h3 a.double-line {
+	padding-top: 75px;
+	height: 55px;
+}
+#content .left .icons h3 a#technical-details {
+	background: url(/images/technical-details-decking.jpg) top left no-repeat #FFF;
+}
+#content .left .icons h3 a#technical-details:hover {
+	background: url(/images/technical-details-decking.jpg) bottom left  no-repeat #FFF;
+}
+#content .left .icons h3 a#decking-board-finishes {
+	background: url(/images/decking-board-finishes.jpg) top left no-repeat #FFF;
+}
+#content .left .icons h3 a#decking-board-finishes:hover {
+	background: url(/images/decking-board-finishes.jpg) bottom left  no-repeat #FFF;
+}
+#content .left .icons h3 a#accessories {
+	background: url(/images/accessories.jpg) top left no-repeat #FFF;
+}
+#content .left .icons h3 a#accessories:hover {
+	background: url(/images/accessories.jpg) bottom left  no-repeat #FFF;
+}
+#content .left .icons h3 a#applications {
+	background: url(/images/applications.jpg) top left no-repeat #FFF;
+}
+#content .left .icons h3 a#applications:hover {
+	background: url(/images/applications.jpg) bottom left  no-repeat #FFF;
+}
+#content .left .icons h3 a.last {
+	margin: 0;
+}
+#content .left ol.bigger-margin li {
+	margin-bottom: 10px;
+}
+#content .left ol li strong {
+	font-weight: bold;
+}
+
+/* Right content */
+
+.right .slider-wrapper.theme-sidebar{
+	background: url(/images/nivoslider/sidebar/slider-bg-decking.jpg) top left no-repeat #FFF;
+}
+
+#content .right #online-shop {
+	border-top: 1px dotted #666;
+}
+
+/****************************************************/
+/* SUB PAGES FOR RULES THAT EXIST ON MULTIPLE PAGES */
+/****************************************************/
+/**
+/* On state for right menu */
+#content .right.subpage ul li a.on {
+	color: #22B5C6 !important;
+}
+/* Article with clickable image on left and text on right */
+.left .article-section img {
+	float: left;
+}
+.left .article-section  .content h5 {
+	color: #22B5C6;
+}
+.left .article-section  .content a.read-more {
+	color: #22B5C6;	
+}
+
+/* Hero image that appears on some Decking subpages (for example, the Fixing subpages) */
+img.main-image {
+	margin: 10px 0 10px 0;
+}
+/* Legend icons that appear on a few pages */
+ul#guide {
+	text-align:center;
+	margin: 30px 0 30px 0;
+}
+ul#guide.restrict-width {
+	width: 552px;
+}
+ul#guide li {
+	display: inline;
+	margin-right: 10px;
+	color: #746B70;
+	font-size: 11px;
+	height: 29px;
+	padding: 12px 0 0 32px;
+}
+ul#guide li.ef {
+	background: url(/images/icon-environmentally-friendly.gif) top left no-repeat #FFF;
+}
+ul#guide li.mf {
+	background: url(/images/icon-maintenance-free.gif) top left no-repeat #FFF;
+}
+ul#guide li.re {
+	background: url(/images/icon-recycled.gif) top left no-repeat #FFF;
+}

@@ -1,0 +1,154 @@
+/* Purple for Ballustrades */
+a, h1, h2, h3, .area_color {
+    color: #7314A5 !important;
+}
+
+.sf-menu > li.sfHover, 
+.sf-menu > li.on {
+    background-color: #7314A5 !important;
+}
+
+
+/*-------------------------------*/
+/* --- BALLUSTRADE HOME PAGE --- */
+/*-------------------------------*/
+/*
+/* Two icons left of the slider */
+
+#two-icons {
+	float: left;
+	width: 219px;
+}
+#two-icons h3 {
+	font-weight: normal;
+}
+#two-icons h3 a {
+	font-family: Georgia,"Times New Roman",Times,serif;
+	font-size: 20px;
+	width: 204px;
+	height: 147px;
+	float: left;
+	padding: 10px 0 0 15px;
+	line-height: 1.1;
+}
+#two-icons h3#online-quote a {
+	background: url(/images/get-an-online-quote.jpg) top left no-repeat #FFF;
+}
+#two-icons h3#online-quote a:hover {
+	background: url(/images/get-an-online-quote.jpg) bottom left no-repeat #FFF;
+}
+#two-icons h3#why-choose-us a {
+	background: url(/images/why-choose-us.jpg) top left no-repeat #FFF;
+	padding: 20px 0 0 130px;
+	width: 89px;
+	height: 137px;
+}
+#two-icons h3#why-choose-us a:hover {
+	background: url(/images/why-choose-us.jpg) bottom left no-repeat #FFF;
+}
+
+
+/* Left column content */
+#content .left .icons h3 {
+	margin: 0;
+	float: left;
+}
+#content .left .icons h3 a {
+	float: left;
+	margin: 0 10px 20px 0;
+	height: 45px;
+	width: 180px;
+	color: #FFF !important;
+	text-transform:capitalize;
+	text-align: center;
+	padding-top: 85px;
+	font-weight: bold;
+	font-size: 12px;
+}
+#content .left .icons h3 a.double-line {
+	padding-top: 75px;
+	height: 55px;
+}
+#content .left .icons h3 a#technical-details {
+	background: url(/images/technical-details.jpg) top left no-repeat #FFF;
+}
+#content .left .icons h3 a#technical-details:hover {
+	background: url(/images/technical-details.jpg) bottom left  no-repeat #FFF;
+}
+#content .left .icons h3 a#trade-customers {
+	background: url(/images/trade-customers.jpg) top left no-repeat #FFF;
+}
+#content .left .icons h3 a#trade-customers:hover {
+	background: url(/images/trade-customers.jpg) bottom left  no-repeat #FFF;
+}
+#content .left .icons h3 a#types-of-balustrade-systems {
+	background: url(/images/types-of-balustrade-systems.jpg) top left no-repeat #FFF;
+}
+#content .left .icons h3 a#types-of-balustrade-systems:hover {
+	background: url(/images/types-of-balustrade-systems.jpg) bottom left  no-repeat #FFF;
+}
+#content .left .icons h3 a#how-to-install-glass-balustrade {
+	background: url(/images/how-to-install-glass-balustrade.jpg) top left no-repeat #FFF;
+}
+#content .left .icons h3 a#how-to-install-glass-balustrade:hover {
+	background: url(/images/how-to-install-glass-balustrade.jpg) bottom left  no-repeat #FFF;
+}
+#content .left .icons h3 a.last {
+	margin: 0;
+}
+#content .left ol.bigger-margin li {
+	margin-bottom: 10px;
+}
+#content .left ol li strong {
+	font-weight: bold;
+}
+
+/*--------------------------------------*/
+/* --- CUSTOMER REVIEWS PAGE --- */
+/*--------------------------------------*/
+/**/
+
+div.qa {
+	float: left;
+	width: 100%;
+	margin-bottom: 10px;
+}
+div.qa p.question {
+	font-size: 14px;
+	font-weight: bold;
+	color: #7314A5;	
+	margin: 0 0 3px 0;
+}
+/*-----------------------------*/
+/* --- PHOTO GALLERY PAGES --- */
+/*-----------------------------*/
+/**/
+#gallery-images {
+	float: left;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+#gallery-images img {
+	margin: 0 16px 16px 0;
+	border: 1px solid #AAAAA8;
+}
+#gallery-images img.last {
+	margin-right: 0;
+}
+
+/* Article with clickable image on left and text on right */
+.left .article-section img {
+	float: left;
+}
+.left .article-section  .content h5 {
+	color: #7314A5;
+}
+.left .article-section  .content a.read-more {
+	color: #7314A5;	
+}
+
+
+
+
+
+

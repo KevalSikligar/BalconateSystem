@@ -1,0 +1,2247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CD6168C-725F-4988-BE2A-14C45BF2314B}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Balcony.Miracle.Web</RootNamespace>
+    <AssemblyName>Balcony.Miracle.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.3.1.7705, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Balcony.Miracle.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Balcony.Miracle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Balcony.Miracle.Data, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Balcony.Miracle.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="CMPCDotNet, Version=2.0.3330.25421, Culture=neutral, PublicKeyToken=60064b713d9de8f4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\CMPCDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Cobisi.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b863a804c9b2bdb0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Cobisi.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Cobisi.EmailVerify, Version=4.6.1.0, Culture=neutral, PublicKeyToken=b863a804c9b2bdb0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Cobisi.EmailVerify.dll</HintPath>
+    </Reference>
+    <Reference Include="EncryptionClassLibrary, Version=2.0.5123.26417, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\EncryptionClassLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.8.1.31687, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.8.1\lib\net40\Google.Apis.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.8.1.31688, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.8.1\lib\net40\Google.Apis.Auth.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.8.1.31699, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.8.1\lib\net40\Google.Apis.Auth.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.8.1.31685, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.8.1\lib\portable-net4+sl4+wp71+win8\Google.Apis.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Customsearch.v1, Version=1.8.1.43, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Customsearch.v1.1.8.1.430\lib\portable-net4+sl4+wp71+win8\Google.Apis.Customsearch.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.8.1.31691, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.8.1\lib\net40\Google.Apis.PlatformServices.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis.Tasks.v1, Version=1.8.1.36, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Tasks.v1.1.8.1.360\lib\portable-net4+sl4+wp71+win8\Google.Apis.Tasks.v1.dll</HintPath>
+    </Reference>
+    <Reference Include="HibernatingRhinos.Profiler.Appender, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0774796e73ebf640, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\HibernatingRhinos.Profiler.Appender.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.2.1.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\Libs\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Threading.Tasks, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\net45\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions, Version=1.0.12.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.16\lib\net45\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=5.0.8.1, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>..\Libs\MySql.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.5\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Caches.SysCache, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=6876f2ea66c9f443, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\NHibernate.Caches.SysCache.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Validator, Version=1.3.2.4000, Culture=neutral, PublicKeyToken=70154e18752585bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\NHibernate.Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity, Version=1.1.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="paypal_base, Version=5.6.60.0, Culture=neutral, PublicKeyToken=b37401294aaf5617">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\paypal_base.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="SVG, Version=1.0.7280.40164, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libs\SVG.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.20.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.20\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20505.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.20.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.20\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20505.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20505.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20505.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20505.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20505.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20505.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20505.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20505.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WebGrease, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.1.0\lib\WebGrease.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Zlib.Portable, Version=1.9.1.9000, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zlib.Portable.1.9.2\lib\portable-net4+sl4+wp71+win8\Zlib.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AccountController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminBaseController.cs" />
+    <Compile Include="Areas\Admin\Controllers\BalustradesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CmsBlocksController.cs" />
+    <Compile Include="Areas\Admin\Controllers\AreasController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CaseStudiesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\DownloadsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\CustomerReviewsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RedirectsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TagsController.cs" />
+    <Compile Include="Areas\Admin\Controllers\PagesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\TagCategoriesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\FilesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ImagesController.cs" />
+    <Compile Include="Areas\Admin\Controllers\ArticlesController.cs" />
+    <Compile Include="Areas\Api\ApiAreaRegistration.cs" />
+    <Compile Include="Areas\Api\Controllers\GeneralServiceController.cs" />
+    <Compile Include="Areas\Api\Controllers\NumServiceController.cs" />
+    <Compile Include="Constants\AppSettings.cs" />
+    <Compile Include="Constants\CookieKeys.cs" />
+    <Compile Include="Controllers\BalustradesController.cs" />
+    <Compile Include="Controllers\BalconyViewsController.cs" />
+    <Compile Include="Controllers\GeneralController.cs" />
+    <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\CurvedDoorsController.cs" />
+    <Compile Include="Controllers\BalconanoController.cs" />
+    <Compile Include="Controllers\DeckingController.cs" />
+    <Compile Include="Controllers\JuliettesController.cs" />
+    <Compile Include="Controllers\TagsController.cs" />
+    <Compile Include="Areas\Admin\Models\SignInModel.cs" />
+    <Compile Include="Constants\AppKeys.cs" />
+    <Compile Include="Constants\SessionKeys.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\CmsController.cs" />
+    <Compile Include="Extensions\FileSizeFormatProvider.cs" />
+    <Compile Include="Extensions\HttpContextExtensions.cs" />
+    <Compile Include="Extensions\RouteExtensions.cs" />
+    <Compile Include="Filters\ApiAuthorizeAttribute.cs" />
+    <Compile Include="Filters\AdminAuthorizeAttribute.cs" />
+    <Compile Include="Filters\SameAsAttribute.cs" />
+    <Compile Include="Filters\MustTickAttribute.cs" />
+    <Compile Include="Filters\PasswordAttribute.cs" />
+    <Compile Include="Filters\UseSslAttribute.cs" />
+    <Compile Include="Filters\VerifyEmailAttribute.cs" />
+    <Compile Include="Filters\EmailAttribute.cs" />
+    <Compile Include="Filters\SpecifiedRangeAttribute.cs" />
+    <Compile Include="Filters\JsonpAttribute.cs" />
+    <Compile Include="Filters\JsonpResult.cs" />
+    <Compile Include="Filters\NoCache.cs" />
+    <Compile Include="Filters\TransactionScope.cs" />
+    <Compile Include="Filters\SessionScope.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\ArrangeVisitModel.cs" />
+    <Compile Include="Models\BalustradeDrawingModel.cs" />
+    <Compile Include="Models\RSVPModel.cs" />
+    <Compile Include="Models\UnsubscribeModel.cs" />
+    <Compile Include="Models\IndexModel.cs" />
+    <Compile Include="Models\BalustradeQuoteModel.cs" />
+    <Compile Include="Models\CallMeBackModel.cs" />
+    <Compile Include="Models\ChangesWrapper.cs" />
+    <Compile Include="Models\ContactUsModel.cs" />
+    <Compile Include="Models\StandardPageModel.cs" />
+    <Compile Include="Models\RequestTicketsModel.cs" />
+    <Compile Include="Models\SearchModel.cs" />
+    <Compile Include="Models\CurvedDoorQuoteModel.cs" />
+    <Compile Include="Models\StandardJulietteModel.cs" />
+    <Compile Include="Models\CustomJulietteQuoteModel.cs" />
+    <Compile Include="Models\OrderPaymentModel.cs" />
+    <Compile Include="Models\OrderDetailsModel.cs" />
+    <Compile Include="Models\DescriptionModel.cs" />
+    <Compile Include="Models\DeliveryCalculatorModel.cs" />
+    <Compile Include="Models\CustomerDto.cs" />
+    <Compile Include="Models\QuoteAuthModel.cs" />
+    <Compile Include="Models\RequestBrochureModel.cs" />
+    <Compile Include="Models\SignInModel.cs" />
+    <Compile Include="Models\UserNameModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="Areas\Admin\Views\Areas\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\Areas\Index.aspx" />
+    <Content Include="Areas\Admin\Views\Balustrades\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\Balustrades\Index.aspx" />
+    <Content Include="Areas\Admin\Views\CaseStudies\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\CaseStudies\Index.aspx" />
+    <Content Include="Areas\Admin\Views\CmsBlocks\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\CmsBlocks\Index.aspx" />
+    <Content Include="Areas\Admin\Views\CustomerReviews\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\CustomerReviews\Index.aspx" />
+    <Content Include="Areas\Admin\Views\Downloads\Add.aspx" />
+    <Content Include="Areas\Admin\Views\Downloads\Index.aspx" />
+    <Content Include="Areas\Admin\Views\Pages\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\Pages\Index.aspx" />
+    <Content Include="Areas\Admin\Views\Redirects\Index.aspx" />
+    <Content Include="Areas\Admin\Views\TagCategories\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\TagCategories\Index.aspx" />
+    <Content Include="Areas\Admin\Views\Tags\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\Tags\Index.aspx" />
+    <Content Include="Content\angular-material.min.css" />
+    <Content Include="Content\balustrades.css" />
+    <Content Include="Content\general.css" />
+    <Content Include="Content\curved-doors.css" />
+    <Content Include="Content\balcony-views.css" />
+    <Content Include="Content\decking.css" />
+    <Content Include="Content\balconano.css" />
+    <Content Include="Content\jquery.marquee.css" />
+    <Content Include="Content\juliets.css" />
+    <Content Include="Content\fancybox\blank.gif" />
+    <Content Include="Content\fancybox\fancybox_loading%402x.gif" />
+    <Content Include="Content\fancybox\fancybox_loading.gif" />
+    <Content Include="Content\fancybox\fancybox_overlay.png" />
+    <Content Include="Content\fancybox\fancybox_sprite%402x.png" />
+    <Content Include="Content\fancybox\fancybox_sprite.png" />
+    <Content Include="Content\fancybox\jquery.fancybox.css" />
+    <Content Include="Content\images\copy.png" />
+    <Content Include="Content\images\delete.png" />
+    <Content Include="Content\main.css" />
+    <Content Include="Content\nivoslider\default.css" />
+    <Content Include="Content\nivoslider\nivo-slider.css" />
+    <Content Include="Content\nivoslider\sidebar.css" />
+    <Content Include="Content\slider\css\lightslider.min.css" />
+    <Content Include="Content\slider\img\controls.png" />
+    <Content Include="Content\slider\js\lightslider.min.js" />
+    <Content Include="Content\superfish.css" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="images\accent.png" />
+    <Content Include="images\accessories.jpg" />
+    <Content Include="images\applications.jpg" />
+    <Content Include="images\architects-area.jpg" />
+    <Content Include="images\architects.jpg" />
+    <Content Include="images\article-no-thumb.jpg" />
+    <Content Include="images\article-thumb-1.jpg" />
+    <Content Include="images\article-thumb-2.jpg" />
+    <Content Include="images\article-thumb-3.jpg" />
+    <Content Include="images\article-thumb-4.jpg" />
+    <Content Include="images\article-thumb-5.jpg" />
+    <Content Include="images\articles-icon-curved-doors.jpg" />
+    <Content Include="images\articles-icon-juliet.jpg" />
+    <Content Include="images\articles-icon.jpg" />
+    <Content Include="images\articles-page.jpg" />
+    <Content Include="images\aspNetHome.png" />
+    <Content Include="images\bal-test.png" />
+    <Content Include="images\balconano-add-to-cart-on-white.jpg" />
+    <Content Include="images\balconano-add-to-cart.jpg" />
+    <Content Include="images\balconano-application-instructions.jpg" />
+    <Content Include="images\balconano-balcony-glass-icon.jpg" />
+    <Content Include="images\balconano-ceramics-icon.jpg" />
+    <Content Include="images\balconano-doors-and-windows-icon.jpg" />
+    <Content Include="images\balconano-faq.jpg" />
+    <Content Include="images\balconano-glass-coating-home.jpg" />
+    <Content Include="images\balconano-goto-shop.jpg" />
+    <Content Include="images\balconano-how-it-works.jpg" />
+    <Content Include="images\balconano-icon.jpg" />
+    <Content Include="images\balconano-marble-icon.jpg" />
+    <Content Include="images\balconano-money-back-guarantee.jpg" />
+    <Content Include="images\balconano-sachet.jpg" />
+    <Content Include="images\balconano-shop-badges.jpg" />
+    <Content Include="images\balconano-shop-bg.jpg" />
+    <Content Include="images\balconano-shopping-cart-on-white.jpg" />
+    <Content Include="images\balconano-shower-glass-icon.jpg" />
+    <Content Include="images\balconano-trade-and-distributors.jpg" />
+    <Content Include="images\balconano-your-car-icon.jpg" />
+    <Content Include="images\balconano.jpg" />
+    <Content Include="images\balconano\BalcoCloth.jpg" />
+    <Content Include="images\balconano\BalcoGloves.jpg" />
+    <Content Include="images\balconano\BalcoHDCleaner.jpg" />
+    <Content Include="images\balconano\BalcoNano Heavy Duty Cleaner.jpg" />
+    <Content Include="images\balconano\BALCOSACHET1.jpg" />
+    <Content Include="images\balconano\BALCOSACHET10.jpg" />
+    <Content Include="images\balconano\BALCOSACHET5.jpg" />
+    <Content Include="images\balconano\BALCOSACHET50.jpg" />
+    <Content Include="images\balconano\BalcoShowerKit.jpg" />
+    <Content Include="images\balconano\BHDC.jpg" />
+    <Content Include="images\balconano\BHDC2.jpg" />
+    <Content Include="images\balconano\Blue hills.jpg" />
+    <Content Include="images\balconano\default.jpg" />
+    <Content Include="images\balconano\Heavy duty glass cleaner picture.jpg" />
+    <Content Include="images\balconano\Microfibre cleaning cloth.jpg" />
+    <Content Include="images\balconano\multi-pack-1.jpg" />
+    <Content Include="images\balconano\multi-pack-10.jpg" />
+    <Content Include="images\balconano\multi-pack-5.jpg" />
+    <Content Include="images\balconano\New Folder.jpg" />
+    <Content Include="images\balconano\Powder free Nitrile gloves.jpg" />
+    <Content Include="images\balconano\sachets_10up.jpg" />
+    <Content Include="images\balconano\sachets_1up.jpg" />
+    <Content Include="images\balconano\Shower renovation Kit.jpg" />
+    <Content Include="images\balconano\Shower-renovation-Kit.jpg" />
+    <Content Include="images\balcony-logo.jpg" />
+    <Content Include="images\balcony-systems-solutions.jpg" />
+    <Content Include="images\balcony-views-bg-icon.jpg" />
+    <Content Include="images\balcony-views-magazine-home.jpg" />
+    <Content Include="images\balustrade-model.png" />
+    <Content Include="images\balustrades\arrows\B1\1\1.png" />
+    <Content Include="images\balustrades\arrows\B1\1\2.png" />
+    <Content Include="images\balustrades\arrows\B1\1\3.png" />
+    <Content Include="images\balustrades\arrows\B1\1\4.png" />
+    <Content Include="images\balustrades\arrows\B1\2\1.png" />
+    <Content Include="images\balustrades\arrows\B1\2\2.png" />
+    <Content Include="images\balustrades\arrows\B1\2\3.png" />
+    <Content Include="images\balustrades\arrows\B1\2\4.png" />
+    <Content Include="images\balustrades\arrows\B1\3\1.png" />
+    <Content Include="images\balustrades\arrows\B1\3\2.png" />
+    <Content Include="images\balustrades\arrows\B1\3\3.png" />
+    <Content Include="images\balustrades\arrows\B1\3\4.png" />
+    <Content Include="images\balustrades\arrows\B1\4\1.png" />
+    <Content Include="images\balustrades\arrows\B1\4\2.png" />
+    <Content Include="images\balustrades\arrows\B1\4\3.png" />
+    <Content Include="images\balustrades\arrows\B1\4\4.png" />
+    <Content Include="images\balustrades\arrows\B1\5\1.png" />
+    <Content Include="images\balustrades\arrows\B1\5\2.png" />
+    <Content Include="images\balustrades\arrows\B1\5\3.png" />
+    <Content Include="images\balustrades\arrows\B1\5\4.png" />
+    <Content Include="images\balustrades\arrows\B1\Curved\1.png" />
+    <Content Include="images\balustrades\arrows\B1\Curved\2.png" />
+    <Content Include="images\balustrades\arrows\B1\Curved\3.png" />
+    <Content Include="images\balustrades\arrows\B1\Curved\4.png" />
+    <Content Include="images\balustrades\arrows\B1\Custom\B1_Custom_Bronze_Arrows_Med.png" />
+    <Content Include="images\balustrades\arrows\B1\Custom\B1_Custom_Chrome_Arrows_Med.png" />
+    <Content Include="images\balustrades\arrows\B1\Custom\B1_Custom_Silver_Arrows_Med.png" />
+    <Content Include="images\balustrades\arrows\B1\Custom\B1_Custom_White_Arrows_Med.png" />
+    <Content Include="images\balustrades\arrows\B2\1\1.png" />
+    <Content Include="images\balustrades\arrows\B2\1\2.png" />
+    <Content Include="images\balustrades\arrows\B2\1\3.png" />
+    <Content Include="images\balustrades\arrows\B2\1\4.png" />
+    <Content Include="images\balustrades\arrows\B2\2\1.png" />
+    <Content Include="images\balustrades\arrows\B2\2\2.png" />
+    <Content Include="images\balustrades\arrows\B2\2\3.png" />
+    <Content Include="images\balustrades\arrows\B2\2\4.png" />
+    <Content Include="images\balustrades\arrows\B2\3\1.png" />
+    <Content Include="images\balustrades\arrows\B2\3\2.png" />
+    <Content Include="images\balustrades\arrows\B2\3\3.png" />
+    <Content Include="images\balustrades\arrows\B2\3\4.png" />
+    <Content Include="images\balustrades\arrows\B2\4\1.png" />
+    <Content Include="images\balustrades\arrows\B2\4\2.png" />
+    <Content Include="images\balustrades\arrows\B2\4\3.png" />
+    <Content Include="images\balustrades\arrows\B2\4\4.png" />
+    <Content Include="images\balustrades\arrows\B2\5\1.png" />
+    <Content Include="images\balustrades\arrows\B2\5\2.png" />
+    <Content Include="images\balustrades\arrows\B2\5\3.png" />
+    <Content Include="images\balustrades\arrows\B2\5\4.png" />
+    <Content Include="images\balustrades\arrows\B2\Curved\1.png" />
+    <Content Include="images\balustrades\arrows\B2\Curved\2.png" />
+    <Content Include="images\balustrades\arrows\B2\Curved\3.png" />
+    <Content Include="images\balustrades\arrows\B2\Curved\4.png" />
+    <Content Include="images\balustrades\arrows\B2\Custom\B2_Custom_Bronze_Arrows_Med.png" />
+    <Content Include="images\balustrades\arrows\B2\Custom\B2_Custom_Chrome_Arrows_Med.png" />
+    <Content Include="images\balustrades\arrows\B2\Custom\B2_Custom_Silver_Arrows_Med.png" />
+    <Content Include="images\balustrades\arrows\B2\Custom\B2_Custom_White_Arrows_Med.png" />
+    <Content Include="images\balustrades\arrows\B6\1\4.png" />
+    <Content Include="images\balustrades\arrows\B6\2\4.png" />
+    <Content Include="images\balustrades\arrows\B6\3\4.png" />
+    <Content Include="images\balustrades\arrows\B6\4\4.png" />
+    <Content Include="images\balustrades\arrows\B6\5\4.png" />
+    <Content Include="images\balustrades\arrows\B6\Curved\4.png" />
+    <Content Include="images\balustrades\arrows\B6\Custom\4.png" />
+    <Content Include="images\balustrades\arrows\B7\1\11.png" />
+    <Content Include="images\balustrades\arrows\B7\2\11.png" />
+    <Content Include="images\balustrades\arrows\B7\3\11.png" />
+    <Content Include="images\balustrades\arrows\B7\4\11.png" />
+    <Content Include="images\balustrades\arrows\B7\5\11.png" />
+    <Content Include="images\balustrades\arrows\B7\Curved\11.png" />
+    <Content Include="images\balustrades\arrows\B7\Custom\11.png" />
+    <Content Include="images\balustrades\med\B1\1\B1_1Sided_Bronze_Med.png" />
+    <Content Include="images\balustrades\med\B1\1\B1_1Sided_Chrome_Med.png" />
+    <Content Include="images\balustrades\med\B1\1\B1_1Sided_Silver_Med.png" />
+    <Content Include="images\balustrades\med\B1\1\B1_1Sided_White_Med.png" />
+    <Content Include="images\balustrades\med\B1\2\B1_2Sided_Bronze_Med.png" />
+    <Content Include="images\balustrades\med\B1\2\B1_2Sided_Chrome_Med.png" />
+    <Content Include="images\balustrades\med\B1\2\B1_2Sided_Silver_Med.png" />
+    <Content Include="images\balustrades\med\B1\2\B1_2Sided_White_Med.png" />
+    <Content Include="images\balustrades\med\B1\3\B1_3Sided_Bronze_Med.png" />
+    <Content Include="images\balustrades\med\B1\3\B1_3Sided_Chrome_Med.png" />
+    <Content Include="images\balustrades\med\B1\3\B1_3Sided_Silver_Med.png" />
+    <Content Include="images\balustrades\med\B1\3\B1_3Sided_White_Med.png" />
+    <Content Include="images\balustrades\med\B1\4\B1_4Sided_Bronze_Med.png" />
+    <Content Include="images\balustrades\med\B1\4\B1_4Sided_Chrome_Med.png" />
+    <Content Include="images\balustrades\med\B1\4\B1_4Sided_Silver_Med.png" />
+    <Content Include="images\balustrades\med\B1\4\B1_4Sided_White_Med.png" />
+    <Content Include="images\balustrades\med\B1\5\B1_Hexagonal_Bronze_Med.png" />
+    <Content Include="images\balustrades\med\B1\5\B1_Hexagonal_Chrome_Med.png" />
+    <Content Include="images\balustrades\med\B1\5\B1_Hexagonal_Silver_Med.png" />
+    <Content Include="images\balustrades\med\B1\5\B1_Hexagonal_White_Med.png" />
+    <Content Include="images\balustrades\med\B1\Curved\B1_Curved_Bronze_Med.png" />
+    <Content Include="images\balustrades\med\B1\Curved\B1_Curved_Chrome_Med.png" />
+    <Content Include="images\balustrades\med\B1\Curved\B1_Curved_Silver_Med.png" />
+    <Content Include="images\balustrades\med\B1\Curved\B1_Curved_White_Med.png" />
+    <Content Include="images\balustrades\med\B1\Custom\B1_Custom_Bronze_Med.png" />
+    <Content Include="images\balustrades\med\B1\Custom\B1_Custom_Chrome_Med.png" />
+    <Content Include="images\balustrades\med\B1\Custom\B1_Custom_Silver_Med.png" />
+    <Content Include="images\balustrades\med\B1\Custom\B1_Custom_White_Med.png" />
+    <Content Include="images\balustrades\med\B2\1\2.png" />
+    <Content Include="images\balustrades\med\B2\1\4.png" />
+    <Content Include="images\balustrades\med\B2\1\3.png" />
+    <Content Include="images\balustrades\med\B2\1\1.png" />
+    <Content Include="images\balustrades\med\B2\2\2.png" />
+    <Content Include="images\balustrades\med\B2\2\4.png" />
+    <Content Include="images\balustrades\med\B2\2\3.png" />
+    <Content Include="images\balustrades\med\B2\2\1.png" />
+    <Content Include="images\balustrades\med\B2\3\2.png" />
+    <Content Include="images\balustrades\med\B2\3\4.png" />
+    <Content Include="images\balustrades\med\B2\3\3.png" />
+    <Content Include="images\balustrades\med\B2\3\1.png" />
+    <Content Include="images\balustrades\med\B2\4\2.png" />
+    <Content Include="images\balustrades\med\B2\4\4.png" />
+    <Content Include="images\balustrades\med\B2\4\3.png" />
+    <Content Include="images\balustrades\med\B2\4\1.png" />
+    <Content Include="images\balustrades\med\B2\5\2.png" />
+    <Content Include="images\balustrades\med\B2\5\4.png" />
+    <Content Include="images\balustrades\med\B2\5\3.png" />
+    <Content Include="images\balustrades\med\B2\5\1.png" />
+    <Content Include="images\balustrades\med\B2\Curved\2.png" />
+    <Content Include="images\balustrades\med\B2\Curved\4.png" />
+    <Content Include="images\balustrades\med\B2\Curved\3.png" />
+    <Content Include="images\balustrades\med\B2\Curved\1.png" />
+    <Content Include="images\balustrades\med\B2\Custom\2.png" />
+    <Content Include="images\balustrades\med\B2\Custom\4.png" />
+    <Content Include="images\balustrades\med\B2\Custom\3.png" />
+    <Content Include="images\balustrades\med\B2\Custom\1.png" />
+    <Content Include="images\balustrades\sections\b1.png" />
+    <Content Include="images\balustrades\sections\b2.png" />
+    <Content Include="images\balustrades\sections\b6.png" />
+    <Content Include="images\balustrades\sections\b7.png" />
+    <Content Include="images\balustrades\thumb\B1\1\1.png" />
+    <Content Include="images\balustrades\thumb\B1\1\2.png" />
+    <Content Include="images\balustrades\thumb\B1\1\3.png" />
+    <Content Include="images\balustrades\thumb\B1\1\4.png" />
+    <Content Include="images\balustrades\thumb\B1\2\1.png" />
+    <Content Include="images\balustrades\thumb\B1\2\2.png" />
+    <Content Include="images\balustrades\thumb\B1\2\3.png" />
+    <Content Include="images\balustrades\thumb\B1\2\4.png" />
+    <Content Include="images\balustrades\thumb\B1\3\1.png" />
+    <Content Include="images\balustrades\thumb\B1\3\2.png" />
+    <Content Include="images\balustrades\thumb\B1\3\3.png" />
+    <Content Include="images\balustrades\thumb\B1\3\4.png" />
+    <Content Include="images\balustrades\thumb\B1\4\1.png" />
+    <Content Include="images\balustrades\thumb\B1\4\2.png" />
+    <Content Include="images\balustrades\thumb\B1\4\3.png" />
+    <Content Include="images\balustrades\thumb\B1\4\4.png" />
+    <Content Include="images\balustrades\thumb\B1\5\1.png" />
+    <Content Include="images\balustrades\thumb\B1\5\2.png" />
+    <Content Include="images\balustrades\thumb\B1\5\3.png" />
+    <Content Include="images\balustrades\thumb\B1\5\4.png" />
+    <Content Include="images\balustrades\thumb\B1\Curved\1.png" />
+    <Content Include="images\balustrades\thumb\B1\Curved\2.png" />
+    <Content Include="images\balustrades\thumb\B1\Curved\3.png" />
+    <Content Include="images\balustrades\thumb\B1\Curved\4.png" />
+    <Content Include="images\balustrades\thumb\B1\Custom\B1_Custom_Bronze_Thumb.png" />
+    <Content Include="images\balustrades\thumb\B1\Custom\B1_Custom_Chrome_Thumb.png" />
+    <Content Include="images\balustrades\thumb\B1\Custom\B1_Custom_Silver_Thumb.png" />
+    <Content Include="images\balustrades\thumb\B1\Custom\B1_Custom_White_Thumb.png" />
+    <Content Include="images\balustrades\thumb\B2\1\1.png" />
+    <Content Include="images\balustrades\thumb\B2\1\2.png" />
+    <Content Include="images\balustrades\thumb\B2\1\3.png" />
+    <Content Include="images\balustrades\thumb\B2\1\4.png" />
+    <Content Include="images\balustrades\thumb\B2\2\1.png" />
+    <Content Include="images\balustrades\thumb\B2\2\2.png" />
+    <Content Include="images\balustrades\thumb\B2\2\3.png" />
+    <Content Include="images\balustrades\thumb\B2\2\4.png" />
+    <Content Include="images\balustrades\thumb\B2\3\1.png" />
+    <Content Include="images\balustrades\thumb\B2\3\2.png" />
+    <Content Include="images\balustrades\thumb\B2\3\3.png" />
+    <Content Include="images\balustrades\thumb\B2\3\4.png" />
+    <Content Include="images\balustrades\thumb\B2\4\1.png" />
+    <Content Include="images\balustrades\thumb\B2\4\2.png" />
+    <Content Include="images\balustrades\thumb\B2\4\3.png" />
+    <Content Include="images\balustrades\thumb\B2\4\4.png" />
+    <Content Include="images\balustrades\thumb\B2\5\1.png" />
+    <Content Include="images\balustrades\thumb\B2\5\2.png" />
+    <Content Include="images\balustrades\thumb\B2\5\3.png" />
+    <Content Include="images\balustrades\thumb\B2\5\4.png" />
+    <Content Include="images\balustrades\thumb\B2\Curved\1.png" />
+    <Content Include="images\balustrades\thumb\B2\Curved\2.png" />
+    <Content Include="images\balustrades\thumb\B2\Curved\3.png" />
+    <Content Include="images\balustrades\thumb\B2\Curved\4.png" />
+    <Content Include="images\balustrades\thumb\B2\Custom\B2_Custom_Bronze_Thumb.png" />
+    <Content Include="images\balustrades\thumb\B2\Custom\B2_Custom_Chrome_Thumb.png" />
+    <Content Include="images\balustrades\thumb\B2\Custom\B2_Custom_Silver_Thumb.png" />
+    <Content Include="images\balustrades\thumb\B2\Custom\B2_Custom_White_Thumb.png" />
+    <Content Include="images\become-a-registered-installer.jpg" />
+    <Content Include="images\brochure.jpg" />
+    <Content Include="images\browse-computer.jpg" />
+    <Content Include="images\bullet.png" />
+    <Content Include="images\button-bg-purple-long.jpg" />
+    <Content Include="images\button-bg-purple.jpg" />
+    <Content Include="images\bv-humb.png" />
+    <Content Include="images\call-me-back.jpg" />
+    <Content Include="images\cart.png" />
+    <Content Include="images\case-studies-icon-curved-doors.jpg" />
+    <Content Include="images\case-studies-icon-juliet.jpg" />
+    <Content Include="images\case-studies-icon.jpg" />
+    <Content Include="images\case-studies-page-img.jpg" />
+    <Content Include="images\clear-form.jpg" />
+    <Content Include="images\close.png" />
+    <Content Include="images\cookie-menu-arrow.gif" />
+    <Content Include="images\curved-doors-architects-area.jpg" />
+    <Content Include="images\curved-doors-door-arrangement-options.jpg" />
+    <Content Include="images\curved-doors-downloads.jpg" />
+    <Content Include="images\curved-doors-home.jpg" />
+    <Content Include="images\curved-doors-installation-faqs.jpg" />
+    <Content Include="images\curved-doors-installation-instructions.jpg" />
+    <Content Include="images\curved-doors-installation-video.jpg" />
+    <Content Include="images\curved-doors-property-developers.jpg" />
+    <Content Include="images\curved-doors-registered-installer.jpg" />
+    <Content Include="images\curved-doors-techs-spec.jpg" />
+    <Content Include="images\curved-doors-u-values.jpg" />
+    <Content Include="images\curved-doors-written-instructions-w4f.jpg" />
+    <Content Include="images\curved-doors-written-instructions-w6f.jpg" />
+    <Content Include="images\curved-doors\arrows\w2.png" />
+    <Content Include="images\curved-doors\arrows\w2f.png" />
+    <Content Include="images\curved-doors\arrows\w3-2f.png" />
+    <Content Include="images\curved-doors\arrows\w3f.png" />
+    <Content Include="images\curved-doors\arrows\w4.png" />
+    <Content Include="images\curved-doors\arrows\w4f.png" />
+    <Content Include="images\curved-doors\arrows\w6-4f.png" />
+    <Content Include="images\curved-doors\arrows\w6f.png" />
+    <Content Include="images\curved-doors\arrows\w8-4f.png" />
+    <Content Include="images\curved-doors\arrows\w8-6f.png" />
+    <Content Include="images\curved-doors\plan\w2.jpg" />
+    <Content Include="images\curved-doors\plan\w2f.jpg" />
+    <Content Include="images\curved-doors\plan\w3-2f.jpg" />
+    <Content Include="images\curved-doors\plan\w3f.jpg" />
+    <Content Include="images\curved-doors\plan\w4.jpg" />
+    <Content Include="images\curved-doors\plan\w4f.jpg" />
+    <Content Include="images\curved-doors\plan\w6-4f.jpg" />
+    <Content Include="images\curved-doors\plan\w6f.jpg" />
+    <Content Include="images\curved-doors\plan\w8-4f.jpg" />
+    <Content Include="images\curved-doors\plan\w8-6f.jpg" />
+    <Content Include="images\curved-doors\thumb\W2.jpg" />
+    <Content Include="images\curved-doors\thumb\W2F.jpg" />
+    <Content Include="images\curved-doors\thumb\W2F_Mirror.jpg" />
+    <Content Include="images\curved-doors\thumb\W2_Mirror.jpg" />
+    <Content Include="images\curved-doors\thumb\W3-2F.jpg" />
+    <Content Include="images\curved-doors\thumb\W3-2F_Mirror.jpg" />
+    <Content Include="images\curved-doors\thumb\W3F.jpg" />
+    <Content Include="images\curved-doors\thumb\W3F_Mirror.jpg" />
+    <Content Include="images\curved-doors\thumb\W4.jpg" />
+    <Content Include="images\curved-doors\thumb\W4F.jpg" />
+    <Content Include="images\curved-doors\thumb\W6-4F.jpg" />
+    <Content Include="images\curved-doors\thumb\W6F.jpg" />
+    <Content Include="images\curved-doors\thumb\W8-4F.jpg" />
+    <Content Include="images\curved-doors\thumb\W8-6F.jpg" />
+    <Content Include="images\curved-glass-illustration.jpg" />
+    <Content Include="images\deck-grit-strips-main.jpg" />
+    <Content Include="images\decking-add-to-cart-on-white.jpg" />
+    <Content Include="images\decking-balconies-and-roof-terraces.jpg" />
+    <Content Include="images\decking-board-finishes.jpg" />
+    <Content Include="images\decking-boardwalks-and-wetland-areas.jpg" />
+    <Content Include="images\decking-commercial.jpg" />
+    <Content Include="images\decking-fixings.jpg" />
+    <Content Include="images\decking-grit-strips.jpg" />
+    <Content Include="images\decking-home.jpg" />
+    <Content Include="images\decking-jetties.jpg" />
+    <Content Include="images\decking-online-shop.jpg" />
+    <Content Include="images\decking-open-public-and-recreation-areas.jpg" />
+    <Content Include="images\decking-park-and-lodge-homes.jpg" />
+    <Content Include="images\decking-pedestals-and-joist-shoes.jpg" />
+    <Content Include="images\decking-pedestals-main.jpg" />
+    <Content Include="images\decking-recycled-plastic.jpg" />
+    <Content Include="images\decking-residential-homes-and-gardens.jpg" />
+    <Content Include="images\decking-schools.jpg" />
+    <Content Include="images\decking-shopping-cart-on-white.jpg" />
+    <Content Include="images\decking-technical-details.jpg" />
+    <Content Include="images\decking-touch-up-paints-and-coating.jpg" />
+    <Content Include="images\decking-why-choose-ours.jpg" />
+    <Content Include="images\default.jpg" />
+    <Content Include="images\delivery.png" />
+    <Content Include="images\distributor-and-trade-enquiries.jpg" />
+    <Content Include="images\drawing.jpg" />
+    <Content Include="images\easy-install-strip.jpg" />
+    <Content Include="images\email-spec.jpg" />
+    <Content Include="images\empty-star.png" />
+    <Content Include="images\facebook-icon.gif" />
+    <Content Include="images\facebook.png" />
+    <Content Include="images\faq-icon-curved-doors.jpg" />
+    <Content Include="images\faq-icon-juliet.jpg" />
+    <Content Include="images\faq-icon.jpg" />
+    <Content Include="images\file-types\128\avi.png" />
+    <Content Include="images\file-types\128\bmp.png" />
+    <Content Include="images\file-types\128\doc.png" />
+    <Content Include="images\file-types\128\docx.png" />
+    <Content Include="images\file-types\128\dwg.png" />
+    <Content Include="images\file-types\128\gif.png" />
+    <Content Include="images\file-types\128\html.png" />
+    <Content Include="images\file-types\128\jpeg.png" />
+    <Content Include="images\file-types\128\jpg.png" />
+    <Content Include="images\file-types\128\mov.png" />
+    <Content Include="images\file-types\128\movie.png" />
+    <Content Include="images\file-types\128\mp4.png" />
+    <Content Include="images\file-types\128\mpeg.png" />
+    <Content Include="images\file-types\128\mpg.png" />
+    <Content Include="images\file-types\128\pdf.png" />
+    <Content Include="images\file-types\128\png.png" />
+    <Content Include="images\file-types\128\pps.png" />
+    <Content Include="images\file-types\128\ppt.png" />
+    <Content Include="images\file-types\128\pptx.png" />
+    <Content Include="images\file-types\128\psd.png" />
+    <Content Include="images\file-types\128\rar.png" />
+    <Content Include="images\file-types\128\tif.png" />
+    <Content Include="images\file-types\128\tiff.png" />
+    <Content Include="images\file-types\128\wmv.png" />
+    <Content Include="images\file-types\128\xls.png" />
+    <Content Include="images\file-types\128\xlsx.png" />
+    <Content Include="images\file-types\128\zip.png" />
+    <Content Include="images\file-types\48\bmp.png" />
+    <Content Include="images\file-types\48\doc.png" />
+    <Content Include="images\file-types\48\docx.png" />
+    <Content Include="images\file-types\48\dvd.png" />
+    <Content Include="images\file-types\48\dwg.png" />
+    <Content Include="images\file-types\48\gif.png" />
+    <Content Include="images\file-types\48\html.png" />
+    <Content Include="images\file-types\48\jpeg.png" />
+    <Content Include="images\file-types\48\jpg.png" />
+    <Content Include="images\file-types\48\mov.png" />
+    <Content Include="images\file-types\48\movie.png" />
+    <Content Include="images\file-types\48\mp4.png" />
+    <Content Include="images\file-types\48\mpeg.png" />
+    <Content Include="images\file-types\48\mpg.png" />
+    <Content Include="images\file-types\48\pdf.png" />
+    <Content Include="images\file-types\48\png.png" />
+    <Content Include="images\file-types\48\pps.png" />
+    <Content Include="images\file-types\48\ppt.png" />
+    <Content Include="images\file-types\48\pptx.png" />
+    <Content Include="images\file-types\48\psd.png" />
+    <Content Include="images\file-types\48\rar.png" />
+    <Content Include="images\file-types\48\tiff.png" />
+    <Content Include="images\file-types\48\wmv.png" />
+    <Content Include="images\file-types\48\xls.png" />
+    <Content Include="images\file-types\48\xlsx.png" />
+    <Content Include="images\file-types\48\zip.png" />
+    <Content Include="images\filled-star.png" />
+    <Content Include="images\findHosting.png" />
+    <Content Include="images\finish-enhanced-grain.jpg" />
+    <Content Include="images\finish-fascias.jpg" />
+    <Content Include="images\finish-lasta-grip.jpg" />
+    <Content Include="images\finish-tactile.jpg" />
+    <Content Include="images\finish-weathered-oak.jpg" />
+    <Content Include="images\footer-bg.gif" />
+    <Content Include="images\gallery-img-1.jpg" />
+    <Content Include="images\gallery-img-2.jpg" />
+    <Content Include="images\gallery-img-3.jpg" />
+    <Content Include="images\gallery-img-4.jpg" />
+    <Content Include="images\gallery-img-5.jpg" />
+    <Content Include="images\get-an-online-quote-curved-doors.jpg" />
+    <Content Include="images\get-an-online-quote.jpg" />
+    <Content Include="images\glass-balustrades-home.jpg" />
+    <Content Include="images\heroAccent.png" />
+    <Content Include="images\how-to-install-curved-doors.jpg" />
+    <Content Include="images\how-to-install-glass-balustrade.jpg" />
+    <Content Include="images\how-to-install-juliet-balconies.jpg" />
+    <Content Include="images\icon-anti-slip.gif" />
+    <Content Include="images\icon-environmentally-friendly.gif" />
+    <Content Include="images\icon-maintenance-free.gif" />
+    <Content Include="images\icon-plas-pro.gif" />
+    <Content Include="images\icon-recycled.gif" />
+    <Content Include="images\installation-faq.jpg" />
+    <Content Include="images\joist-shoe.jpg" />
+    <Content Include="images\juliet-balconies-home.jpg" />
+    <Content Include="images\juliette-correct-fixings.jpg" />
+    <Content Include="images\juliette-downloads.jpg" />
+    <Content Include="images\juliette-mirror-style-system.jpg" />
+    <Content Include="images\juliette-standard-handrail-system.jpg" />
+    <Content Include="images\juliette-standard-style-system.jpg" />
+    <Content Include="images\juliette-structural-calculations.jpg" />
+    <Content Include="images\juliette-tech-spec.jpg" />
+    <Content Include="images\juliettes\custom\1\1.jpg" />
+    <Content Include="images\juliettes\custom\1\2.jpg" />
+    <Content Include="images\juliettes\custom\1\3.jpg" />
+    <Content Include="images\juliettes\custom\1\4.jpg" />
+    <Content Include="images\juliettes\custom\2\1.jpg" />
+    <Content Include="images\juliettes\custom\2\2.jpg" />
+    <Content Include="images\juliettes\custom\2\3.jpg" />
+    <Content Include="images\juliettes\custom\2\4.jpg" />
+    <Content Include="images\juliettes\custom\3\1.jpg" />
+    <Content Include="images\juliettes\custom\3\2.jpg" />
+    <Content Include="images\juliettes\custom\3\3.jpg" />
+    <Content Include="images\juliettes\custom\3\4.jpg" />
+    <Content Include="images\juliettes\custom\6\4.jpg" />
+    <Content Include="images\juliettes\sections\1.JPG" />
+    <Content Include="images\juliettes\sections\2.JPG" />
+    <Content Include="images\juliettes\sections\3.JPG" />
+    <Content Include="images\juliettes\sections\6.jpg" />
+    <Content Include="images\juliettes\standards\med\1\1\3200.jpg" />
+    <Content Include="images\juliettes\standards\med\1\2\3200.jpg" />
+    <Content Include="images\juliettes\standards\med\1\3\3200.jpg" />
+    <Content Include="images\juliettes\standards\med\1\4\3200.jpg" />
+    <Content Include="images\juliettes\standards\med\2\1\3200.jpg" />
+    <Content Include="images\juliettes\standards\med\2\2\3200.jpg" />
+    <Content Include="images\juliettes\standards\med\2\3\3200.jpg" />
+    <Content Include="images\juliettes\standards\med\2\4\3200.jpg" />
+    <Content Include="images\juliettes\standards\med\6\4\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\6\4\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\6\4\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\6\4\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\6\4\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\6\4\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\6\4\2840.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\1\1280.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\1\1500.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\1\1680.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\1\1860.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\1\2180.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\1\2450.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\1\2840.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\2\1280.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\2\1500.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\2\1680.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\2\1860.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\2\2180.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\2\2450.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\2\2840.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\3\1280.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\3\1500.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\3\1680.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\3\1860.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\3\2180.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\3\2450.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\3\2840.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\4\1280.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\4\1500.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\4\1680.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\4\1860.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\4\2180.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\4\2450.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\1\4\2840.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\1\1280.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\1\1500.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\1\1680.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\1\1860.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\1\2180.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\1\2450.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\1\2840.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\2\1280.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\2\1500.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\2\1680.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\2\1860.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\2\2180.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\2\2450.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\2\2840.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\3\1280.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\3\1500.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\3\1680.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\3\1860.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\3\2180.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\3\2450.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\3\2840.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\4\1280.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\4\1500.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\4\1680.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\4\1860.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\4\2180.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\4\2450.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\2\4\2840.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\1\1280.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\1\1500.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\1\1680.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\1\1860.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\1\2180.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\1\2450.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\2\1280.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\2\1500.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\2\1680.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\2\1860.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\2\2180.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\2\2450.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\3\1280.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\3\1500.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\3\1680.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\3\1860.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\3\2180.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\3\2450.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\4\1280.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\4\1500.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\4\1680.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\4\1860.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\4\2180.jpg" />
+    <Content Include="images\juliettes\standards\thumbs\3\4\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\1\1\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\1\1\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\1\1\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\1\1\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\1\1\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\1\1\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\1\1\2840.jpg" />
+    <Content Include="images\juliettes\standards\med\1\2\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\1\2\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\1\2\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\1\2\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\1\2\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\1\2\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\1\2\2840.jpg" />
+    <Content Include="images\juliettes\standards\med\1\3\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\1\3\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\1\3\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\1\3\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\1\3\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\1\3\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\1\3\2840.jpg" />
+    <Content Include="images\juliettes\standards\med\1\4\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\1\4\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\1\4\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\1\4\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\1\4\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\1\4\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\1\4\2840.jpg" />
+    <Content Include="images\juliettes\standards\med\2\1\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\2\1\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\2\1\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\2\1\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\2\1\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\2\1\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\2\1\2840.jpg" />
+    <Content Include="images\juliettes\standards\med\2\2\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\2\2\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\2\2\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\2\2\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\2\2\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\2\2\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\2\2\2840.jpg" />
+    <Content Include="images\juliettes\standards\med\2\3\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\2\3\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\2\3\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\2\3\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\2\3\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\2\3\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\2\3\2840.jpg" />
+    <Content Include="images\juliettes\standards\med\2\4\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\2\4\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\2\4\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\2\4\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\2\4\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\2\4\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\2\4\2840.jpg" />
+    <Content Include="images\juliettes\standards\med\3\1\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\3\1\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\3\1\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\3\1\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\3\1\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\3\1\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\3\2\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\3\2\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\3\2\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\3\2\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\3\2\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\3\2\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\3\3\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\3\3\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\3\3\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\3\3\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\3\3\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\3\3\2450.jpg" />
+    <Content Include="images\juliettes\standards\med\3\4\1280.jpg" />
+    <Content Include="images\juliettes\standards\med\3\4\1500.jpg" />
+    <Content Include="images\juliettes\standards\med\3\4\1680.jpg" />
+    <Content Include="images\juliettes\standards\med\3\4\1860.jpg" />
+    <Content Include="images\juliettes\standards\med\3\4\2180.jpg" />
+    <Content Include="images\juliettes\standards\med\3\4\2450.jpg" />
+    <Content Include="images\magnifying-glass-blue.jpg" />
+    <Content Include="images\magnifying-glass-brown.jpg" />
+    <Content Include="images\magnifying-glass.gif" />
+    <Content Include="images\magnifying-glass.jpg" />
+    <Content Include="images\mastercard-visa.jpg" />
+    <Content Include="images\millboard-pedestals.jpg" />
+    <Content Include="images\mirror-style-system.jpg" />
+    <Content Include="images\money-back-guarantee.jpg" />
+    <Content Include="images\next.gif" />
+    <Content Include="images\nivoslider\default\arrows.png" />
+    <Content Include="images\nivoslider\default\bullets.png" />
+    <Content Include="images\nivoslider\default\loading.gif" />
+    <Content Include="images\nivoslider\default\slide-bg.jpg" />
+    <Content Include="images\nivoslider\default\slide1.jpg" />
+    <Content Include="images\nivoslider\default\slide2.jpg" />
+    <Content Include="images\nivoslider\default\slide3.jpg" />
+    <Content Include="images\nivoslider\sidebar\arrows.png" />
+    <Content Include="images\nivoslider\sidebar\bullets.png" />
+    <Content Include="images\nivoslider\sidebar\loading.gif" />
+    <Content Include="images\nivoslider\sidebar\slide-bg.jpg" />
+    <Content Include="images\nivoslider\sidebar\slide1.jpg" />
+    <Content Include="images\nivoslider\sidebar\slide2.jpg" />
+    <Content Include="images\nivoslider\sidebar\slide3.jpg" />
+    <Content Include="images\nivoslider\sidebar\slider-bg.jpg" />
+    <Content Include="images\nivoslider\sidebar\thumb-arrow-left.gif" />
+    <Content Include="images\nivoslider\sidebar\thumb-arrow-right.gif" />
+    <Content Include="images\noimage.jpg" />
+    <Content Include="images\NuGetGallery.png" />
+    <Content Include="images\off-the-shelf-prices.jpg" />
+    <Content Include="images\online-shop-decking-icon.jpg" />
+    <Content Include="images\orderedList0.png" />
+    <Content Include="images\orderedList1.png" />
+    <Content Include="images\orderedList2.png" />
+    <Content Include="images\orderedList3.png" />
+    <Content Include="images\orderedList4.png" />
+    <Content Include="images\orderedList5.png" />
+    <Content Include="images\orderedList6.png" />
+    <Content Include="images\orderedList7.png" />
+    <Content Include="images\orderedList8.png" />
+    <Content Include="images\orderedList9.png" />
+    <Content Include="images\over-ten-units-required.jpg" />
+    <Content Include="images\paint-golden-oak.jpg" />
+    <Content Include="images\paypal.jpg" />
+    <Content Include="images\pdf-icon-on-grey.jpg" />
+    <Content Include="images\pdf-icon-small.jpg" />
+    <Content Include="images\pdf-icon.jpg" />
+    <Content Include="images\pdf.png" />
+    <Content Include="images\phone-home.jpg" />
+    <Content Include="images\phone.jpg" />
+    <Content Include="images\pic1.jpg" />
+    <Content Include="images\placeholder.gif" />
+    <Content Include="images\pr-and-media-icon.jpg" />
+    <Content Include="images\prev.gif" />
+    <Content Include="images\pro-recycled-plastic-main.jpg" />
+    <Content Include="images\product-heavy-duty-glass-cleaner.jpg" />
+    <Content Include="images\product-info-blue.jpg" />
+    <Content Include="images\product-info.jpg" />
+    <Content Include="images\product-sachet.jpg" />
+    <Content Include="images\product-shower-renovation-kit.jpg" />
+    <Content Include="images\prog1.gif" />
+    <Content Include="images\publication-agp.jpg" />
+    <Content Include="images\publication-balcony-magazine.jpg" />
+    <Content Include="images\publication-balcony-views.jpg" />
+    <Content Include="images\read-balcony-views-online.jpg" />
+    <Content Include="images\ring-supports.jpg" />
+    <Content Include="images\shop-decking.jpg" />
+    <Content Include="images\shop-product-sachet-large.jpg" />
+    <Content Include="images\shop-product-sachet.jpg" />
+    <Content Include="images\size-i-need.jpg" />
+    <Content Include="images\social\addthis-variation.png" />
+    <Content Include="images\social\appnet.png" />
+    <Content Include="images\social\behance-variation.png" />
+    <Content Include="images\social\blogger-variation.png" />
+    <Content Include="images\social\deviantart-variation.png" />
+    <Content Include="images\social\digg-variation.png" />
+    <Content Include="images\social\dribbble-variation.png" />
+    <Content Include="images\social\email-variation.png" />
+    <Content Include="images\social\facebook-variation.png" />
+    <Content Include="images\social\flickr-variation.png" />
+    <Content Include="images\social\foursquare.png" />
+    <Content Include="images\social\github.png" />
+    <Content Include="images\social\gplus-variation.png" />
+    <Content Include="images\social\gplus-variation2.png" />
+    <Content Include="images\social\indiegogo.png" />
+    <Content Include="images\social\instagram-variation.png" />
+    <Content Include="images\social\kickstarter.png" />
+    <Content Include="images\social\lastfm-variation.png" />
+    <Content Include="images\social\like-variation.png" />
+    <Content Include="images\social\linkedin-variation.png" />
+    <Content Include="images\social\livejournal-variation.png" />
+    <Content Include="images\social\messenger-generic.png" />
+    <Content Include="images\social\myspace-variation.png" />
+    <Content Include="images\social\myspace-variation2.png" />
+    <Content Include="images\social\orkut-variation.png" />
+    <Content Include="images\social\paypal-variation.png" />
+    <Content Include="images\social\picasa-variation.png" />
+    <Content Include="images\social\pinterest.png" />
+    <Content Include="images\social\reddit-variation.png" />
+    <Content Include="images\social\rss-variation.png" />
+    <Content Include="images\social\sharethis-variation.png" />
+    <Content Include="images\social\skype-variation.png" />
+    <Content Include="images\social\soundcloud-variation.png" />
+    <Content Include="images\social\spotify-variation.png" />
+    <Content Include="images\social\stackoverflow.png" />
+    <Content Include="images\social\stumbleupon-variation.png" />
+    <Content Include="images\social\tumblr-variation.png" />
+    <Content Include="images\social\twitter-variation-old.png" />
+    <Content Include="images\social\twitter-variation.png" />
+    <Content Include="images\social\vimeo-variation.png" />
+    <Content Include="images\social\wordpress-variation.png" />
+    <Content Include="images\social\yelp.png" />
+    <Content Include="images\social\youtube-variation.png" />
+    <Content Include="images\standard-handrail-system.jpg" />
+    <Content Include="images\standard-style-system.jpg" />
+    <Content Include="images\stars-five.gif" />
+    <Content Include="images\step-nosing.jpg" />
+    <Content Include="images\stories-and-articles-icon.jpg" />
+    <Content Include="images\submit-balcony-views.jpg" />
+    <Content Include="images\submit-decking-get-quote.jpg" />
+    <Content Include="images\submit-decking.jpg" />
+    <Content Include="images\subscribe-balcony-views.jpg" />
+    <Content Include="images\superfish\dot.png" />
+    <Content Include="images\superfish\li-menu-bg-first.png" />
+    <Content Include="images\superfish\li-menu-bg-hover.png" />
+    <Content Include="images\superfish\li-menu-bg-last-hover.png" />
+    <Content Include="images\superfish\li-menu-bg-last.png" />
+    <Content Include="images\superfish\li-menu-bg.png" />
+    <Content Include="images\superfish\main_nav_bg.gif" />
+    <Content Include="images\superfish\play-icon.png" />
+    <Content Include="images\superfish\sf-menu-bg.png" />
+    <Content Include="images\system-bal2-juliette-1.jpg" />
+    <Content Include="images\system-bal2-juliette-2.jpg" />
+    <Content Include="images\system-juliette-balcony-1.jpg" />
+    <Content Include="images\system-juliette-balcony-2.jpg" />
+    <Content Include="images\system-mirror-1.jpg" />
+    <Content Include="images\system-mirror-2.jpg" />
+    <Content Include="images\technical-details-curved-doors.jpg" />
+    <Content Include="images\technical-details-decking.jpg" />
+    <Content Include="images\technical-details-juliet.jpg" />
+    <Content Include="images\technical-details.jpg" />
+    <Content Include="images\ten-year.jpg" />
+    <Content Include="images\test.jpg" />
+    <Content Include="images\top-menu-bg-repeat.png" />
+    <Content Include="images\top-menu-bg.png" />
+    <Content Include="images\trade-customers-curved-doors.jpg" />
+    <Content Include="images\trade-customers-juliet.jpg" />
+    <Content Include="images\trade-customers.jpg" />
+    <Content Include="images\twitter-icon.gif" />
+    <Content Include="images\twitter.png" />
+    <Content Include="images\types-of-balustrade-systems.jpg" />
+    <Content Include="images\types-of-curved-doors.jpg" />
+    <Content Include="images\types-of-juliet-balconies.jpg" />
+    <Content Include="images\view-3d.jpg" />
+    <Content Include="images\view-plan.jpg" />
+    <Content Include="images\why-choose-our-decking.jpg" />
+    <Content Include="images\why-choose-us.jpg" />
+    <Content Include="images\windowsLive.png" />
+    <Content Include="robots.txt" />
+    <Content Include="Scripts\admin.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\Admin\Views\Account\SignIn.aspx" />
+    <Content Include="Areas\Admin\Views\Images\Add.aspx" />
+    <Content Include="Areas\Admin\Views\Images\Index.aspx" />
+    <Content Include="Areas\Admin\Views\Articles\Edit.aspx" />
+    <Content Include="Areas\Admin\Views\Articles\Index.aspx" />
+    <Content Include="Content\admin.css" />
+    <Content Include="Content\Black\editor.png" />
+    <Content Include="Content\Black\imagebrowser.png" />
+    <Content Include="Content\Black\loading-image.gif" />
+    <Content Include="Content\Black\loading.gif" />
+    <Content Include="Content\Black\slider-h.gif" />
+    <Content Include="Content\Black\slider-v.gif" />
+    <Content Include="Content\Black\sprite%402x.png" />
+    <Content Include="Content\Black\sprite.png" />
+    <Content Include="Content\BlueOpal\editor.png" />
+    <Content Include="Content\BlueOpal\imagebrowser.png" />
+    <Content Include="Content\BlueOpal\loading-image.gif" />
+    <Content Include="Content\BlueOpal\loading.gif" />
+    <Content Include="Content\BlueOpal\slider-h.gif" />
+    <Content Include="Content\BlueOpal\slider-v.gif" />
+    <Content Include="Content\BlueOpal\sprite%402x.png" />
+    <Content Include="Content\BlueOpal\sprite.png" />
+    <Content Include="Content\Bootstrap\editor.png" />
+    <Content Include="Content\Bootstrap\imagebrowser.png" />
+    <Content Include="Content\Bootstrap\loading-image.gif" />
+    <Content Include="Content\Bootstrap\loading.gif" />
+    <Content Include="Content\Bootstrap\slider-h.gif" />
+    <Content Include="Content\Bootstrap\slider-v.gif" />
+    <Content Include="Content\Bootstrap\sprite%402x.png" />
+    <Content Include="Content\Bootstrap\sprite.png" />
+    <Content Include="Content\Default\editor.png" />
+    <Content Include="Content\Default\imagebrowser.png" />
+    <Content Include="Content\Default\loading-image.gif" />
+    <Content Include="Content\Default\loading.gif" />
+    <Content Include="Content\Default\slider-h.gif" />
+    <Content Include="Content\Default\slider-v.gif" />
+    <Content Include="Content\Default\sprite%402x.png" />
+    <Content Include="Content\Default\sprite.png" />
+    <Content Include="Content\HighContrast\editor.png" />
+    <Content Include="Content\HighContrast\imagebrowser.png" />
+    <Content Include="Content\HighContrast\loading-image.gif" />
+    <Content Include="Content\HighContrast\loading.gif" />
+    <Content Include="Content\HighContrast\slider-h.gif" />
+    <Content Include="Content\HighContrast\slider-v.gif" />
+    <Content Include="Content\HighContrast\sprite%402x.png" />
+    <Content Include="Content\HighContrast\sprite.png" />
+    <Content Include="Content\images\rotate_acw.png" />
+    <Content Include="Content\images\rotate_cw.png" />
+    <Content Include="Content\kendo.black.min.css" />
+    <Content Include="Content\kendo.blueopal.min.css" />
+    <Content Include="Content\kendo.bootstrap.min.css" />
+    <Content Include="Content\kendo.common.min.css" />
+    <Content Include="Content\kendo.default.min.css" />
+    <Content Include="Content\kendo.highcontrast.min.css" />
+    <Content Include="Content\kendo.metro.min.css" />
+    <Content Include="Content\kendo.metroblack.min.css" />
+    <Content Include="Content\kendo.moonlight.min.css" />
+    <Content Include="Content\kendo.rtl.min.css" />
+    <Content Include="Content\kendo.silver.min.css" />
+    <Content Include="Content\kendo.uniform.min.css" />
+    <Content Include="Content\MetroBlack\editor.png" />
+    <Content Include="Content\MetroBlack\imagebrowser.png" />
+    <Content Include="Content\MetroBlack\loading-image.gif" />
+    <Content Include="Content\MetroBlack\loading.gif" />
+    <Content Include="Content\MetroBlack\slider-h.gif" />
+    <Content Include="Content\MetroBlack\slider-v.gif" />
+    <Content Include="Content\MetroBlack\sprite%402x.png" />
+    <Content Include="Content\MetroBlack\sprite.png" />
+    <Content Include="Content\Metro\editor.png" />
+    <Content Include="Content\Metro\imagebrowser.png" />
+    <Content Include="Content\Metro\loading-image.gif" />
+    <Content Include="Content\Metro\loading.gif" />
+    <Content Include="Content\Metro\slider-h.gif" />
+    <Content Include="Content\Metro\slider-v.gif" />
+    <Content Include="Content\Metro\sprite%402x.png" />
+    <Content Include="Content\Metro\sprite.png" />
+    <Content Include="Content\Moonlight\editor.png" />
+    <Content Include="Content\Moonlight\imagebrowser.png" />
+    <Content Include="Content\Moonlight\loading-image.gif" />
+    <Content Include="Content\Moonlight\loading.gif" />
+    <Content Include="Content\Moonlight\slider-h.gif" />
+    <Content Include="Content\Moonlight\slider-v.gif" />
+    <Content Include="Content\Moonlight\sprite%402x.png" />
+    <Content Include="Content\Moonlight\sprite.png" />
+    <Content Include="Content\reset.css" />
+    <Content Include="Content\Silver\editor.png" />
+    <Content Include="Content\Silver\imagebrowser.png" />
+    <Content Include="Content\Silver\loading-image.gif" />
+    <Content Include="Content\Silver\loading.gif" />
+    <Content Include="Content\Silver\slider-h.gif" />
+    <Content Include="Content\Silver\slider-v.gif" />
+    <Content Include="Content\Silver\sprite%402x.png" />
+    <Content Include="Content\Silver\sprite.png" />
+    <Content Include="Content\textures\brushed-metal.png" />
+    <Content Include="Content\textures\dots1.png" />
+    <Content Include="Content\textures\dots10.png" />
+    <Content Include="Content\textures\dots11.png" />
+    <Content Include="Content\textures\dots12.png" />
+    <Content Include="Content\textures\dots13.png" />
+    <Content Include="Content\textures\dots2.png" />
+    <Content Include="Content\textures\dots3.png" />
+    <Content Include="Content\textures\dots4.png" />
+    <Content Include="Content\textures\dots5.png" />
+    <Content Include="Content\textures\dots6.png" />
+    <Content Include="Content\textures\dots7.png" />
+    <Content Include="Content\textures\dots8.png" />
+    <Content Include="Content\textures\dots9.png" />
+    <Content Include="Content\textures\glass-lighter.png" />
+    <Content Include="Content\textures\glass.png" />
+    <Content Include="Content\textures\highlight.png" />
+    <Content Include="Content\textures\hsv-gradient.png" />
+    <Content Include="Content\textures\hue.png" />
+    <Content Include="Content\textures\leather1.png" />
+    <Content Include="Content\textures\leather2.png" />
+    <Content Include="Content\textures\noise.png" />
+    <Content Include="Content\textures\stripe1.png" />
+    <Content Include="Content\textures\stripe2.png" />
+    <Content Include="Content\textures\stripe3.png" />
+    <Content Include="Content\textures\stripe4.png" />
+    <Content Include="Content\textures\stripe5.png" />
+    <Content Include="Content\textures\stripe6.png" />
+    <Content Include="Content\textures\transparency.png" />
+    <Content Include="Content\textures\transtexture.png" />
+    <Content Include="Content\Uniform\editor.png" />
+    <Content Include="Content\Uniform\imagebrowser.png" />
+    <Content Include="Content\Uniform\loading-image.gif" />
+    <Content Include="Content\Uniform\loading.gif" />
+    <Content Include="Content\Uniform\slider-h.gif" />
+    <Content Include="Content\Uniform\slider-v.gif" />
+    <Content Include="Content\Uniform\sprite%402x.png" />
+    <Content Include="Content\Uniform\sprite.png" />
+    <Content Include="Content\uploadify\uploadify-cancel.png" />
+    <Content Include="Content\uploadify\uploadify.css" />
+    <Content Include="Content\uploadify\uploadify.swf" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\ckeditor\build-config.js" />
+    <Content Include="Scripts\ckeditor\ckeditor.js" />
+    <Content Include="Scripts\ckeditor\config.js" />
+    <Content Include="Scripts\ckeditor\contents.css" />
+    <Content Include="Scripts\ckeditor\lang\af.js" />
+    <Content Include="Scripts\ckeditor\lang\ar.js" />
+    <Content Include="Scripts\ckeditor\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\lang\bn.js" />
+    <Content Include="Scripts\ckeditor\lang\bs.js" />
+    <Content Include="Scripts\ckeditor\lang\ca.js" />
+    <Content Include="Scripts\ckeditor\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\lang\da.js" />
+    <Content Include="Scripts\ckeditor\lang\de.js" />
+    <Content Include="Scripts\ckeditor\lang\el.js" />
+    <Content Include="Scripts\ckeditor\lang\en-au.js" />
+    <Content Include="Scripts\ckeditor\lang\en-ca.js" />
+    <Content Include="Scripts\ckeditor\lang\en-gb.js" />
+    <Content Include="Scripts\ckeditor\lang\en.js" />
+    <Content Include="Scripts\ckeditor\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\lang\es.js" />
+    <Content Include="Scripts\ckeditor\lang\et.js" />
+    <Content Include="Scripts\ckeditor\lang\eu.js" />
+    <Content Include="Scripts\ckeditor\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\lang\fo.js" />
+    <Content Include="Scripts\ckeditor\lang\fr-ca.js" />
+    <Content Include="Scripts\ckeditor\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\lang\gl.js" />
+    <Content Include="Scripts\ckeditor\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\lang\he.js" />
+    <Content Include="Scripts\ckeditor\lang\hi.js" />
+    <Content Include="Scripts\ckeditor\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\lang\hu.js" />
+    <Content Include="Scripts\ckeditor\lang\is.js" />
+    <Content Include="Scripts\ckeditor\lang\it.js" />
+    <Content Include="Scripts\ckeditor\lang\ja.js" />
+    <Content Include="Scripts\ckeditor\lang\ka.js" />
+    <Content Include="Scripts\ckeditor\lang\km.js" />
+    <Content Include="Scripts\ckeditor\lang\ko.js" />
+    <Content Include="Scripts\ckeditor\lang\ku.js" />
+    <Content Include="Scripts\ckeditor\lang\lt.js" />
+    <Content Include="Scripts\ckeditor\lang\lv.js" />
+    <Content Include="Scripts\ckeditor\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\lang\mn.js" />
+    <Content Include="Scripts\ckeditor\lang\ms.js" />
+    <Content Include="Scripts\ckeditor\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\lang\no.js" />
+    <Content Include="Scripts\ckeditor\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\lang\pt.js" />
+    <Content Include="Scripts\ckeditor\lang\ro.js" />
+    <Content Include="Scripts\ckeditor\lang\ru.js" />
+    <Content Include="Scripts\ckeditor\lang\sk.js" />
+    <Content Include="Scripts\ckeditor\lang\sl.js" />
+    <Content Include="Scripts\ckeditor\lang\sr-latn.js" />
+    <Content Include="Scripts\ckeditor\lang\sr.js" />
+    <Content Include="Scripts\ckeditor\lang\sv.js" />
+    <Content Include="Scripts\ckeditor\lang\th.js" />
+    <Content Include="Scripts\ckeditor\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\lang\zh.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="Scripts\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="Scripts\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="Scripts\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Scripts\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Scripts\ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="Scripts\ckeditor\plugins\fakeobjects\images\spacer.gif" />
+    <Content Include="Scripts\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="Scripts\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="Scripts\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Scripts\ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="Scripts\ckeditor\plugins\icons.png" />
+    <Content Include="Scripts\ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="Scripts\ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="Scripts\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="Scripts\ckeditor\plugins\image\images\noimage.png" />
+    <Content Include="Scripts\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="Scripts\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="Scripts\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Scripts\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="Scripts\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Scripts\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\preview\preview.html" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="Scripts\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\embarrassed_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\tongue_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Scripts\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Scripts\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Scripts\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\dialogs\templates.css" />
+    <Content Include="Scripts\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Scripts\ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Scripts\ckeditor\samples\ajax.html" />
+    <Content Include="Scripts\ckeditor\samples\api.html" />
+    <Content Include="Scripts\ckeditor\samples\appendto.html" />
+    <Content Include="Scripts\ckeditor\samples\assets\inlineall\logo.png" />
+    <Content Include="Scripts\ckeditor\samples\assets\outputxhtml\outputxhtml.css" />
+    <Content Include="Scripts\ckeditor\samples\assets\posteddata.php" />
+    <Content Include="Scripts\ckeditor\samples\assets\sample.css" />
+    <Content Include="Scripts\ckeditor\samples\assets\sample.jpg" />
+    <Content Include="Scripts\ckeditor\samples\assets\uilanguages\languages.js" />
+    <Content Include="Scripts\ckeditor\samples\datafiltering.html" />
+    <Content Include="Scripts\ckeditor\samples\divreplace.html" />
+    <Content Include="Scripts\ckeditor\samples\index.html" />
+    <Content Include="Scripts\ckeditor\samples\inlineall.html" />
+    <Content Include="Scripts\ckeditor\samples\inlinebycode.html" />
+    <Content Include="Scripts\ckeditor\samples\plugins\dialog\assets\my_dialog.js" />
+    <Content Include="Scripts\ckeditor\samples\plugins\dialog\dialog.html" />
+    <Content Include="Scripts\ckeditor\samples\plugins\enterkey\enterkey.html" />
+    <Content Include="Scripts\ckeditor\samples\plugins\htmlwriter\assets\outputforflash\outputforflash.swf" />
+    <Content Include="Scripts\ckeditor\samples\plugins\htmlwriter\assets\outputforflash\swfobject.js" />
+    <Content Include="Scripts\ckeditor\samples\plugins\htmlwriter\outputforflash.html" />
+    <Content Include="Scripts\ckeditor\samples\plugins\htmlwriter\outputhtml.html" />
+    <Content Include="Scripts\ckeditor\samples\plugins\magicline\magicline.html" />
+    <Content Include="Scripts\ckeditor\samples\plugins\toolbar\toolbar.html" />
+    <Content Include="Scripts\ckeditor\samples\plugins\wysiwygarea\fullpage.html" />
+    <Content Include="Scripts\ckeditor\samples\readonly.html" />
+    <Content Include="Scripts\ckeditor\samples\replacebyclass.html" />
+    <Content Include="Scripts\ckeditor\samples\replacebycode.html" />
+    <Content Include="Scripts\ckeditor\samples\sample.css" />
+    <Content Include="Scripts\ckeditor\samples\sample.js" />
+    <Content Include="Scripts\ckeditor\samples\sample_posteddata.php" />
+    <Content Include="Scripts\ckeditor\samples\tabindex.html" />
+    <Content Include="Scripts\ckeditor\samples\uicolor.html" />
+    <Content Include="Scripts\ckeditor\samples\uilanguages.html" />
+    <Content Include="Scripts\ckeditor\samples\xhtmlstyle.html" />
+    <Content Include="Scripts\ckeditor\skins\moono\dialog.css" />
+    <Content Include="Scripts\ckeditor\skins\moono\dialog_ie.css" />
+    <Content Include="Scripts\ckeditor\skins\moono\dialog_ie7.css" />
+    <Content Include="Scripts\ckeditor\skins\moono\dialog_ie8.css" />
+    <Content Include="Scripts\ckeditor\skins\moono\dialog_iequirks.css" />
+    <Content Include="Scripts\ckeditor\skins\moono\dialog_opera.css" />
+    <Content Include="Scripts\ckeditor\skins\moono\editor.css" />
+    <Content Include="Scripts\ckeditor\skins\moono\editor_gecko.css" />
+    <Content Include="Scripts\ckeditor\skins\moono\editor_ie.css" />
+    <Content Include="Scripts\ckeditor\skins\moono\editor_ie7.css" />
+    <Content Include="Scripts\ckeditor\skins\moono\editor_ie8.css" />
+    <Content Include="Scripts\ckeditor\skins\moono\editor_iequirks.css" />
+    <Content Include="Scripts\ckeditor\skins\moono\icons.png" />
+    <Content Include="Scripts\ckeditor\skins\moono\images\arrow.png" />
+    <Content Include="Scripts\ckeditor\skins\moono\images\close.png" />
+    <Content Include="Scripts\ckeditor\skins\moono\images\mini.png" />
+    <Content Include="Scripts\ckeditor\styles.js" />
+    <Content Include="Scripts\cultures\kendo.culture.af-ZA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.af.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.am-ET.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.am.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-AE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-BH.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-DZ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-EG.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-IQ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-JO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-KW.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-LB.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-LY.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-MA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-OM.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-QA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-SA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-SY.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-TN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar-YE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ar.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.arn-CL.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.arn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.as-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.as.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.az-Cyrl-AZ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.az-Cyrl.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.az-Latn-AZ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.az-Latn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.az.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ba-RU.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ba.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.be-BY.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.be.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.bg-BG.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.bg.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.bn-BD.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.bn-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.bn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.bo-CN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.bo.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.br-FR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.br.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.bs-Cyrl-BA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.bs-Cyrl.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.bs-Latn-BA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.bs-Latn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.bs.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ca-ES.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ca.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.co-FR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.co.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.cs-CZ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.cs.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.cy-GB.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.cy.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.da-DK.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.da.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.de-AT.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.de-CH.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.de-DE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.de-LI.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.de-LU.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.de.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.dsb-DE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.dsb.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.dv-MV.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.dv.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.el-GR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.el.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-029.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-AU.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-BZ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-CA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-GB.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-IE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-JM.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-MY.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-NZ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-PH.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-SG.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-TT.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-US.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-ZA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en-ZW.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.en.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-AR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-BO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-CL.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-CO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-CR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-DO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-EC.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-ES.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-GT.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-HN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-MX.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-NI.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-PA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-PE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-PR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-PY.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-SV.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-US.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-UY.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es-VE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.es.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.et-EE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.et.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.eu-ES.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.eu.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fa-IR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fa.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fi-FI.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fi.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fil-PH.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fil.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fo-FO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fo.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fr-BE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fr-CA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fr-CH.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fr-FR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fr-LU.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fr-MC.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fr.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fy-NL.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.fy.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ga-IE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ga.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.gd-GB.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.gd.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.gl-ES.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.gl.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.gsw-FR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.gsw.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.gu-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.gu.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ha-Latn-NG.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ha-Latn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ha.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.he-IL.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.he.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.hi-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.hi.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.hr-BA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.hr-HR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.hr.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.hsb-DE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.hsb.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.hu-HU.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.hu.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.hy-AM.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.hy.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.id-ID.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.id.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ig-NG.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ig.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ii-CN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ii.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.is-IS.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.is.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.it-CH.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.it-IT.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.it.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.iu-Cans-CA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.iu-Cans.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.iu-Latn-CA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.iu-Latn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.iu.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ja-JP.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ja.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ka-GE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ka.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.kk-KZ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.kk.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.kl-GL.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.kl.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.km-KH.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.km.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.kn-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.kn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ko-KR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ko.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.kok-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.kok.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ky-KG.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ky.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.lb-LU.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.lb.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.lo-LA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.lo.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.lt-LT.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.lt.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.lv-LV.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.lv.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mi-NZ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mi.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mk-MK.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mk.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ml-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ml.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mn-Cyrl.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mn-MN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mn-Mong-CN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mn-Mong.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.moh-CA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.moh.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mr-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mr.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ms-BN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ms-MY.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ms.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mt-MT.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.mt.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.nb-NO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.nb.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ne-NP.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ne.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.nl-BE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.nl-NL.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.nl.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.nn-NO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.nn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.no.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.nso-ZA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.nso.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.oc-FR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.oc.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.or-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.or.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.pa-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.pa.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.pl-PL.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.pl.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.prs-AF.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.prs.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ps-AF.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ps.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.pt-BR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.pt-PT.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.pt.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.qut-GT.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.qut.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.quz-BO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.quz-EC.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.quz-PE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.quz.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.rm-CH.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.rm.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ro-RO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ro.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ru-RU.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ru-UA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ru.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.rw-RW.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.rw.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sa-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sa.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sah-RU.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sah.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.se-FI.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.se-NO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.se-SE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.se.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.si-LK.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.si.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sk-SK.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sk.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sl-SI.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sl.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sma-NO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sma-SE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sma.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.smj-NO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.smj-SE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.smj.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.smn-FI.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.smn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sms-FI.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sms.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sq-AL.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sq.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sr-Cyrl-BA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sr-Cyrl-CS.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sr-Cyrl-ME.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sr-Cyrl-RS.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sr-Cyrl.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sr-Latn-BA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sr-Latn-CS.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sr-Latn-ME.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sr-Latn-RS.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sr-Latn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sr.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sv-FI.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sv-SE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sv.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sw-KE.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.sw.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.syr-SY.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.syr.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ta-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ta.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.te-IN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.te.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tg-Cyrl-TJ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tg-Cyrl.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tg.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.th-TH.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.th.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tk-TM.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tk.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tn-ZA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tr-TR.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tr.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tt-RU.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tt.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tzm-Latn-DZ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tzm-Latn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.tzm.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ug-CN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ug.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.uk-UA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.uk.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ur-PK.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.ur.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.uz-Cyrl-UZ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.uz-Cyrl.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.uz-Latn-UZ.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.uz-Latn.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.uz.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.vi-VN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.vi.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.wo-SN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.wo.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.xh-ZA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.xh.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.yo-NG.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.yo.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.zh-CHS.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.zh-CHT.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.zh-CN.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.zh-Hans.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.zh-Hant.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.zh-HK.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.zh-MO.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.zh-SG.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.zh-TW.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.zh.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.zu-ZA.min.js" />
+    <Content Include="Scripts\cultures\kendo.culture.zu.min.js" />
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-1.6.2-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.6.2.js" />
+    <Content Include="Scripts\jquery-1.6.2.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-3.3.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.js" />
+    <Content Include="Scripts\jquery-ui-1.8.11.min.js" />
+    <Content Include="Scripts\jquery.autoellipsis-1.0.10.js" />
+    <Content Include="Scripts\jquery.cycle.all.js" />
+    <Content Include="Scripts\jquery.fancybox.js" />
+    <Content Include="Scripts\jquery.fancybox.pack.js" />
+    <Content Include="Scripts\jquery.lightbox-0.5.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery.marquee.js" />
+    <Content Include="Scripts\jquery.nivo.slider.pack.js" />
+    <Content Include="Scripts\jquery.query.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.uploadify.js" />
+    <Content Include="Scripts\jquery.uploadify.min.js" />
+    <Content Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\kendo.autocomplete.min.js" />
+    <Content Include="Scripts\kendo.binder.min.js" />
+    <Content Include="Scripts\kendo.calendar.min.js" />
+    <Content Include="Scripts\kendo.colorpicker.min.js" />
+    <Content Include="Scripts\kendo.columnmenu.min.js" />
+    <Content Include="Scripts\kendo.combobox.min.js" />
+    <Content Include="Scripts\kendo.core.min.js" />
+    <Content Include="Scripts\kendo.data.min.js" />
+    <Content Include="Scripts\kendo.data.odata.min.js" />
+    <Content Include="Scripts\kendo.data.xml.min.js" />
+    <Content Include="Scripts\kendo.datepicker.min.js" />
+    <Content Include="Scripts\kendo.datetimepicker.min.js" />
+    <Content Include="Scripts\kendo.draganddrop.min.js" />
+    <Content Include="Scripts\kendo.dropdownlist.min.js" />
+    <Content Include="Scripts\kendo.editable.min.js" />
+    <Content Include="Scripts\kendo.editor.min.js" />
+    <Content Include="Scripts\kendo.filtermenu.min.js" />
+    <Content Include="Scripts\kendo.fx.min.js" />
+    <Content Include="Scripts\kendo.grid.min.js" />
+    <Content Include="Scripts\kendo.groupable.min.js" />
+    <Content Include="Scripts\kendo.imagebrowser.min.js" />
+    <Content Include="Scripts\kendo.list.min.js" />
+    <Content Include="Scripts\kendo.listview.min.js" />
+    <Content Include="Scripts\kendo.menu.min.js" />
+    <Content Include="Scripts\kendo.mobile.scroller.min.js" />
+    <Content Include="Scripts\kendo.multiselect.min.js" />
+    <Content Include="Scripts\kendo.numerictextbox.min.js" />
+    <Content Include="Scripts\kendo.pager.min.js" />
+    <Content Include="Scripts\kendo.panelbar.min.js" />
+    <Content Include="Scripts\kendo.popup.min.js" />
+    <Content Include="Scripts\kendo.reorderable.min.js" />
+    <Content Include="Scripts\kendo.resizable.min.js" />
+    <Content Include="Scripts\kendo.router.min.js" />
+    <Content Include="Scripts\kendo.selectable.min.js" />
+    <Content Include="Scripts\kendo.slider.min.js" />
+    <Content Include="Scripts\kendo.sortable.min.js" />
+    <Content Include="Scripts\kendo.splitter.min.js" />
+    <Content Include="Scripts\kendo.tabstrip.min.js" />
+    <Content Include="Scripts\kendo.timepicker.min.js" />
+    <Content Include="Scripts\kendo.tooltip.min.js" />
+    <Content Include="Scripts\kendo.treeview.min.js" />
+    <Content Include="Scripts\kendo.upload.min.js" />
+    <Content Include="Scripts\kendo.userevents.min.js" />
+    <Content Include="Scripts\kendo.validator.min.js" />
+    <Content Include="Scripts\kendo.view.min.js" />
+    <Content Include="Areas\Admin\Views\Web.config" />
+    <Content Include="Areas\Admin\Views\Shared\Admin.Master" />
+    <Content Include="Scripts\ckeditor\CHANGES.md" />
+    <Content Include="Scripts\ckeditor\LICENSE.md" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\LICENSE.md" />
+    <Content Include="Scripts\ckeditor\plugins\scayt\README.md" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\LICENSE.md" />
+    <Content Include="Scripts\ckeditor\plugins\wsc\README.md" />
+    <Content Include="Scripts\ckeditor\README.md" />
+    <Content Include="Scripts\ckeditor\samples\plugins\htmlwriter\assets\outputforflash\outputforflash.fla" />
+    <Content Include="Scripts\ckeditor\skins\moono\readme.md" />
+    <Content Include="Content\web.config" />
+    <Content Include="pdfs\juliet\installation-instructions\B2BAL.pdf" />
+    <Content Include="pdfs\juliet\installation-instructions\BAL.pdf" />
+    <Content Include="pdfs\juliet\installation-instructions\MBAL.pdf" />
+    <Content Include="pdfs\web.config" />
+    <Content Include="Content\upimages\web.config" />
+    <Content Include="Content\uploads\web.config" />
+    <Content Include="images\web.config" />
+    <Content Include="pdfs\curved-doors\technical-details\w2.pdf" />
+    <Content Include="pdfs\curved-doors\technical-details\w2f.pdf" />
+    <Content Include="pdfs\curved-doors\technical-details\w3f.pdf" />
+    <Content Include="pdfs\curved-doors\technical-details\w4.pdf" />
+    <Content Include="pdfs\curved-doors\technical-details\w4f.pdf" />
+    <Content Include="pdfs\curved-doors\technical-details\w6f.pdf" />
+    <Content Include="pdfs\balustrades\technical-details\b1.pdf" />
+    <Content Include="pdfs\balustrades\technical-details\b2.pdf" />
+    <Content Include="pdfs\balustrades\technical-details\b6.pdf" />
+    <Content Include="pdfs\balustrades\technical-details\b7.pdf" />
+    <Content Include="pdfs\juliet\installation-instructions\FBAL.pdf" />
+    <Content Include="pdfs\curved-doors\technical-details\w3-2f.pdf" />
+    <Content Include="pdfs\curved-doors\technical-details\w6-4f.pdf" />
+    <Content Include="pdfs\curved-doors\technical-details\w8-4f.pdf" />
+    <Content Include="pdfs\curved-doors\technical-details\w8-6f.pdf" />
+    <Content Include="pdfs\juliet\elevations\1\bal128.pdf" />
+    <Content Include="pdfs\juliet\elevations\1\bal150.pdf" />
+    <Content Include="pdfs\juliet\elevations\1\bal168.pdf" />
+    <Content Include="pdfs\juliet\elevations\1\bal186.pdf" />
+    <Content Include="pdfs\juliet\elevations\1\bal218.pdf" />
+    <Content Include="pdfs\juliet\elevations\1\bal245.pdf" />
+    <Content Include="pdfs\juliet\elevations\1\bal284.pdf" />
+    <Content Include="pdfs\juliet\elevations\1\bal320.pdf" />
+    <Content Include="pdfs\juliet\elevations\2\b2bal128.pdf" />
+    <Content Include="pdfs\juliet\elevations\2\b2bal150.pdf" />
+    <Content Include="pdfs\juliet\elevations\2\b2bal168.pdf" />
+    <Content Include="pdfs\juliet\elevations\2\b2bal186.pdf" />
+    <Content Include="pdfs\juliet\elevations\2\b2bal218.pdf" />
+    <Content Include="pdfs\juliet\elevations\2\b2bal245.pdf" />
+    <Content Include="pdfs\juliet\elevations\2\b2bal284.pdf" />
+    <Content Include="pdfs\juliet\elevations\2\b2bal320.pdf" />
+    <Content Include="pdfs\juliet\elevations\3\mbal128.pdf" />
+    <Content Include="pdfs\juliet\elevations\3\mbal150.pdf" />
+    <Content Include="pdfs\juliet\elevations\3\mbal168.pdf" />
+    <Content Include="pdfs\juliet\elevations\3\mbal186.pdf" />
+    <Content Include="pdfs\juliet\elevations\3\mbal218.pdf" />
+    <Content Include="pdfs\juliet\elevations\3\mbal245.pdf" />
+    <Content Include="pdfs\juliet\elevations\6\fbal128.pdf" />
+    <Content Include="pdfs\juliet\elevations\6\fbal150.pdf" />
+    <Content Include="pdfs\juliet\elevations\6\fbal168.pdf" />
+    <Content Include="pdfs\juliet\elevations\6\fbal186.pdf" />
+    <Content Include="pdfs\juliet\elevations\6\fbal218.pdf" />
+    <Content Include="pdfs\juliet\elevations\6\fbal245.pdf" />
+    <Content Include="pdfs\juliet\elevations\6\fbal284.pdf" />
+    <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <None Include="Scripts\kendo.web-vsdoc.js" />
+    <None Include="Scripts\kendo.web.min.intellisense.js" />
+    <Content Include="Scripts\kendo.web.min.js" />
+    <Content Include="Scripts\kendo.window.min.js" />
+    <Content Include="Scripts\knockout-2.0.0.debug.js" />
+    <Content Include="Scripts\knockout-2.0.0.js" />
+    <Content Include="Scripts\knockout.debug.js" />
+    <Content Include="Scripts\knockout.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\modernizr-2.0.6-development-only.js" />
+    <Content Include="Scripts\superfish\hoverIntent.js" />
+    <Content Include="Scripts\superfish\superfish.js" />
+    <Content Include="Scripts\svg-pan-zoom.min.js" />
+    <Content Include="tinymce\main.css" />
+    <Content Include="Views\Balconano\Homepage.aspx" />
+    <Content Include="Views\Balconano\Glass-Coating-Shop.aspx" />
+    <Content Include="Views\BalconyViews\Homepage.aspx" />
+    <Content Include="Views\Balustrades\3DViewModal.ascx" />
+    <Content Include="Views\Balustrades\3DViewModal.html" />
+    <Content Include="Views\Balustrades\Model.aspx" />
+    <Content Include="Views\Balustrades\Homepage.aspx" />
+    <Content Include="Views\Balustrades\Drawing.aspx" />
+    <Content Include="Views\Balustrades\View3DModal.ascx" />
+    <Content Include="Views\Customer\Fill-Details.aspx" />
+    <Content Include="Views\Customer\Photo-Comp-Entry.aspx" />
+    <Content Include="Views\Customer\Unsubscribe.aspx" />
+    <Content Include="Views\Customer\HtmlPage1.html" />
+    <Content Include="Views\General\arrange-a-visit.aspx" />
+    <Content Include="Views\General\Contact-Us.aspx" />
+    <Content Include="Views\Customer\Request-Tickets.aspx" />
+    <Content Include="Views\General\Homepage.aspx" />
+    <Content Include="Views\General\rsvp.aspx" />
+    <Content Include="Views\Shared\CustomerReview.aspx" />
+    <Content Include="Views\Shared\CustomerReviewsIndex.aspx" />
+    <Content Include="Views\Shared\Articles.aspx" />
+    <Content Include="Views\Shared\Article.aspx" />
+    <Content Include="Views\Balustrades\Quote.aspx" />
+    <Content Include="Views\Balustrades\ModelDetails.ascx" />
+    <Content Include="Views\Shared\CaseStudy.aspx" />
+    <Content Include="Views\Shared\CaseStudies.aspx" />
+    <Content Include="Views\CurvedDoors\Model.aspx" />
+    <Content Include="Views\CurvedDoors\Quote.aspx" />
+    <Content Include="Views\Customer\Order-Payment.aspx" />
+    <Content Include="Views\Customer\Bulk-Products.aspx" />
+    <Content Include="Views\Customer\Call-Me-Back.aspx" />
+    <Content Include="Views\Juliettes\Find-Size.aspx" />
+    <Content Include="Views\Juliettes\StandardDetails.ascx" />
+    <Content Include="Views\Juliettes\Standard-Model.aspx" />
+    <Content Include="Views\Juliettes\Quote-Custom.aspx" />
+    <Content Include="Views\Juliettes\Standard-Models.aspx" />
+    <Content Include="Views\Shared\Captcha.ascx" />
+    <Content Include="Views\Shared\News.ascx" />
+    <Content Include="Views\Shared\DefaultFooterOld.aspx" />
+    <Content Include="Views\Shared\CustomerReviews.ascx" />
+    <Content Include="Views\Shared\GoogleAnalytics.ascx" />
+    <Content Include="Views\Shared\CrazyEgg.ascx" />
+    <Content Include="Views\Shared\Downloads.aspx" />
+    <Content Include="Views\Shared\leftsidebar.ascx" />
+    <Content Include="Views\Shared\Photos.aspx" />
+    <Content Include="Views\Customer\Cart.aspx" />
+    <Content Include="Views\Customer\SignIn.ascx" />
+    <Content Include="Views\Customer\Order-Details.aspx" />
+    <Content Include="Views\Customer\Delivery-Calculator.aspx" />
+    <Content Include="Views\Customer\Quote.aspx" />
+    <Content Include="Views\Customer\Sign-In.aspx" />
+    <Content Include="Views\Customer\Create-Quote.aspx" />
+    <Content Include="Views\Shared\EditorTemplates\CustomerDto.ascx" />
+    <Content Include="Views\Customer\Request-Brochure.aspx" />
+    <Content Include="Views\Shared\QuotePage.aspx" />
+    <Content Include="Views\Shared\Search.aspx" />
+    <Content Include="Views\Shared\Page.aspx" />
+    <Content Include="Views\CurvedDoors\Homepage.aspx" />
+    <Content Include="Views\Decking\Homepage.aspx" />
+    <Content Include="Views\Juliettes\Homepage.aspx" />
+    <Content Include="Views\Shared\CKEditor.ascx" />
+    <Content Include="Views\Shared\Description.aspx" />
+    <Content Include="Views\Shared\Shop.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Account\ChangePassword.aspx" />
+    <Content Include="Views\Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Views\Account\Login.aspx" />
+    <Content Include="Views\Account\LoginPartial.ascx" />
+    <Content Include="Views\Account\Register.aspx" />
+    <Content Include="Views\Account\RegisterPartial.ascx" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\Main.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Balcony.Miracle.Web.Cms\Balcony.Miracle.Web.Cms.csproj">
+      <Project>{469400b7-57d9-40e7-a191-a477d2e39dd8}</Project>
+      <Name>Balcony.Miracle.Web.Cms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Balcony.Miracle.Web.Shared\Balcony.Miracle.Web.Shared.csproj">
+      <Project>{6562e513-2462-4707-bc59-2eccc2be5182}</Project>
+      <Name>Balcony.Miracle.Web.Shared</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>6352</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6352/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

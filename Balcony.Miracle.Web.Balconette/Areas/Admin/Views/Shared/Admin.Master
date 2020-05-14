@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <asp:ContentPlaceHolder ID="HeadStart" runat="server" />
+    <link href="/content/reset.css" rel="stylesheet" />
+    <link href="/content/admin.css" rel="stylesheet" />
+    <link href="/content/kendo.common.min.css" rel="stylesheet" />
+    <link href="/content/kendo.default.min.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="HeadEnd" runat="server" />
+</head>
+<body>
+    <div>
+        <div id="menuStore">
+            <ul id="menu">
+                <li>
+                    <%:Html.ActionLink("Areas", "Index", "Areas") %>
+                </li>
+                <li>
+                    Pages
+                    <ul>                        
+                        <li><%:Html.ActionLink("Index", "Index", "Pages") %></li>
+                        <li><%:Html.ActionLink("Create New", "Edit", "Pages", new { id = "" }, null) %></li>
+                    </ul>
+                </li>
+                <li>
+                    Blocks
+                    <ul>
+                        <li><%:Html.ActionLink("Index", "Index", "CmsBlocks") %></li>
+                        <li><%:Html.ActionLink("Create New", "Edit", "CmsBlocks", new { id = "" }, null) %></li>
+                    </ul>
+                </li>
+                <li>
+                    Images
+                    <ul>
+                        <li><%:Html.ActionLink("Index", "Index", "Images") %></li>
+                        <li><%:Html.ActionLink("Add", "Add", "Images") %></li>
+                    </ul>
+                </li>
+                <li>
+                    Downloads
+                    <ul>
+                        <li><%:Html.ActionLink("Index", "Index", "Downloads") %></li>
+                        <li><%:Html.ActionLink("Add", "Add", "Downloads") %></li>
+                    </ul>
+                </li>
+                <li>
+                    Tags
+                    <ul>
+                        <li>
+                            Categories
+                            <ul>
+                                <li><%:Html.ActionLink("Index", "Index", "TagCategories") %></li>
+                                <li><%:Html.ActionLink("Create New", "Edit", "TagCategories", new { id = "" }, null) %></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Tags
+                            <ul>
+                                <li><%:Html.ActionLink("Index", "Index", "Tags") %></li>
+                                <li><%:Html.ActionLink("Create New", "Edit", "Tags", new { id = "" }, null) %></li>
+                            </ul>
+                        </li>                        
+                    </ul>
+                </li>
+                <li>
+                    Articles
+                    <ul>                        
+                        <li><%:Html.ActionLink("Index", "Index", "Articles") %></li>
+                        <li><%:Html.ActionLink("Create New", "Edit", "Articles", new { id = "" }, null) %></li>
+                    </ul>
+                </li>
+                <li>
+                    Case Studies
+                    <ul>                        
+                        <li><%:Html.ActionLink("Index", "Index", "CaseStudies") %></li>
+                        <li><%:Html.ActionLink("Create New", "Edit", "CaseStudies", new { id = "" }, null) %></li>
+                    </ul>
+                </li>
+
+                <li>
+                    Balustrades
+                    <ul>
+                        <li><%:Html.ActionLink("Index", "index", "Balustrades") %></li>
+                        <li><%:Html.ActionLink("Create New", "edit", "Balustrades", new { id = "" }, null) %></li>
+                    </ul>
+                </li>    
+                <li>
+                    Customer Reviews
+                    <ul>
+                        <li><%:Html.ActionLink("Index", "index", "CustomerReviews") %></li>
+                        <li><%:Html.ActionLink("Create New", "edit", "CustomerReviews", new { id = "" }, null) %></li>
+                    </ul>
+                </li>    
+                <li>
+                    <%:Html.ActionLink("Redirects", "index", "redirects") %>
+                </li>
+
+                <li>
+                    <%:Html.ActionLink("Sign Out", "signout", "account") %>
+                </li>
+            </ul>
+        </div>
+        <div id="wrapper">
+            <asp:ContentPlaceHolder ID="BodyContent" runat="server" />
+        </div>
+    </div>    
+    <asp:ContentPlaceHolder ID="FooterStart" runat="server" />
+    <script type="text/javascript" src="/scripts/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.unobtrusive-ajax.js"></script>
+    <script type="text/javascript" src="/scripts/kendo.web.min.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.validate.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.validate.unobtrusive.js"></script>
+    <script type="text/javascript" src="/scripts/admin.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#menu").kendoMenu();
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="FooterEnd" runat="server" />
+</body>
+</html>
