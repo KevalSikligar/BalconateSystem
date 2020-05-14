@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="http://fonts.googleapis.com/css?family=Walter+Turncoat&.css" rel="stylesheet"/>
+    
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
     <link href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css" rel="stylesheet">
@@ -1573,14 +1573,38 @@
         });
 
         $(document).on('click', '#btnzoomin', function () {
-            scalePoint = scalePoint + 1 * 0.25;
+            if (scalePoint >= 1.10) {
+                scalePoint = 1.10;
+            }
+            else
+            {
+                scalePoint *= 1.05;
+            }
+
         });
         $(document).on('click', '#btnzoomout', function () {
-            scalePoint = scalePoint - 1 * 0.25;
+            if (scalePoint <= 0.5) {
+                scalePoint = 0.5;
+            }
+            else
+            {
+                scalePoint *= 0.95;
+            }
+            scalePoint = scalePoint - 1 * 0.05;
         });
         $(document).on('click', '#btnreset', function () {
             scalePoint = 1;
         });
+
+        $("#myModal").on("hidden.bs.modal", function () {
+            scalePoint = 1;
+        });
+        //let font;
+        //function preload() {
+        //    font = loadFont("file:///F:/font/Inconsolata.otf");
+           
+        //}
+        
         function setup() {
              //create dummy canvas            
             let dummyCanvas = createCanvas(565, 100, WEBGL);
@@ -1589,6 +1613,11 @@
             let cnv = createCanvas(565, 500, WEBGL);
             cnv.id('mycanvas');
             cnv.parent("#canvas");
+            //fill(0)
+            // .strokeWeight(0)
+            //   .textSize(10);
+            //textFont(font);
+            //text('Font Style Normal', 10, 30);
         }
         function draw() {
             dummycanvas = mycanvas;
@@ -1601,15 +1630,6 @@
 
             background(255);
 
-            
-            fill(0);
-            textSize(36);
-            textFont("Georgia");
-            text("Hello World! in Georgia.", -157, -40);
-            
-            
-
-
             push();
 
             text("Height", -170, -57);
@@ -1621,15 +1641,18 @@
             line(-170, 57, -150, 57);
 
             pop();
+            
 
             rotateY(mouseX * 0.01);
             //rotateX(mouseY *0.01);
+            
 
             let locX = mouseX - height / 2;
             let locY = mouseY - width / 2;
             ambientLight(60, 60, 60);
             pointLight(255, 255, 255, locX, locY, 100);
 
+           
             //panel 1
             push();
             translate(0, -50, 0);
@@ -1684,14 +1707,14 @@
             if (e.deltaY > 0) {
 
                 //If size is increase 
-                if (scalePoint >= 1.27) {
-                    scalePoint = 1.27;
+                if (scalePoint >= 1.10) {
+                    scalePoint = 1.10;
                 }
                 scalePoint *= 1.05;
 
             }
-            else if (scalePoint <= 0.53)
-                 scalePoint = 0.53;
+            else if (scalePoint <= 0.50)
+                 scalePoint = 0.50;
             else
                 scalePoint *= 0.95;
         });
