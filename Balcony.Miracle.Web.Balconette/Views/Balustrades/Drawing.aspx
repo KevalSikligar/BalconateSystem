@@ -1556,13 +1556,7 @@
         var sacleObj = 1.5;
         var scalePoint = 1;
         var isdummyCanvas = true;
-
-        $(document).on('click', '#3dButton', function () {
-            scalePoint = 1;
-            sacleObj = 1.5;
-        });
-
-
+       
         function setup() {
              //create dummy canvas            
             let dummyCanvas = createCanvas(565, 100, WEBGL);
