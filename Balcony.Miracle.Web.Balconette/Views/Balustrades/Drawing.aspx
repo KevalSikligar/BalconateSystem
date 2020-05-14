@@ -11,6 +11,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link href="http://fonts.googleapis.com/css?family=Walter+Turncoat&.css" rel="stylesheet"/>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
     <link href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.12/angular-material.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -1514,27 +1516,33 @@
 
 
 
-
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">3D  Model</h4>
-                </div>
-                <div class="modal-body">
-                    <div id="canvas"></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">3D  Model</h4>
         </div>
+        <div class="modal-body">
+            <label>Height:</label>
+            <label id="height"></label>
+        <div id="canvas"></div> 
+        </div>
+        <div class="modal-footer">
+            <button type="button" id="btnzoomin" class="btn"  style="background-color: gray; color: white;font-weight: bold;" >+</button>
+            <button type="button" id="btnreset"  class="btn"  style="background-color: gray; color: white;font-weight: bold;"  >RESET</button>
+            <button type="button" id="btnzoomout"  class="btn"  style="background-color: gray; color: white;font-weight: bold;"  >-</button>
+
+         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
     </div>
+  </div>
+
     <script type="text/javascript">
         function showModal() {
             $('#myModal').modal('show');
@@ -1544,6 +1552,8 @@
             //image.src = canvasObj.toDataURL("image/png");
             //return image;
             $('#imgPreview').attr("src", canvasObj.toDataURL("image/png"));
+
+            $("#height").text($("#input_15").val());
 
             //console.log(image);
         }
@@ -1562,7 +1572,15 @@
             sacleObj = 1.5;
         });
 
-
+        $(document).on('click', '#btnzoomin', function () {
+            scalePoint = scalePoint + 1 * 0.25;
+        });
+        $(document).on('click', '#btnzoomout', function () {
+            scalePoint = scalePoint - 1 * 0.25;
+        });
+        $(document).on('click', '#btnreset', function () {
+            scalePoint = 1;
+        });
         function setup() {
              //create dummy canvas            
             let dummyCanvas = createCanvas(565, 100, WEBGL);
@@ -1582,6 +1600,28 @@
             scale(scalePoint);
 
             background(255);
+
+            
+            fill(0);
+            textSize(36);
+            textFont("Georgia");
+            text("Hello World! in Georgia.", -157, -40);
+            
+            
+
+
+            push();
+
+            text("Height", -170, -57);
+            //main line
+            line(-170, -57, -170, 57);
+            //upper line
+            line(-170, -57, -150, -57);
+            //lower line
+            line(-170, 57, -150, 57);
+
+            pop();
+
             rotateY(mouseX * 0.01);
             //rotateX(mouseY *0.01);
 
