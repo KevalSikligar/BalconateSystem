@@ -1960,6 +1960,7 @@
     <Content Include="Scripts\cultures\kendo.culture.zh.min.js" />
     <Content Include="Scripts\cultures\kendo.culture.zu-ZA.min.js" />
     <Content Include="Scripts\cultures\kendo.culture.zu.min.js" />
+	<Content Include="Asset\Inconsolata.otf" />
     <None Include="packages.config" />
     <None Include="Scripts\jquery-1.6.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.2.js" />

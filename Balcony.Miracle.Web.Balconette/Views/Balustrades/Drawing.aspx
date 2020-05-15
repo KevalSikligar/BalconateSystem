@@ -1566,11 +1566,8 @@
         var sacleObj = 1.5;
         var scalePoint = 1;
         var isdummyCanvas = true;
-
-        $(document).on('click', '#3dButton', function () {
-            scalePoint = 1;
-            sacleObj = 1.5;
-        });
+ 
+        let myFont;
 
         $(document).on('click', '#btnzoomin', function () {
             if (scalePoint >= 1.10) {
@@ -1599,11 +1596,7 @@
         $("#myModal").on("hidden.bs.modal", function () {
             scalePoint = 1;
         });
-        //let font;
-        //function preload() {
-        //    font = loadFont("file:///F:/font/Inconsolata.otf");
-           
-        //}
+     
         
         function setup() {
              //create dummy canvas            
@@ -1613,12 +1606,17 @@
             let cnv = createCanvas(565, 500, WEBGL);
             cnv.id('mycanvas');
             cnv.parent("#canvas");
-            //fill(0)
-            // .strokeWeight(0)
-            //   .textSize(10);
-            //textFont(font);
-            //text('Font Style Normal', 10, 30);
+
+            //fill('#ED225D');
+            textFont(myFont);
+            textSize(15);
+            text('p5*js', 10, 50);
+           
         }
+        function preload() {
+          myFont = loadFont('../../Asset/Inconsolata.otf');
+        }
+
         function draw() {
             dummycanvas = mycanvas;
             if(isdummyCanvas)
@@ -1629,10 +1627,10 @@
             scale(scalePoint);
 
             background(255);
-
+            fill(0);
             push();
 
-            text("Height", -170, -57);
+           // text("Height", -170, -57);
             //main line
             line(-170, -57, -170, 57);
             //upper line
@@ -1640,6 +1638,12 @@
             //lower line
             line(-170, 57, -150, 57);
 
+            push();
+            
+            textSize(32);
+            rotate(10.99);
+            text('Height: '+$("#height").text($("#input_15").val()), 10, -86.5);
+            fill(0, 102, 153);
             pop();
             
 
