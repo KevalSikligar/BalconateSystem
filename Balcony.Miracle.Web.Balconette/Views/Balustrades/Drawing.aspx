@@ -1524,11 +1524,11 @@
       <div class="modal-content">
         <div class="modal-header">
          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">3D  Model</h4>
+          <h4 class="modal-title">3D View</h4>
         </div>
         <div class="modal-body">
-            <label>Height:</label>
-            <label id="height"></label>
+           <%-- <label>Height:</label>
+            <label id="height"></label>--%>
         <div id="canvas"></div> 
         </div>
         <div class="modal-footer">
@@ -1553,7 +1553,7 @@
             //return image;
             $('#imgPreview').attr("src", canvasObj.toDataURL("image/png"));
 
-            $("#height").text($("#input_15").val());
+           // $("#height").text($("#input_15").val());
 
             //console.log(image);
         }
@@ -1570,8 +1570,8 @@
         let myFont;
 
         $(document).on('click', '#btnzoomin', function () {
-            if (scalePoint >= 1.10) {
-                scalePoint = 1.10;
+            if (scalePoint >= 1) {
+                scalePoint = 1;
             }
             else
             {
@@ -1632,17 +1632,24 @@
 
            // text("Height", -170, -57);
             //main line
-            line(-170, -57, -170, 57);
+            line(-170, -60, -170, 60);
+            triangle(-175, -60, -170, -70, -165, -60);
+
+            triangle(-175,60,-170,70,-165,60);
+
+           // circle(-170, 60, 10);
+
+            //triangle(30, 75, 58, 20, 86, 75);
             //upper line
-            line(-170, -57, -150, -57);
+           // line(-170, -57, -150, -57);
             //lower line
-            line(-170, 57, -150, 57);
+            //line(-170, 57, -150, 57);
 
             push();
-            
-            textSize(32);
-            rotate(10.99);
-            text('Height: '+$("#height").text($("#input_15").val()), 10, -86.5);
+            let height = $("#input_15").val();
+            textSize(12);
+           rotate(10.99);
+            text(height, -10, -175);
             fill(0, 102, 153);
             pop();
             
