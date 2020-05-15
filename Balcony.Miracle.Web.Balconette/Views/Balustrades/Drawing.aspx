@@ -1570,8 +1570,8 @@
         let myFont;
 
         $(document).on('click', '#btnzoomin', function () {
-            if (scalePoint >= 1) {
-                scalePoint = 1;
+            if (scalePoint > 0.95) {
+                scalePoint = .95;
             }
             else
             {
@@ -1718,8 +1718,8 @@
             if (e.deltaY > 0) {
 
                 //If size is increase 
-                if (scalePoint >= 1.10) {
-                    scalePoint = 1.10;
+                if (scalePoint > 0.95) {
+                    scalePoint = 0.95;
                 }
                 scalePoint *= 1.05;
 
