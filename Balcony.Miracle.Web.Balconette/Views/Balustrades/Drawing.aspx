@@ -1649,7 +1649,7 @@
             let height = $("#input_15").val();
             textSize(12);
            rotate(10.99);
-            text(height, -10, -175);
+            text('Height:'+height,-30, -175);
             fill(0, 102, 153);
             pop();
             
