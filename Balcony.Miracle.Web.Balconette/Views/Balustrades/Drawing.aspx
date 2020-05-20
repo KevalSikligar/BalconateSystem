@@ -451,9 +451,8 @@
                                                     </div>
                                                 </div>
                                                 <div>
-                                                <%-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>--%>
+                                                
                                                      <img  onclick="javascript:showModal()" title="Preview 3D View" id="imgPreview" height="200" width="300"/>
-<%--                                                <md-button style="transform: translateY(7px);" ng-disabled="drawingGeneralForm.system.$invalid" data-toggle="modal" data-target="#myModal" class="md-accent md-hue-4 md-raised btn btn-info btn-lg" id="3dButton">3D View</md-button>--%>
                                             </div>  
                                             </div>
                                         </div>
@@ -686,6 +685,8 @@
     <script src="/scripts/svg-pan-zoom.min.js"></script>
 
     <script type="text/javascript">
+                    var angleArray=[];
+
         (function () {
 
             function DrawingController($http, $scope, $timeout, $sce, $q, $mdDialog, $mdPanel, $mdToast) {
@@ -827,9 +828,15 @@
             DrawingController.prototype.$onInit = function () {
                 var that = this;
 
-                this.$scope.$watch(function () { return that.model.systemId; }, function (newValue, oldValue) {
+                this.$scope.$watch(function () {
+                    angleArray = that.model.sections;
+                    return that.model.systemId;
+                }, function (newValue, oldValue) {
+                    debugger;
                     //var oldSystem = that.getSystem(oldValue);
                     var newSystem = that.getSystem(newValue);
+
+                  
 
                     //if (newSystem && (that.height === null || that.height === undefined || (oldSystem && that.height === oldSystem.defaultHeight))) {
                     //    that.model.height = newSystem.defaultHeight;
@@ -1522,39 +1529,8 @@
                 .directive('onlyNumbers', OnlyNumbersDirective);
 
         })();
-    </script>
 
 
-
-
- <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog" >
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-         <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">3D View</h4>
-        </div>
-        <div class="modal-body">
-           <%-- <label>Height:</label>
-            <label id="height"></label>--%>
-        <div id="canvas"></div> 
-        </div>
-        <div class="modal-footer">
-            <button type="button" id="btnzoomin" class="btn"  style="background-color: gray; color: white;font-weight: bold;" >+</button>
-            <button type="button" id="btnreset"  class="btn"  style="background-color: gray; color: white;font-weight: bold;"  >RESET</button>
-            <button type="button" id="btnzoomout"  class="btn"  style="background-color: gray; color: white;font-weight: bold;"  >-</button>
-
-         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-    <script type="text/javascript">
         function showModal() {
             $('#myModal').modal('show');
         }
@@ -1568,10 +1544,8 @@
 
             //console.log(image);
         }
-    </script>
-    <script type="text/javascript">
-        
-        
+
+         
         function railingColor()
         {
             var val = document.getElementById("colorId").value;
@@ -1608,9 +1582,7 @@
             }
 
             var color=[r,g,b,chrome]
-            return color;
-
-            
+            return color;           
 
         }
 
@@ -1620,7 +1592,8 @@
         var sacleObj = 1.5;
         var scalePoint = 1;
         var isdummyCanvas = true;
- 
+        let nutrual = 180;
+        let newAngle = 0;
         let myFont;
 
         $(document).on('click', '#btnzoomin', function () {
@@ -1649,18 +1622,47 @@
         $(document).on('click', '#btnreset', function () {
             scalePoint = 1;
         });
-
         $("#myModal").on("hidden.bs.modal", function () {
             scalePoint = 1;
         });
-     
-        
+
+        function draw3D(recX,recY,recWidth,recHeight,translate_x,translate_y,translate_z,angle) 
+      {
+		for (i=0; i<= angle.length-1; i++)
+		{
+		
+			if(i==0)
+			{
+			
+				//SECOND  [0]
+                translate(-190,0,0);     
+
+				fill(179, 204, 255);
+				translate(translate_x,translate_y,translate_z);     
+				rotateY(radians(angle[i].angle));
+				newAngle = nutrual - (angle[i].angle);
+				stroke(51);
+				rect(recX,recY,recWidth,recHeight);
+			}
+			else
+			{
+                //THIRD
+                fill(179, 204, 255);
+				translate(translate_x,translate_y,translate_z);
+				rotateY(radians(angle[i].angle - (nutrual - newAngle)));
+				newAngle = nutrual - (angle[i].angle);
+				stroke(51);
+				rect(recX,recY,recWidth,recHeight);						
+			}
+			
+		}	 
+ }        
         function setup() {
              //create dummy canvas            
-            let dummyCanvas = createCanvas(565, 100, WEBGL);
+            let dummyCanvas = createCanvas(864, 100, WEBGL);
             dummyCanvas.id('dummycanvas');
 
-            let cnv = createCanvas(565, 500, WEBGL);
+            let cnv = createCanvas(864, 500, WEBGL);
             cnv.id('mycanvas');
             cnv.parent("#canvas");
 
@@ -1673,7 +1675,6 @@
         function preload() {
           myFont = loadFont('../../Asset/Inconsolata.otf');
         }
-
         function draw() {
            var railingcolor= railingColor();
             dummycanvas = mycanvas;
@@ -1688,25 +1689,17 @@
             fill(0);
             push();
 
-           // text("Height", -170, -57);
+           
             //main line
             line(-170, -60, -170, 60);
             triangle(-175, -60, -170, -70, -165, -60);
 
             triangle(-175,60,-170,70,-165,60);
 
-           // circle(-170, 60, 10);
-
-            //triangle(30, 75, 58, 20, 86, 75);
-            //upper line
-           // line(-170, -57, -150, -57);
-            //lower line
-            //line(-170, 57, -150, 57);
-
             push();
             let height = $("#input_15").val();
             textSize(12);
-           rotate(10.99);
+            rotate(10.99);
             text('Height:'+height,-30, -175);
             fill(0, 102, 153);
             pop();
@@ -1718,98 +1711,104 @@
 
             let locX = mouseX - height / 2;
             let locY = mouseY - width / 2;
-            ambientLight(60, 60, 60);
-            pointLight(255, 255, 255, 0, -200, 100);
+            //ambientLight(60, 60, 60);
+            //pointLight(255, 255, 255, 0, -200, 100);
 
+            ambientLight(224, 224, 235);
+		    pointLight(179, 204, 255, mouseX, mouseY, 100);
+		
+            //Rectengle
+		     var recX=0;
+		     var recY=0;
+		     var recWidth=55;
+		     var recHeight=55;
+		     
+		     //Translation
+		     var translate_x=56;
+		     var translate_y=0;
+		     var translate_z=0;
+		     
+		     //Angles	
+	         //var angle=[90,68,45,22,0,-22,-45,-68,-90];
+	         var angle=[0,90,45,0,315,270];    
            
-            //panel 1
-            push();
-            translate(0, -50, 0);
-            rotateX(PI / 2);
-            // fill(140, 140, 140, 250);
-            if (railingcolor[3] == 1)
-            {
-                specularMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
-            }
-            else
-            {
-                ambientMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
-            }
-            //White
-           // ambientMaterial(250);
+		     draw3D(recX,recY,recWidth,recHeight,translate_x,translate_y,translate_z,angleArray);
+    
 
-            //silver
-           // ambientMaterial(180);
+                
+                 //panel 1
+            //push();
+            //translate(0, -50, 0);
+            //rotateX(PI / 2);
+            //if (railingcolor[3] == 1)
+            //{
+            //    specularMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
+            //}
+            //else
+            //{
+            //    ambientMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
+            //}
+                      
+            //cylinder(3, 90, 100);
+            //pop();
 
-            //Bronze
-           // ambientMaterial(125, 108, 95);
-
-            //chrome
-          //  specularMaterial(150);
+            //push();
+            //translate(0, 0, 0);
+            //  fill(73, 129, 230, 50);
             
-            cylinder(3, 90, 100);
-            pop();
+            //box(3, 100, 80, 100);
 
-            push();
-            translate(0, 0, 0);
-              fill(73, 129, 230, 50);
-            
-            box(3, 100, 80, 100);
+            ////panel 2
+            //pop();
+            //push();
+            //translate(-31, -50, 75);
+            //rotateY(-PI / 4);
+            //rotateX(PI / 2);
+            //if (railingcolor[3] == 1) {
+            //    specularMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
+            //}
+            //else 
+            //{
+            //    ambientMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
+            //}
+            //cylinder(3, 90, 100);
+            //pop();
+            //push();
+            //translate(-31, 0, 75);
+            //fill(73, 129, 230, 50);
+            //rotateY(-PI / 4);
+            //box(3, 100, 80, 100);
 
-            //panel 2
-            pop();
-            push();
-            translate(-31, -50, 75);
-            rotateY(-PI / 4);
-            rotateX(PI / 2);
-            //fill(140, 140, 140, 250);
-            if (railingcolor[3] == 1) {
-                specularMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
-            }
-            else 
-            {
-                ambientMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
-            }
-            debugger;
-           // ambientMaterial(250);
-            cylinder(3, 90, 100);
-            pop();
-            push();
-            translate(-31, 0, 75);
-            fill(73, 129, 230, 50);
-            rotateY(-PI / 4);
-            box(3, 100, 80, 100);
+            ////pane1 3
+            //pop();
 
-            //pane1 3
-            pop();
-
-            push();
-            translate(-31, -50, -75);
-            rotateY(radians(45));
-            rotateX(PI / 2);
-            //fill(140, 140, 140, 250);
-            // ambientMaterial(250);
-            if (railingcolor[3] == 1)
-            {
-                specularMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
-            }
-            else
-            {
-                ambientMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
-            }
-            cylinder(3, 90, 100);
-            pop();
-            push();
-            translate(-31, 0, -75);
-            fill(73, 129, 230, 50);
-            rotateY(PI / 4);
-            box(3, 100, 80, 100)
-            pop();
-
-            angle = angle + 1;
-           
-        }
+            //push();
+            //translate(-31, -50, -75);
+            //rotateY(radians(45));
+            //rotateX(PI / 2);
          
+            //if (railingcolor[3] == 1)
+            //{
+            //    specularMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
+            //}
+            //else
+            //{
+            //    ambientMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
+            //}
+            //cylinder(3, 90, 100);
+            //pop();
+            //push();
+            //translate(-31, 0, -75);
+            //fill(73, 129, 230, 50);
+            //rotateY(PI / 4);
+            //box(3, 100, 80, 100)
+            //pop();
+
+            //angle = angle + 1;
+           
+        }   
+
+
         window.addEventListener("wheel", function (e) {
             isdummyCanvas = false;
             this.console.log("scalepoint" + scalePoint);
@@ -1828,7 +1827,38 @@
                 scalePoint *= 0.95;
         });
 
-
     </script>
+
+
+
+
+ <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" >
+    <div class="modal-dialog modal-lg">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">3D View</h4>
+        </div>
+        <div class="modal-body">
+           <%-- <label>Height:</label>
+            <label id="height"></label>--%>
+        <div id="canvas"></div> 
+        </div>
+        <div class="modal-footer">
+            <button type="button" id="btnzoomin" class="btn"  style="background-color: gray; color: white;font-weight: bold;" >+</button>
+            <button type="button" id="btnreset"  class="btn"  style="background-color: gray; color: white;font-weight: bold;"  >RESET</button>
+            <button type="button" id="btnzoomout"  class="btn"  style="background-color: gray; color: white;font-weight: bold;"  >-</button>
+
+         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+   
 </body>
 </html>
