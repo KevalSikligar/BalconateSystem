@@ -274,12 +274,13 @@
                                             </md-input-container>
                                             <md-input-container>
                                                 <label>Colour</label>
-                                                <md-select ng-model="vm.model.colorId" name="colorId" placeholder="Select Colour" md-on-open="vm.systemsPromise" required style="min-width: 200px;">
+                                                <md-select ng-change="vm.getColorId(vm.model)" ng-model="vm.model.colorId" name="colorId" placeholder="Select Colour" md-on-open="vm.systemsPromise" required style="min-width: 200px;">
                                                     <md-option ng-value="color.id" ng-repeat="color in vm.getSystem().colors">{{color.name}}</md-option>
                                                 </md-select>
                                                 <div class="errors" ng-messages="drawingGeneralForm.colorId.$error">
                                                     <div ng-message="required">Required. <span ng-if="!vm.getSystem()">Please select System first</span></div>
                                                 </div>
+                                                <input type="hidden" id="colorId"/> 
                                                 <md-button class="md-icon-button inputHelp" ng-click="vm.openImageHelp($event, '/images/balustrade-drawing/colors/' + vm.model.colorId + '.png')">
                                                     <md-icon md-font-set="material-icons">help_outline</md-icon>
                                                 </md-button>
@@ -1284,6 +1285,7 @@
             //};
 
             DrawingController.prototype.cdeg = function (deg) {
+                
                 var res = deg % 360;
                 if (res < 0) {
                     res = 360 + res;
@@ -1373,7 +1375,9 @@
                 that.model.brhr = null;
                 that.model.wg = null;
                 that.model.gw = null;
-
+                document.getElementById("colorId").value = that.model.colorId;
+               
+                
                 that.selectedTabIndex = 2;
             };
 
@@ -1388,6 +1392,13 @@
                 this.saveModelToCookie();
                 this.selectedTabIndex = 1;
             };
+
+            DrawingController.prototype.getColorId = function (res) {
+                var that = this;
+                document.getElementById("colorId").value = that.model.colorId;
+                
+                //vm.getSystem().colors 
+            }
 
             function DrawingPanelController($scope, $element, $attrs) {
 
@@ -1559,6 +1570,49 @@
         }
     </script>
     <script type="text/javascript">
+        
+        
+        function railingColor()
+        {
+            var val = document.getElementById("colorId").value;
+
+            var r=0;
+            var g=0;
+            var b=0;
+            var chrome=0
+            if(val==1)
+            {
+                r=250;
+                g=250;
+                b=250;
+            }
+            else if(val==2)
+            {
+                r=125;
+                g=108;
+                b=95;
+            }
+           else if(val==3)
+            {
+               r=180;
+               g=180;
+               b=180;
+            }
+           else if(val==4)
+            {
+               r=150;
+               g=150;
+               b = 150;
+                chrome=1;
+               
+            }
+
+            var color=[r,g,b,chrome]
+            return color;
+
+            
+
+        }
 
         let angle = 0;
         let bg;
@@ -1570,6 +1624,9 @@
         let myFont;
 
         $(document).on('click', '#btnzoomin', function () {
+            var val = document.getElementById("colorId").value;
+           
+
             if (scalePoint > 0.95) {
                 scalePoint = .95;
             }
@@ -1618,6 +1675,7 @@
         }
 
         function draw() {
+           var railingcolor= railingColor();
             dummycanvas = mycanvas;
             if(isdummyCanvas)
             convertToImg(dummycanvas);
@@ -1626,7 +1684,7 @@
             scale(sacleObj);
             scale(scalePoint);
 
-            background(255);
+            background(200);
             fill(0);
             push();
 
@@ -1660,20 +1718,42 @@
 
             let locX = mouseX - height / 2;
             let locY = mouseY - width / 2;
-            ambientLight(60, 60, 60);
-            pointLight(255, 255, 255, locX, locY, 100);
+            ambientLight(100, 100, 100);
+            pointLight(255, 255, 255, 0, -200, 100);
 
            
             //panel 1
             push();
             translate(0, -50, 0);
             rotateX(PI / 2);
-            fill(138, 138, 138, 250);
+            // fill(140, 140, 140, 250);
+            if (railingcolor[3] == 1)
+            {
+                specularMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
+            }
+            else
+            {
+                ambientMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
+            }
+            //White
+           // ambientMaterial(250);
+
+            //silver
+           // ambientMaterial(180);
+
+            //Bronze
+           // ambientMaterial(125, 108, 95);
+
+            //chrome
+          //  specularMaterial(150);
+            
             cylinder(3, 90, 100);
             pop();
+
             push();
             translate(0, 0, 0);
-            fill(73, 129, 230, 50);
+              fill(73, 129, 230, 50);
+            
             box(3, 100, 80, 100);
 
             //panel 2
@@ -1682,7 +1762,16 @@
             translate(-31, -50, 75);
             rotateY(-PI / 4);
             rotateX(PI / 2);
-            fill(138, 138, 138, 250);
+            //fill(140, 140, 140, 250);
+            if (railingcolor[3] == 1) {
+                specularMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
+            }
+            else 
+            {
+                ambientMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
+            }
+            debugger;
+           // ambientMaterial(250);
             cylinder(3, 90, 100);
             pop();
             push();
@@ -1698,7 +1787,16 @@
             translate(-31, -50, -75);
             rotateY(radians(45));
             rotateX(PI / 2);
-            fill(138, 138, 138, 250);
+            //fill(140, 140, 140, 250);
+            // ambientMaterial(250);
+            if (railingcolor[3] == 1)
+            {
+                specularMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
+            }
+            else
+            {
+                ambientMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
+            }
             cylinder(3, 90, 100);
             pop();
             push();
