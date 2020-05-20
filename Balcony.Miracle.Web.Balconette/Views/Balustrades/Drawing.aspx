@@ -1684,7 +1684,7 @@
             scale(sacleObj);
             scale(scalePoint);
 
-            background(200);
+            background(230);
             fill(0);
             push();
 
@@ -1718,7 +1718,7 @@
 
             let locX = mouseX - height / 2;
             let locY = mouseY - width / 2;
-            ambientLight(100, 100, 100);
+            ambientLight(60, 60, 60);
             pointLight(255, 255, 255, 0, -200, 100);
 
            
