@@ -1,9 +1,0 @@
-/* Purple for Ballustrades */
-a, h1, h2, h3, .area_color {
-    color: #CC0000 !important;
-}
-
-.sf-menu > li.sfHover, 
-.sf-menu > li.on {
-    color: #CC0000 !important;
-}
