@@ -685,7 +685,7 @@
     <script src="/scripts/svg-pan-zoom.min.js"></script>
 
     <script type="text/javascript">
-                    var angleArray=[];
+        var angleArray = [];
 
         (function () {
 
@@ -836,7 +836,7 @@
                     //var oldSystem = that.getSystem(oldValue);
                     var newSystem = that.getSystem(newValue);
 
-                  
+
 
                     //if (newSystem && (that.height === null || that.height === undefined || (oldSystem && that.height === oldSystem.defaultHeight))) {
                     //    that.model.height = newSystem.defaultHeight;
@@ -1292,7 +1292,7 @@
             //};
 
             DrawingController.prototype.cdeg = function (deg) {
-                
+
                 var res = deg % 360;
                 if (res < 0) {
                     res = 360 + res;
@@ -1383,8 +1383,8 @@
                 that.model.wg = null;
                 that.model.gw = null;
                 document.getElementById("colorId").value = that.model.colorId;
-               
-                
+
+
                 that.selectedTabIndex = 2;
             };
 
@@ -1403,7 +1403,7 @@
             DrawingController.prototype.getColorId = function (res) {
                 var that = this;
                 document.getElementById("colorId").value = that.model.colorId;
-                
+
                 //vm.getSystem().colors 
             }
 
@@ -1540,49 +1540,44 @@
             //return image;
             $('#imgPreview').attr("src", canvasObj.toDataURL("image/png"));
 
-           // $("#height").text($("#input_15").val());
+            // $("#height").text($("#input_15").val());
 
             //console.log(image);
         }
 
-         
-        function railingColor()
-        {
+
+        function railingColor() {
             var val = document.getElementById("colorId").value;
 
-            var r=0;
-            var g=0;
-            var b=0;
-            var chrome=0
-            if(val==1)
-            {
-                r=250;
-                g=250;
-                b=250;
+            var r = 0;
+            var g = 0;
+            var b = 0;
+            var chrome = 0
+            if (val == 1) {
+                r = 250;
+                g = 250;
+                b = 250;
             }
-            else if(val==2)
-            {
-                r=125;
-                g=108;
-                b=95;
+            else if (val == 2) {
+                r = 125;
+                g = 108;
+                b = 95;
             }
-           else if(val==3)
-            {
-               r=180;
-               g=180;
-               b=180;
+            else if (val == 3) {
+                r = 180;
+                g = 180;
+                b = 180;
             }
-           else if(val==4)
-            {
-               r=150;
-               g=150;
-               b = 150;
-                chrome=1;
-               
+            else if (val == 4) {
+                r = 150;
+                g = 150;
+                b = 150;
+                chrome = 1;
+
             }
 
-            var color=[r,g,b,chrome]
-            return color;           
+            var color = [r, g, b, chrome]
+            return color;
 
         }
 
@@ -1598,13 +1593,12 @@
 
         $(document).on('click', '#btnzoomin', function () {
             var val = document.getElementById("colorId").value;
-           
+
 
             if (scalePoint > 0.95) {
                 scalePoint = .95;
             }
-            else
-            {
+            else {
                 scalePoint *= 1.05;
             }
 
@@ -1613,8 +1607,7 @@
             if (scalePoint <= 0.5) {
                 scalePoint = 0.5;
             }
-            else
-            {
+            else {
                 scalePoint *= 0.95;
             }
             scalePoint = scalePoint - 1 * 0.05;
@@ -1626,39 +1619,35 @@
             scalePoint = 1;
         });
 
-        function draw3D(recX,recY,recWidth,recHeight,translate_x,translate_y,translate_z,angle) 
-      {
-		for (i=0; i<= angle.length-1; i++)
-		{
-		
-			if(i==0)
-			{
-			
-				//SECOND  [0]
-                translate(-190,0,0);     
+        function draw3D(recX, recY, recWidth, recHeight, translate_x, translate_y, translate_z, angle) {
+            for (i = 0; i <= angle.length - 1; i++) {
 
-				fill(179, 204, 255);
-				translate(translate_x,translate_y,translate_z);     
-				rotateY(radians(angle[i].angle));
-				newAngle = nutrual - (angle[i].angle);
-				stroke(51);
-				rect(recX,recY,recWidth,recHeight);
-			}
-			else
-			{
-                //THIRD
-                fill(179, 204, 255);
-				translate(translate_x,translate_y,translate_z);
-				rotateY(radians(angle[i].angle - (nutrual - newAngle)));
-				newAngle = nutrual - (angle[i].angle);
-				stroke(51);
-				rect(recX,recY,recWidth,recHeight);						
-			}
-			
-		}	 
- }        
+                if (i == 0) {
+
+                    //SECOND  [0]
+                    translate(-190, 0, 0);
+
+                    fill(179, 204, 255);
+                    translate(translate_x, translate_y, translate_z);
+                    rotateY(radians(angle[i].angle));
+                    newAngle = nutrual - (angle[i].angle);
+                    stroke(51);
+                    rect(recX, recY, recWidth, recHeight);
+                }
+                else {
+                    //THIRD
+                    fill(179, 204, 255);
+                    translate(translate_x, translate_y, translate_z);
+                    rotateY(radians(angle[i].angle - (nutrual - newAngle)));
+                    newAngle = nutrual - (angle[i].angle);
+                    stroke(51);
+                    rect(recX, recY, recWidth, recHeight);
+                }
+
+            }
+        }
         function setup() {
-             //create dummy canvas            
+            //create dummy canvas            
             let dummyCanvas = createCanvas(864, 100, WEBGL);
             dummyCanvas.id('dummycanvas');
 
@@ -1670,17 +1659,17 @@
             textFont(myFont);
             textSize(15);
             text('p5*js', 10, 50);
-           
+
         }
         function preload() {
-          myFont = loadFont('../../Asset/Inconsolata.otf');
+            myFont = loadFont('../../Asset/Inconsolata.otf');
         }
         function draw() {
-           var railingcolor= railingColor();
+            var railingcolor = railingColor();
             dummycanvas = mycanvas;
-            if(isdummyCanvas)
-            convertToImg(dummycanvas);
-            
+            if (isdummyCanvas)
+                convertToImg(dummycanvas);
+
             //for zoom the canvas
             scale(sacleObj);
             scale(scalePoint);
@@ -1689,25 +1678,25 @@
             fill(0);
             push();
 
-           
+
             //main line
             line(-170, -60, -170, 60);
             triangle(-175, -60, -170, -70, -165, -60);
 
-            triangle(-175,60,-170,70,-165,60);
+            triangle(-175, 60, -170, 70, -165, 60);
 
             push();
             let height = $("#input_15").val();
             textSize(12);
             rotate(10.99);
-            text('Height:'+height,-30, -175);
+            text('Height:' + height, -30, -175);
             fill(0, 102, 153);
             pop();
-            
+
 
             rotateY(mouseX * 0.01);
             //rotateX(mouseY *0.01);
-            
+
 
             let locX = mouseX - height / 2;
             let locY = mouseY - width / 2;
@@ -1715,28 +1704,28 @@
             //pointLight(255, 255, 255, 0, -200, 100);
 
             ambientLight(224, 224, 235);
-		    pointLight(179, 204, 255, mouseX, mouseY, 100);
-		
-            //Rectengle
-		     var recX=0;
-		     var recY=0;
-		     var recWidth=55;
-		     var recHeight=55;
-		     
-		     //Translation
-		     var translate_x=56;
-		     var translate_y=0;
-		     var translate_z=0;
-		     
-		     //Angles	
-	         //var angle=[90,68,45,22,0,-22,-45,-68,-90];
-	         var angle=[0,90,45,0,315,270];    
-           
-		     draw3D(recX,recY,recWidth,recHeight,translate_x,translate_y,translate_z,angleArray);
-    
+            pointLight(179, 204, 255, mouseX, mouseY, 100);
 
-                
-                 //panel 1
+            //Rectengle
+            var recX = 0;
+            var recY = 0;
+            var recWidth = 55;
+            var recHeight = 55;
+
+            //Translation
+            var translate_x = 56;
+            var translate_y = 0;
+            var translate_z = 0;
+
+            //Angles	
+            //var angle=[90,68,45,22,0,-22,-45,-68,-90];
+            var angle = [0, 90, 45, 0, 315, 270];
+
+            draw3D(recX, recY, recWidth, recHeight, translate_x, translate_y, translate_z, angleArray);
+
+
+
+            //panel 1
             //push();
             //translate(0, -50, 0);
             //rotateX(PI / 2);
@@ -1748,14 +1737,14 @@
             //{
             //    ambientMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
             //}
-                      
+
             //cylinder(3, 90, 100);
             //pop();
 
             //push();
             //translate(0, 0, 0);
             //  fill(73, 129, 230, 50);
-            
+
             //box(3, 100, 80, 100);
 
             ////panel 2
@@ -1786,7 +1775,7 @@
             //translate(-31, -50, -75);
             //rotateY(radians(45));
             //rotateX(PI / 2);
-         
+
             //if (railingcolor[3] == 1)
             //{
             //    specularMaterial(railingcolor[0], railingcolor[1], railingcolor[2]);
@@ -1805,8 +1794,8 @@
             //pop();
 
             //angle = angle + 1;
-           
-        }   
+
+        }
 
 
         window.addEventListener("wheel", function (e) {
@@ -1822,7 +1811,7 @@
 
             }
             else if (scalePoint <= 0.50)
-                 scalePoint = 0.50;
+                scalePoint = 0.50;
             else
                 scalePoint *= 0.95;
         });
